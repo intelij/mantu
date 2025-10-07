@@ -1,84 +1,116 @@
+{{-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="csrf-token" content="J4ekgNQ7VwmiJ21wo19Q36cK2mDJtnw2fmOhov9V">
+
+    <link rel="shortcut icon" type="image/png" href="asset/images/default.png">
+
+    <title>
+                    Mantu-
+                Login Page
+    </title>
+
+    <link rel="stylesheet" href="css/lib/bootstrap.min.css">
+
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- lineawesome font -->
+    <link rel="stylesheet" href="css/line-awesome.min.css">
+    <!-- lightcase css -->
+    <link rel="stylesheet" href="css/lightcase.css">
+
+    <link rel="stylesheet" href="css/lib/countrySelect.css">
+    <!-- slick slider css -->
+    <link rel="stylesheet" href="css/lib/slick.css">
+
+    <link rel="stylesheet" href="css/izitoast.min.css">
+
+    <link rel="stylesheet" href="css/custom.css">
+
+    <!-- main css -->
+    <link rel="stylesheet" href="css/main.css">
+
+    <link rel="stylesheet"
+        href="css/color.php%3Fprimary_color=813FD6.css">
+</head>
+
+
+<body> --}}
+
+
 @extends('layouts.auth')
 
 @section('page-title', trans('Login'))
 
 @section('content')
 
-<div class="col-md-8 col-lg-6 col-xl-5 mx-auto my-10p" id="login">
-    <div class="text-center">
-        <x-logo />
-    </div>
 
-    <div class="card mt-5">
-        <div class="card-body">
-            <h5 class="card-title text-center mt-4 text-uppercase">
-                @lang('Login')
-            </h5>
+            <div class="logo">
+                <a href="/"><img src="images/logo/logo.png" alt="image"></a>
+            </div>
+            <div class="content">
+                <h2 class="title">Get Money Within 1 Business Day Or Less</h2>
+            </div>
+        </div>
 
-            <div class="p-4">
-                @include('auth.social.buttons')
+        <div class="form-wrapper">
+            <div class="inner-wrapper">
+                <div class="text-center">
+                    <h2 class="title">Welcome To Mantu CRM Portal</h2>
+                    <p class="mt-2">New To Mantu? <a href="register" class="site-color">Sign Up</a></p>
+                </div>
 
                 @include('partials.messages')
 
-                <form role="form" action="<?= url('login') ?>" method="POST" id="login-form" autocomplete="off" class="mt-3">
+                <form role="form" action="<?= url('login') ?>" method="POST" id="login-form" autocomplete="off" class="mt-3 account-form">
 
                     <input type="hidden" value="<?= csrf_token() ?>" name="_token">
-
                     @if (Request::has('to'))
                         <input type="hidden" value="{{ Request::get('to') }}" name="to">
                     @endif
 
-                    <div class="form-group">
-                        <label for="username" class="sr-only">@lang('Email or Username')</label>
+                    <label>@lang('Email or Username')</label>
+                    <div class="custom-icon-field mb-3">
                         <input type="text"
                                 name="username"
                                 id="username"
                                 class="form-control input-solid"
                                 placeholder="@lang('Email or Username')"
                                 value="{{ old('username') }}">
+                        <i class="las la-envelope"></i>
                     </div>
-
-                    <div class="form-group password-field">
-                        <label for="password" class="sr-only">@lang('Password')</label>
+                    <label>@lang('Password')</label>
+                    <div class="custom-icon-field mb-3">
                         <input type="password"
                                name="password"
                                id="password"
                                class="form-control input-solid"
                                placeholder="@lang('Password')">
+                        <i class="las la-lock"></i>
                     </div>
 
+                    <div class="d-flex flex-wrap justify-content-between">
 
-                    @if (setting('remember_me'))
-                        <div class="custom-control custom-checkbox">
-                            <input type="checkbox" class="custom-control-input" name="remember" id="remember" value="1"/>
-                            <label class="custom-control-label font-weight-normal" for="remember">
-                                @lang('Remember me?')
-                            </label>
-                        </div>
-                    @endif
+                        @if (setting('remember_me'))
+                            <div class="custom-control custom-checkbox mb-2">
+                                <input type="checkbox" class="custom-control-input" name="remember" id="remember" value="1"/>
+                                <label class="custom-control-label font-weight-normal" for="remember">
+                                    @lang('Remember me?')
+                                </label>
+                            </div>
+                        @endif
 
+                        @if (setting('forgot_password'))
+                            <a href="<?= route('password.request') ?>" class="forgot mb-2 site-color">@lang('I forgot my password')</a>
+                        @endif
 
-                    <div class="form-group mt-4">
-                        <button type="submit" class="btn btn-primary btn-lg btn-block" id="btn-login">
-                            @lang('Log In')
-                        </button>
                     </div>
+                    <button class="btn main-btn w-100 mt-4" type="submit">@lang('Log In')</button>
                 </form>
 
-                @if (setting('forgot_password'))
-                    <a href="<?= route('password.request') ?>" class="forgot">@lang('I forgot my password')</a>
-                @endif
             </div>
-        </div>
-    </div>
-
-    <div class="text-center text-muted">
-        @if (setting('reg_enabled'))
-            @lang("Don't have an account?")
-            <a class="font-weight-bold" href="<?= url("register") ?>">@lang('Sign Up')</a>
-        @endif
-    </div>
-</div>
 
 @stop
 

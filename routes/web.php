@@ -25,6 +25,10 @@ use Vanguard\UserActivity\Http\Controllers\Web\ActivityController as WebActivity
 use App\Http\Controllers\Web\InstallController;
 use Vanguard\UserActivity\Http\Controllers\Web\ActivityController;
 
+Route::get('/welcome', function () {
+    return view('welcome');
+});
+
 /**
  * Authentication
  */

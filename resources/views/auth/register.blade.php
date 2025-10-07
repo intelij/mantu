@@ -8,25 +8,32 @@
 
 @section('content')
 
-    <div class="col-md-8 col-lg-6 col-xl-5 mx-auto my-10p">
-        <div class="text-center">
-            <x-logo />
+
+            <div class="logo">
+                <a href="/"><img src="images/logo/logo.png" alt="image"></a>
+            </div>
+            <div class="content">
+                <h2 class="title">Get Money Within 1 Business Day Or Less</h2>
+            </div>
         </div>
 
-        <div class="card mt-5">
-            <div class="card-body">
-                <h5 class="card-title text-center mt-4 text-uppercase">
-                    @lang('Register')
-                </h5>
+        <div class="form-wrapper">
+            <div class="inner-wrapper">
+                <div class="text-center">
+                    <h2 class="title">Welcome To Mantu CRM Portal</h2>
+                     @if (setting('reg_enabled'))
+                        <p class="mt-2">@lang('Already have an account?') <a class="font-weight-bold site-color" href="<?= url("login") ?>">@lang('Login')</a></p>
+                    @endif
+                </div>
 
-                <div class="p-4">
-                    @include('auth.social.buttons')
+                @include('partials.messages')
 
-                    @include('partials/messages')
+                @include('partials/messages')
 
                     <form role="form" action="<?= url('register') ?>" method="post" id="registration-form" autocomplete="off" class="mt-3">
                         <input type="hidden" value="<?= csrf_token() ?>" name="_token">
                         <div class="form-group">
+                            <label>@lang('Email')</label>
                             <input type="email"
                                    name="email"
                                    id="email"
@@ -35,6 +42,7 @@
                                    value="{{ old('email') }}">
                         </div>
                         <div class="form-group">
+                            <label>@lang('Username')</label>
                             <input type="text"
                                    name="username"
                                    id="username"
@@ -43,6 +51,7 @@
                                    value="{{ old('username') }}">
                         </div>
                         <div class="form-group">
+                            <label>@lang('Password')</label>
                             <input type="password"
                                    name="password"
                                    id="password"
@@ -50,6 +59,7 @@
                                    placeholder="@lang('Password')">
                         </div>
                          <div class="form-group">
+                            <label>@lang('Confirm Password')</label>
                             <input type="password"
                                    name="password_confirmation"
                                    id="password_confirmation"
@@ -57,12 +67,13 @@
                                    placeholder="@lang('Confirm Password')">
                         </div>
 
+
                         @if (setting('tos'))
                             <div class="custom-control custom-checkbox">
                                 <input type="checkbox" class="custom-control-input" name="tos" id="tos" value="1"/>
                                 <label class="custom-control-label font-weight-normal" for="tos">
                                     @lang('I accept')
-                                    <a href="#tos-modal" data-toggle="modal">@lang('Terms of Service')</a>
+                                    <a href="#tos-modal" data-toggle="modal" class="font-weight-bold site-color">@lang('Terms of Service')</a>
                                 </label>
                             </div>
                         @endif
@@ -75,47 +86,36 @@
                         @endif
                         {{-- end captcha --}}
 
-                        <div class="form-group mt-4">
-                            <button type="submit" class="btn btn-primary btn-lg btn-block" id="btn-login">
-                                @lang('Register')
-                            </button>
-                        </div>
+                        <button class="btn main-btn w-100 mt-4" type="submit">@lang('Register')</button>
+
+
                     </form>
-                </div>
-            </div>
-        </div>
 
-        <div class="text-center text-muted">
-            @if (setting('reg_enabled'))
-                @lang('Already have an account?')
-                <a class="font-weight-bold" href="<?= url("login") ?>">@lang('Login')</a>
+            </div>
+
+
+            @if (setting('tos'))
+                <div class="modal fade" id="tos-modal" tabindex="-1" role="dialog" aria-labelledby="tos-label">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="tos-label">@lang('Terms of Service')</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                @include('auth.tos')
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                                    @lang('Close')
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             @endif
-        </div>
-
-    </div>
-
-    @if (setting('tos'))
-        <div class="modal fade" id="tos-modal" tabindex="-1" role="dialog" aria-labelledby="tos-label">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="tos-label">@lang('Terms of Service')</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        @include('auth.tos')
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">
-                            @lang('Close')
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    @endif
 
 @stop
 
