@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="csrf-token" content="J4ekgNQ7VwmiJ21wo19Q36cK2mDJtnw2fmOhov9V">
     <link rel="shortcut icon" type="image/png" href="/images/default.png">
-    <title> TransferMax- Home </title>
+    <title> Mantu - Home </title>
     <!-- bootstrap 5  -->
     <link rel="stylesheet" href="css/lib/bootstrap.min.css">
     <!-- fontawesome 5  -->
@@ -102,8 +102,8 @@
                 <h2 class="banner-title">Connecting Homeowners with Skilled and Trusted Tradespeople</h2>
                 <p class="text-white mt-3">We're on a mission to bring transparency to hiring tradespeople, connecting you with trusted professionals you can rely on. No hidden charges, no surprises—just upfront pricing and quality service every time.</p>
                 <div class="d-sm-flex d-none flex-wrap align-items-center justify-content-lg-start justify-content-center mt-2">
-                  <a href="http://transfermax.springsoftit.com/demo/How-work" class="btn main-btn me-3 mt-3">How It Works</a>
-                  <a href="Https://www.youtube.com/embed/SzQ_kVWONo0" data-rel="lightcase:myCollection" class="banner-video-btn mt-3">
+                  <a href="#" class="btn main-btn me-3 mt-3">How It Works</a>
+                  <a href="#" data-rel="lightcase:myCollection" class="banner-video-btn mt-3">
                     <i class="fas fa-play"></i>
                     <span>How To Send Money</span>
                   </a>
@@ -240,8 +240,8 @@
                 <div class="work-img">
                   <img src="images/how_it_works/63ce5e21da29f1674468897.png" alt="image">
                 </div>
-                <h4 class="title text-white">Deposit Money</h4>
-                <p class="text-white mt-2">To Your Loved Ones All Over The World</p>
+                <h4 class="title text-white">Request a Service</h4>
+                <p class="text-white mt-2">Whatever you need done, we got you covered</p>
               </div>
             </div>
             <div class="col-lg-4 col-sm-6  wow fadeInUp" data-wow-delay="0.3s" data-wow-duration="0.5s">
@@ -249,8 +249,8 @@
                 <div class="work-img">
                   <img src="images/how_it_works/63ce5e27af7411674468903.png" alt="image">
                 </div>
-                <h4 class="title text-white">Transfer Money</h4>
-                <p class="text-white mt-2">While We Do The Hard Lifting Fro You</p>
+                <h4 class="title text-white">We deploy trusted Trades people</h4>
+                <p class="text-white mt-2">Get realtime updates on your project</p>
               </div>
             </div>
           </div>
@@ -510,7 +510,6 @@
               <ul class="footer-info-list">
                 <li>
                   <i class="fas fa-map-marked-alt"></i>
-                  <!-- <span>A108 Adam Street, New York, NY 535022</span> -->
                   <span>Albion Court, Fort St &amp; 14th Ave, Bulawayo</span>
                 </li>
                 <li>
@@ -535,7 +534,7 @@
         <div class="container">
           <div class="row gy-2">
             <div class="col-lg-8 text-lg-start text-center">
-              <p> Copyright &copy; 2024 TrustedTrader. All Rights Reserved. </p>
+              <p> Copyright &copy; {{ date('Y')}} Mantu. All Rights Reserved. </p>
             </div>
             <div class="col-lg-4">
               <ul class="social-media-links justify-content-lg-end justify-content-center">
