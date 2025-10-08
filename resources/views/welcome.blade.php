@@ -107,7 +107,7 @@
                 <p class="text-white mt-3">We're on a mission to bring transparency to hiring tradespeople, connecting you with trusted professionals you can rely on. No hidden charges, no surprises—just upfront pricing and quality service every time.</p>
                 <div class="d-sm-flex d-none flex-wrap align-items-center justify-content-lg-start justify-content-center mt-2">
                   <a href="#" class="btn main-btn me-3 mt-3">How It Works</a>
-                <a href="#sample-report" class="btn main-btn me-3 mt-3">View Sample Report</a>
+                <a href="assets/downloads/report.pdf" target="_blank" class="btn main-btn me-3 mt-3">View Sample Report</a>
                 {{-- <a href="#" data-rel="lightcase:myCollection" class="banner-video-btn mt-3">
                   <i class="fas fa-play"></i>
                   <span>How To Send Money</span>
