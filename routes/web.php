@@ -37,7 +37,7 @@ Route::post('login', [LoginController::class, 'login'])->name('login');
 Route::get('logout', [LoginController::class, 'logout'])->name('auth.logout');
 
 Route::group(['middleware' => ['registration', 'guest']], function () {
-    Route::get('register', [RegisterController::class, 'show']);
+    Route::get('register', [RegisterController::class, 'show'])->name('register');
     Route::post('register', [RegisterController::class, 'register']);
 });
 

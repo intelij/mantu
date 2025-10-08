@@ -65,15 +65,15 @@
                   <a href="index.html" class="nav-link">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a href="demo/about.html" class="nav-link">About</a>
+                  <a href="#about.html" class="nav-link">About</a>
                 </li>
               </ul>
               <div class="navbar-action">
                 <div class="header-auth-btn">
                   <i class="las la-sign-in-alt"></i>
-                  <a href="demo/login.html" class="h-login">Login</a>
+                  <a href="{{ route('login') }}" class="h-login">Login</a>
                   <span>/</span>
-                  <a href="demo/register.html" class="h-register">Signup</a>
+                  <a href="{{ route('register') }}" class="h-register">Signup</a>
                 </div>
               </div>
           </nav>
@@ -113,11 +113,12 @@
             <div class="col-lg-4 ps-xxl-4 wow fadeInUp" data-wow-delay="0.5s" data-wow-duration="0.5s"></div>
             <div class="col-12 d-sm-none">
               <div class="d-flex flex-wrap align-items-center justify-content-lg-start justify-content-center mt-2">
-                <a href="http://transfermax.springsoftit.com/demo/How-work" class="btn main-btn me-3 mt-3">How It Works</a>
-                <a href="Https://www.youtube.com/embed/SzQ_kVWONo0" data-rel="lightcase:myCollection" class="banner-video-btn mt-3">
+                <a href="#" class="btn main-btn me-3 mt-3">How It Works</a>
+                <a href="#sample-report" class="btn main-btn me-3 mt-3">View Sample Report</a>
+                {{-- <a href="#" data-rel="lightcase:myCollection" class="banner-video-btn mt-3">
                   <i class="fas fa-play"></i>
                   <span>How To Send Money</span>
-                </a>
+                </a> --}}
               </div>
             </div>
           </div>
@@ -487,10 +488,10 @@
               <h5 class="footer-title">About Company</h5>
               <ul class="footer-menu justify-content-center">
                 <li>
-                  <a href="demo/service/privacy.html">Privacy Policy</a>
+                  <a href="#privacy.html">Privacy Policy</a>
                 </li>
                 <li>
-                  <a href="demo/service/terms.html">Terms &amp; Conditions</a>
+                  <a href="#terms.html">Terms &amp; Conditions</a>
                 </li>
               </ul>
             </div>
@@ -498,10 +499,10 @@
               <h5 class="footer-title">More Links</h5>
               <ul class="footer-menu justify-content-center">
                 <li>
-                  <a href="index.html">Home</a>
+                  <a href="/">Home</a>
                 </li>
                 <li>
-                  <a href="demo/about.html">About</a>
+                  <a href="#about.html">About</a>
                 </li>
               </ul>
             </div>
