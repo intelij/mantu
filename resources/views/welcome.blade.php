@@ -79,7 +79,7 @@
                     @if (Auth::check())
                         <div class="header-auth-btn">
                             <i class="las la-sign-in-alt"></i>
-                            <a href="{{ route('dashboard') }}" class="h-login">My Account</a>
+                            <a href="{{ route('dashboard') }}" class="h-login">My Account &nbsp;</a>
                         </div>
                     @else
                         <div class="header-auth-btn">
