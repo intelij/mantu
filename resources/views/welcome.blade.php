@@ -73,12 +73,23 @@
                 </li>
               </ul>
               <div class="navbar-action">
-                <div class="header-auth-btn">
-                  <i class="las la-sign-in-alt"></i>
-                  <a href="{{ route('login') }}" class="h-login">Login</a>
-                  <span>/</span>
-                  <a href="{{ route('register') }}" class="h-register">Signup</a>
-                </div>
+
+
+
+                    @if (Auth::check())
+                        <div class="header-auth-btn">
+                            <i class="las la-sign-in-alt"></i>
+                            <a href="{{ route('dashboard') }}" class="h-login">My Account</a>
+                        </div>
+                    @else
+                        <div class="header-auth-btn">
+                            <i class="las la-sign-in-alt"></i>
+                            <a href="{{ route('login') }}" class="h-login">Login</a>
+                            <span>/</span>
+                            <a href="{{ route('register') }}" class="h-register">Signup</a>
+                        </div>
+                    @endif
+
               </div>
           </nav>
         </div>
