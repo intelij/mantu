@@ -482,7 +482,7 @@
           <div class="row gy-5">
             <div class="col-lg-4 pe-xl-5">
               <a href="/" class="footer-logo">
-                <img src="/images/logo/logo.png" alt="image">
+                <img src="/images/logo/logo-white.png" alt="image">
               </a>
               <p class="mt-3">In home maintenance and repairs, finding trusted tradespeople is essential to ensure every project is completed professionally and meets the highest quality standards possible.</p>
               <div class="footer-payment mt-3">
