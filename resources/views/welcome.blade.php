@@ -5,7 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="csrf-token" content="J4ekgNQ7VwmiJ21wo19Q36cK2mDJtnw2fmOhov9V">
     <link rel="shortcut icon" type="image/png" href="/images/default.png">
-    <title> Mantu - Home </title>
+    <title>{{ setting('app_name') }} - Find traders near you with Which? Trusted Traders</title>
+    <META NAME="Description" CONTENT="Find builders, electricians, plumbers, garages or other traders in your area that have been endorsed by Which? Trusted Traders. Our logo is a sign of reputation and trust, helping you to choose the right trader.">
+    <META NAME="Keywords" CONTENT="Which,Find,Traders,Trusted,traders,area,been,builders,choose,electricians,endorsed,garages,have,helping,logo,near,other,plumbers,reputation,right,sign,trader,trust">
+    <META NAME="news_keywords" CONTENT="Which,Find,Traders,Trusted,traders,area,been,builders,choose,electricians,endorsed,garages,have,helping,logo,near,other,plumbers,reputation,right,sign,trader,trust">
+
     <!-- bootstrap 5  -->
     <link rel="stylesheet" href="css/lib/bootstrap.min.css">
     <!-- fontawesome 5  -->
