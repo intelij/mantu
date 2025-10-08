@@ -25,7 +25,7 @@ use Vanguard\UserActivity\Http\Controllers\Web\ActivityController as WebActivity
 use App\Http\Controllers\Web\InstallController;
 use Vanguard\UserActivity\Http\Controllers\Web\ActivityController;
 
-Route::get('/welcome', function () {
+Route::get('/', function () {
     return view('welcome');
 });
 
@@ -80,7 +80,7 @@ Route::group(['middleware' => ['auth', 'verified', 'approved', 'password-change'
     /**
      * Dashboard
      */
-    Route::get('/', [DashboardController::class, 'index'])->name('dashboard');
+    Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
 
     /**
      * User Profile
