@@ -57,7 +57,7 @@
       <div class="header-bottom">
         <div class="container">
           <nav class="navbar navbar-expand-xl p-0 align-items-center">
-            <a class="site-logo site-title" href="index.html">
+            <a class="site-logo site-title" href="/">
               <img src="images/logo/logo.png" alt="logo">
             </a>
             <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -66,7 +66,7 @@
             <div class="collapse navbar-collapse mt-lg-0 mt-3" id="mainNavbar">
               <ul class="nav navbar-nav main-menu ms-auto me-3">
                 <li class="nav-item">
-                  <a href="index.html" class="nav-link">Home</a>
+                  <a href="/" class="nav-link">Home</a>
                 </li>
                 <li class="nav-item">
                   <a href="#about.html" class="nav-link">About</a>
@@ -481,7 +481,7 @@
         <div class="container">
           <div class="row gy-5">
             <div class="col-lg-4 pe-xl-5">
-              <a href="index.html#0" class="footer-logo">
+              <a href="/" class="footer-logo">
                 <img src="/images/logo/logo.png" alt="image">
               </a>
               <p class="mt-3">In home maintenance and repairs, finding trusted tradespeople is essential to ensure every project is completed professionally and meets the highest quality standards possible.</p>
