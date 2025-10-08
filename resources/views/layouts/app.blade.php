@@ -43,6 +43,16 @@
         </div>
     </div>
 
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DRP5CLRML0"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-DRP5CLRML0');
+    </script>
+
     <script src="{{ url(mix('assets/js/vendor.js')) }}"></script>
     <script src="{{ url('assets/js/as/app.js') }}"></script>
     @yield('scripts')

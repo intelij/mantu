@@ -135,7 +135,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-4 ps-xxl-4 wow fadeInUp" data-wow-delay="0.5s" data-wow-duration="0.5s"></div>
+
             <div class="col-12 d-sm-none">
               <div class="d-flex flex-wrap align-items-center justify-content-lg-start justify-content-center mt-2">
                 <a href="#" class="btn main-btn me-3 mt-3">How It Works</a>
@@ -543,6 +543,12 @@
                   <span>+263 78 393 0023</span>
                 </li>
                 <li>
+                    <a href="https://wa.me/447983951875" target="_blank" style="color: #25D366;">
+                        <i class="fab fa-whatsapp fa-2x"></i>
+                    </a>
+                  <span>+44 79 8395 1875</span>
+                </li>
+                <li>
                   <i class="fas fa-envelope"></i>
                   <span>Info@mantu.co.zw</span>
                 </li>
@@ -601,6 +607,17 @@
     <script src="js/lib/wow.min.js"></script>
     <script src="js/izitoast.min.js"></script>
     <script src="js/lib/select2.min.js"></script>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DRP5CLRML0"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-DRP5CLRML0');
+    </script>
+
     <!-- main js -->
     <script src="js/app.js"></script>
 
