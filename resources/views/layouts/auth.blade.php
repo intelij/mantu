@@ -6,7 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>@yield('page-title') - {{ setting('app_name') }}</title>
+    <title>{{ setting('app_name') }} - Find traders near you with Which? Trusted Traders</title>
+    <META NAME="Description" CONTENT="Find builders, electricians, plumbers, garages or other traders in your area that have been endorsed by Which? Trusted Traders. Our logo is a sign of reputation and trust, helping you to choose the right trader.">
+    <META NAME="Keywords" CONTENT="Which,Find,Traders,Trusted,traders,area,been,builders,choose,electricians,endorsed,garages,have,helping,logo,near,other,plumbers,reputation,right,sign,trader,trust">
+    <META NAME="news_keywords" CONTENT="Which,Find,Traders,Trusted,traders,area,been,builders,choose,electricians,endorsed,garages,have,helping,logo,near,other,plumbers,reputation,right,sign,trader,trust">
+
+
+    {{-- <title>@yield('page-title') - {{ setting('app_name') }}</title> --}}
     <link rel="stylesheet" href="{{ asset('css/lib/bootstrap.min.css') }}">
 
     <link rel="stylesheet" href="{{ asset('css/all.min.css') }}">

@@ -8,7 +8,10 @@
 
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>@yield('page-title') - {{ setting('app_name') }}</title>
+    <title>{{ setting('app_name') }} - Find traders near you with Which? Trusted Traders</title>
+    <META NAME="Description" CONTENT="Find builders, electricians, plumbers, garages or other traders in your area that have been endorsed by Which? Trusted Traders. Our logo is a sign of reputation and trust, helping you to choose the right trader.">
+    <META NAME="Keywords" CONTENT="Which,Find,Traders,Trusted,traders,area,been,builders,choose,electricians,endorsed,garages,have,helping,logo,near,other,plumbers,reputation,right,sign,trader,trust">
+    <META NAME="news_keywords" CONTENT="Which,Find,Traders,Trusted,traders,area,been,builders,choose,electricians,endorsed,garages,have,helping,logo,near,other,plumbers,reputation,right,sign,trader,trust">
 
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ url('assets/img/icons/apple-touch-icon-144x144.png') }}" />
     <link rel="apple-touch-icon-precomposed" sizes="152x152" href="{{ url('assets/img/icons/apple-touch-icon-152x152.png') }}" />
