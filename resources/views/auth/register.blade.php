@@ -13,7 +13,7 @@
                 <a href="/"><img src="images/logo/logo.png" alt="image"></a>
             </div>
             <div class="content">
-                <h2 class="title">Get Money Within 1 Business Day Or Less</h2>
+                <h2 class="title">We work with Trusted Traders we've endorsed for your peace of mind.</h2>
             </div>
         </div>
 
