@@ -129,8 +129,7 @@
 
 
 
-                <div class="card-body p-4">
-                    <h3 class="mb-4 text-center">@lang('Request a Runner or Property Service')</h3>
+                {{-- <div class="card-body p-4"> --}}
 
                     <form action=" route('enquiries.store') " method="POST" enctype="multipart/form-data">
                         @csrf
@@ -250,7 +249,7 @@
                             <i class="fas fa-paper-plane"></i> @lang('Submit Request')
                         </button>
                     </form>
-                </div>
+                {{-- </div> --}}
 
 
 
