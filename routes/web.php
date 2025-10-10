@@ -24,10 +24,20 @@ use App\Http\Controllers\Web\SettingsController;
 use Vanguard\UserActivity\Http\Controllers\Web\ActivityController as WebActivityController;
 use App\Http\Controllers\Web\InstallController;
 use Vanguard\UserActivity\Http\Controllers\Web\ActivityController;
+use App\Http\Controllers\Web\ProviderRequestController;
 
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/runner-request', [ProviderRequestController::class, 'create'])->name('runner.request.create');
+Route::post('/runner-request', [ProviderRequestController::class, 'store'])->name('runner.request.store');
+
+Route::prefix('admin')->group(function () {
+    Route::get('/runner-requests', [ProviderRequestController::class, 'index'])->name('admin.runner-requests.index');
+    Route::get('/runner-requests/{id}', [ProviderRequestController::class, 'show'])->name('admin.runner-requests.show');
+});
+
 
 /**
  * Authentication
