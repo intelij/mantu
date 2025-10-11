@@ -121,7 +121,7 @@
           <div class="row gy-5 justify-content-between align-items-center">
             <div class="col-lg-7 text-lg-start text-center">
               <div class="banner-content wow fadeInUp" data-wow-delay="0.3s" data-wow-duration="0.5s">
-                <div class="banner-top-title">Bulawayo&#039;s Trusted Traders Platform</div>
+                <div class="banner-top-title">Matebeleland&#039;s Trusted Traders Platform</div>
                 <h2 class="banner-title">Connecting Homeowners with Skilled and Trusted Tradespeople</h2>
                 <p class="text-white mt-3">We're on a mission to bring transparency to hiring tradespeople, connecting you with trusted professionals you can rely on. No hidden charges, no surprises—just upfront pricing and quality service every time.</p>
                 <div class="d-sm-flex d-none flex-wrap align-items-center justify-content-lg-start justify-content-center mt-2">
