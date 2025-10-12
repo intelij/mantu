@@ -146,8 +146,6 @@
               </ul>
               <div class="navbar-action">
 
-
-
                     @if (Auth::check())
                         <div class="header-auth-btn">
                             <i class="las la-sign-in-alt"></i>
