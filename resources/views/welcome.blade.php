@@ -1,46 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+  <!-- =========================================================
+     MANTU – Qualified Trades & Home Services Platform
+     Optimized for Local & Regional Discovery in Matabeleland, Zimbabwe
+    ========================================================== -->
+    <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="csrf-token" content="J4ekgNQ7VwmiJ21wo19Q36cK2mDJtnw2fmOhov9V">
-    <link rel="shortcut icon" type="image/png" href="/images/default.png">
-    <title>{{ setting('app_name') }} - Find traders near you with Which? Trusted Traders</title>
-    <META NAME="Description" CONTENT="Find builders, electricians, plumbers, garages or other traders in your area that have been endorsed by Which? Trusted Traders. Our logo is a sign of reputation and trust, helping you to choose the right trader.">
-    <META NAME="Keywords" CONTENT="Which,Find,Traders,Trusted,traders,area,been,builders,choose,electricians,endorsed,garages,have,helping,logo,near,other,plumbers,reputation,right,sign,trader,trust">
-    <META NAME="news_keywords" CONTENT="Which,Find,Traders,Trusted,traders,area,been,builders,choose,electricians,endorsed,garages,have,helping,logo,near,other,plumbers,reputation,right,sign,trader,trust">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+    <meta name="application-name" content="{{ setting('app_name') }}">
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+    <meta name="msapplication-TileImage" content="{{ url('assets/img/icons/mstile-144x144.png') }}">
 
-        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ url('assets/img/icons/apple-touch-icon-144x144.png') }}" />
-    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="{{ url('assets/img/icons/apple-touch-icon-152x152.png') }}" />
-    <link rel="icon" type="image/png" href="{{ url('assets/img/icons/favicon-32x32.png') }}" sizes="32x32" />
-    <link rel="icon" type="image/png" href="{{ url('assets/img/icons/favicon-16x16.png') }}" sizes="16x16" />
-    <meta name="application-name" content="{{ setting('app_name') }}"/>
-    <meta name="msapplication-TileColor" content="#FFFFFF" />
-    <meta name="msapplication-TileImage" content="{{ url('assets/img/icons/mstile-144x144.png') }}" />
+    <title>{{ setting('app_name') }} | Qualified Tradespeople & Home Services in Matabeleland, Zimbabwe</title>
 
-    <!-- bootstrap 5  -->
+    <!-- =========================================================
+        SEO Meta Tags
+    ========================================================== -->
+    <meta name="description" content="Mantu provides professional construction, carpentry, plumbing, electrical work, cleaning, shuttle services, borehole drilling, errands, and property management across Matabeleland. Our qualified experts deliver reliable, transparent, and affordable home and commercial services.">
+    <meta name="keywords" content="Mantu, qualified tradespeople Zimbabwe, builders Bulawayo, electricians Matabeleland, plumbers Zimbabwe, carpenters Bulawayo, cleaning services Zimbabwe, borehole drilling Bulawayo, car hire Zimbabwe, shuttle services Matabeleland, property management Bulawayo, home repairs, maintenance contractors, handyman Bulawayo, construction companies Zimbabwe, verified professionals, small tasks, errands, renovation experts, trusted contractors Zimbabwe">
+    <meta name="author" content="Mantu">
+    <meta name="robots" content="index, follow">
+    <meta name="news_keywords" content="Mantu, trusted tradespeople, builders, electricians, plumbers, carpenters, cleaning, borehole drilling, property management, Matabeleland, Bulawayo, Zimbabwe, home services, contractors, renovation, repairs, handyman">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://mantu.co.zw/">
+
+    <!-- =========================================================
+        Icons & Favicons
+    ========================================================== -->
+    <link rel="shortcut icon" type="image/png" href="{{ asset('images/favicon.png') }}">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ url('assets/img/icons/apple-touch-icon-144x144.png') }}">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="{{ url('assets/img/icons/apple-touch-icon-152x152.png') }}">
+    <link rel="icon" type="image/png" href="{{ url('assets/img/icons/favicon-32x32.png') }}" sizes="32x32">
+    <link rel="icon" type="image/png" href="{{ url('assets/img/icons/favicon-16x16.png') }}" sizes="16x16">
+
+    <!-- =========================================================
+        Open Graph / Facebook
+    ========================================================== -->
+    <meta property="og:title" content="Mantu – Qualified Trades & Reliable Home Services in Matabeleland, Zimbabwe">
+    <meta property="og:description" content="Hire qualified builders, electricians, plumbers, carpenters, cleaners, and property managers. Mantu provides trusted local professionals for all home and commercial needs across Matabeleland.">
+    <meta property="og:image" content="https://mantu.co.zw/images/mantu-social-banner.jpg">
+    <meta property="og:url" content="https://mantu.co.zw/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Mantu">
+
+    <!-- =========================================================
+        Twitter Card
+    ========================================================== -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Mantu – Qualified Tradespeople & Home Services in Zimbabwe">
+    <meta name="twitter:description" content="Mantu connects you with verified builders, plumbers, electricians, carpenters, and cleaners. Trusted professionals serving homes and businesses in Matabeleland.">
+    <meta name="twitter:image" content="https://mantu.co.zw/images/mantu-social-banner.jpg">
+
+    <!-- =========================================================
+        Structured Data (JSON-LD)
+    ========================================================== -->
+    @verbatim
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Mantu",
+        "image": "https://mantu.co.zw/images/mantu-social-banner.jpg",
+        "url": "https://mantu.co.zw",
+        "telephone": "+263783930023",
+        "email": "info@mantu.co.zw",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Ground Floor Albion Court, Crn Fort Street & 13th Avenue",
+            "addressLocality": "Bulawayo",
+            "addressCountry": "ZW"
+        },
+        "description": "Mantu provides all-in-one trade and home services through qualified builders, electricians, plumbers, carpenters, cleaners, and property managers across Matabeleland, Zimbabwe. We ensure vetted professionals, fair pricing, and dependable results.",
+        "openingHours": ["Mo-Fr 08:00-18:00", "Sa 08:00-13:00"],
+        "areaServed": "Matabeleland, Zimbabwe",
+        "sameAs": [
+            "https://www.facebook.com/mantuzw",
+            "https://www.instagram.com/mantuzw",
+            "https://www.linkedin.com/company/mantu-zimbabwe"
+        ]
+    }
+    </script>
+    @endverbatim
+
+    <!-- =========================================================
+        Stylesheets
+    ========================================================== -->
     <link rel="stylesheet" href="css/lib/bootstrap.min.css">
-    <!-- fontawesome 5  -->
     <link rel="stylesheet" href="css/all.min.css">
-    <!-- lineawesome font -->
     <link rel="stylesheet" href="css/custom.css">
     <link rel="stylesheet" href="css/line-awesome.min.css">
-    <!-- lightcase css -->
     <link rel="stylesheet" href="css/lightcase.css">
     <link rel="stylesheet" href="css/lib/countrySelect.css">
-    <!-- slick slider css -->
     <link rel="stylesheet" href="css/lib/slick.css">
     <link rel="stylesheet" href="css/izitoast.min.css">
     <link rel="stylesheet" href="css/lib/select2.min.css">
-    <!-- main css -->
     <link rel="stylesheet" href="css/main.css">
+
     <style>
-      #profit-table tr td {
+        #profit-table tr td {
         color: #fff;
-      }
+        }
     </style>
-    <link rel="stylesheet" href="css/color.php%3Fprimary_color=813FD6.css">
-  </head>
+    </head>
+
   <body>
     <!-- back-to-top start -->
     <div class="back-to-top">
