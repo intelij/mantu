@@ -2,7 +2,7 @@
 
     <div class="navbar-brand-wrapper d-flex align-items-center justify-content-center">
         <a class="navbar-brand mr-0" href="{{ url('/') }}">
-            <x-logo class="logo-lg" height="35" />
+            <x-logo class="logo-lg" height="50" />
             <x-logo variant="no-text" class="logo-sm" height="35" />
         </a>
     </div>
