@@ -205,7 +205,7 @@
                   <div class="single-transfer">
                     <div class="custom-transfer-field">
                       <span class="caption">Your Name</span>
-                      <input type="text" name="first_name" class="form-control sender" placeholder="Mukoma Ndebele" style="margin-bottom: 20px; font-size: 16px;" required>
+                      <input type="text" name="first_name" class="form-control sender" placeholder="Sam Bhoqo" style="margin-bottom: 20px; font-size: 16px;" required>
                     </div>
 
                     <div class="custom-transfer-field">
