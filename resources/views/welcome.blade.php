@@ -147,7 +147,7 @@
               <div class="navbar-action">
 
                     @if (Auth::check())
-                        <div class="header-auth-btn">
+                        <div class="header-auth-btn" style="background-color: #f29f24;">
                             <i class="las la-sign-in-alt"></i>
                             <a href="{{ route('dashboard') }}" class="h-login">My Account &nbsp;</a>
                         </div>
