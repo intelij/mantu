@@ -184,8 +184,8 @@
             <div class="col-lg-7 text-lg-start text-center">
               <div class="banner-content wow fadeInUp" data-wow-delay="0.3s" data-wow-duration="0.5s">
                 <div class="banner-top-title">Matebeleland&#039;s Trusted Traders Platform</div>
-                <h2 class="banner-title">Connecting Homeowners with Skilled and Trusted Tradespeople</h2>
-                <p class="text-white mt-3">We're on a mission to bring transparency to hiring tradespeople, connecting you with trusted professionals you can rely on. No hidden charges, no surprises—just upfront pricing and quality service every time.</p>
+                <h2 class="banner-title">Connecting Homeowners, Landlords, and Businesses with Verified Local Experts</h2>
+                <p class="text-white mt-3">Mantu makes it easy to find trusted and affordable service providers for every kind of home, property, or business need. Whether it’s fixing a leaky pipe, building a wall, or managing your property while you're away, Mantu connects you with vetted professionals you can rely on.</p>
                 <div class="d-sm-flex d-none flex-wrap align-items-center justify-content-lg-start justify-content-center mt-2">
                   <a href="#" class="btn main-btn me-3 mt-3">How It Works</a>
                 <a href="assets/downloads/report.pdf" target="_blank" class="btn main-btn me-3 mt-3">View Sample Report</a>
@@ -195,6 +195,50 @@
                 </a> --}}
                   </a>
                 </div>
+              </div>
+            </div>
+            <div class="col-lg-5 ps-xxl-5 wow fadeInUp" data-wow-delay="0.5s" data-wow-duration="0.5s">
+              <div class="banner-transfer">
+                <h4 class="title">Let us Talk </h4>
+                <form method="POST" action="#" id="lets-talk">
+                  <input type="hidden" name="_token" value="J4ekgNQ7VwmiJ21wo19Q36cK2mDJtnw2fmOhov9V">
+                  <div class="single-transfer">
+                    <div class="custom-transfer-field">
+                      <span class="caption">Your Name</span>
+                      <input type="text" name="first_name" class="form-control sender" placeholder="Mukoma Ndebele" style="margin-bottom: 20px; font-size: 16px;" required>
+                    </div>
+
+                    <div class="custom-transfer-field">
+                      <span class="caption">WhatsApp Enable Number</span>
+                      <input type="text" name="sender_amount" class="form-control sender" placeholder="+44 79 1234 5678" style="margin-bottom: 20px; font-size: 16px;">
+                    </div>
+
+                    <div class="custom-transfer-field">
+                        <select name="service_type" id="service_type" class="form-control input-solid" style="margin-bottom: 20px; padding-top: 0rem; font-size: 16px;" required>
+                            <option value="" selected>Select the type of service</option>
+                            <option value="construction">Construction / Building</option>
+                            <option value="carpentry">Carpentry</option>
+                            <option value="plumbing">Plumbing</option>
+                            <option value="electrical">Electrical Work</option>
+                            <option value="cleaning">Cleaning</option>
+                            <option value="shuttle">Shuttle / Car Hire</option>
+                            <option value="borehole">Borehole Drilling</option>
+                            <option value="errands">Errands / Small Tasks</option>
+                            <option value="property_management">Property Management</option>
+                            <option value="other">Other Professional Services</option>
+                        </select>
+                    </div>
+
+                    <div class="custom-transfer-field">
+                      <span class="caption">Detailed Information</span>
+                      <textarea name="description" class="form-control sender" placeholder="" style="margin-bottom: 20px; font-size: 16px;"></textarea>
+                    </div>
+
+
+                  </div>
+
+                  <button type="submit" class="btn main-btn w-100 mt-4">Send Now</button>
+                </form>
               </div>
             </div>
 
