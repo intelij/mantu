@@ -1,4 +1,4 @@
-<nav class="col-md-2 sidebar">
+<nav class="col-md-2 sidebar" style="background: #5f2b90;">
     <div class="user-box text-center pt-5 pb-3">
         <div class="user-img">
             <img src="{{ auth()->user()->present()->avatar }}"
