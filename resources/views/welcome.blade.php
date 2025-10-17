@@ -200,45 +200,55 @@
             <div class="col-lg-5 ps-xxl-5 wow fadeInUp" data-wow-delay="0.5s" data-wow-duration="0.5s">
               <div class="banner-transfer">
                 <h4 class="title">Let us Talk </h4>
-                <form method="POST" action="#" id="lets-talk">
-                  <input type="hidden" name="_token" value="J4ekgNQ7VwmiJ21wo19Q36cK2mDJtnw2fmOhov9V">
-                  <div class="single-transfer">
-                    <div class="custom-transfer-field">
-                      <span class="caption">Your Name</span>
-                      <input type="text" name="first_name" class="form-control sender" placeholder="Sam Bhoqo" style="margin-bottom: 20px; font-size: 16px;" required>
+
+                @if (session('success'))
+                    <div class="alert alert-success mt-3">{{ session('success') }}</div>
+                @endif
+
+               <form method="POST" action="{{ route('contact.store') }}" id="lets-talk">
+                    @csrf
+
+                    <div class="single-transfer">
+                        <div class="custom-transfer-field">
+                            <span class="caption">Your Name</span>
+                            <input type="text" name="first_name" class="form-control sender"
+                                placeholder="Sam Bhoqo" style="margin-bottom: 20px; font-size: 16px;" required>
+                        </div>
+
+                        <div class="custom-transfer-field">
+                            <span class="caption">WhatsApp Enable Number</span>
+                            <input type="text" name="phone_number" class="form-control sender"
+                                placeholder="+44 79 1234 5678" style="margin-bottom: 20px; font-size: 16px;">
+                        </div>
+
+                        <div class="custom-transfer-field">
+                            <select name="service_type" id="service_type" class="form-control input-solid"
+                                    style="margin-bottom: 20px; padding-top: 0rem; font-size: 16px;" required>
+                                <option value="" selected>Select the type of service</option>
+                                <option value="construction">Construction / Building</option>
+                                <option value="carpentry">Carpentry</option>
+                                <option value="plumbing">Plumbing</option>
+                                <option value="electrical">Electrical Work</option>
+                                <option value="cleaning">Cleaning</option>
+                                <option value="shuttle">Shuttle / Car Hire</option>
+                                <option value="borehole">Borehole Drilling</option>
+                                <option value="errands">Errands / Small Tasks</option>
+                                <option value="property_management">Property Management</option>
+                                <option value="other">Other Professional Services</option>
+                            </select>
+                        </div>
+
+                        <div class="custom-transfer-field">
+                            <span class="caption">Detailed Information</span>
+                            <textarea name="description" class="form-control sender"
+                                    placeholder="Provide more details about your service request"
+                                    style="margin-bottom: 20px; font-size: 16px;"></textarea>
+                        </div>
                     </div>
 
-                    <div class="custom-transfer-field">
-                      <span class="caption">WhatsApp Enable Number</span>
-                      <input type="text" name="sender_amount" class="form-control sender" placeholder="+44 79 1234 5678" style="margin-bottom: 20px; font-size: 16px;">
-                    </div>
-
-                    <div class="custom-transfer-field">
-                        <select name="service_type" id="service_type" class="form-control input-solid" style="margin-bottom: 20px; padding-top: 0rem; font-size: 16px;" required>
-                            <option value="" selected>Select the type of service</option>
-                            <option value="construction">Construction / Building</option>
-                            <option value="carpentry">Carpentry</option>
-                            <option value="plumbing">Plumbing</option>
-                            <option value="electrical">Electrical Work</option>
-                            <option value="cleaning">Cleaning</option>
-                            <option value="shuttle">Shuttle / Car Hire</option>
-                            <option value="borehole">Borehole Drilling</option>
-                            <option value="errands">Errands / Small Tasks</option>
-                            <option value="property_management">Property Management</option>
-                            <option value="other">Other Professional Services</option>
-                        </select>
-                    </div>
-
-                    <div class="custom-transfer-field">
-                      <span class="caption">Detailed Information</span>
-                      <textarea name="description" class="form-control sender" placeholder="" style="margin-bottom: 20px; font-size: 16px;"></textarea>
-                    </div>
-
-
-                  </div>
-
-                  <button type="submit" class="btn main-btn w-100 mt-4">Send Now</button>
+                    <button type="submit" class="btn main-btn w-100 mt-4">Send Now</button>
                 </form>
+
               </div>
             </div>
 
@@ -301,7 +311,7 @@
         <div class="container">
           <div class="row justify-content-between gy-5">
             <div class="col-lg-5 pe-lg-5 wow fadeInLeft" data-wow-delay="0.3s" data-wow-duration="0.5s">
-              <h2 class="section-title">Get A Trusted Trader <br/>In A Heartbeat</h2>
+              <h2 class="section-title">Find the Right Expert<br/> for any Job</h2>
               <div class="feature-item mt-4">
                 <div class="icon">
                   <i class="fas fa-percent"></i>

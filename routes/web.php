@@ -20,6 +20,7 @@ use Vanguard\UserActivity\Http\Controllers\Web\ActivityController as UsersActivi
 use App\Http\Controllers\Web\Authorization\RolesController;
 use App\Http\Controllers\Web\Authorization\RolePermissionsController;
 use App\Http\Controllers\Web\Authorization\PermissionsController;
+use App\Http\Controllers\Web\ContactController;
 use App\Http\Controllers\Web\SettingsController;
 use Vanguard\UserActivity\Http\Controllers\Web\ActivityController as WebActivityController;
 use App\Http\Controllers\Web\InstallController;
@@ -29,6 +30,8 @@ use App\Http\Controllers\Web\ProviderRequestController;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::post('/contact', [ContactController::class, 'store'])->name('contact.store');
 
 Route::get('/runner-request', [ProviderRequestController::class, 'create'])->name('runner.request.create');
 Route::post('/runner-request', [ProviderRequestController::class, 'store'])->name('runner.request.store');
