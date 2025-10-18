@@ -42,7 +42,7 @@
             box-shadow: 0 2px 6px rgba(0,0,0,0.1);
         }
         .email-header {
-            background-color: #813fd6;
+            background-color: #17081e;
             text-align: center;
             padding: 20px;
         }
@@ -55,7 +55,7 @@
             text-align: left;
         }
         .email-body h2 {
-            color: #004d40;
+            color: #17081e;
             font-size: 22px;
         }
         .email-body p {
@@ -65,7 +65,7 @@
         }
         .signature {
             margin-top: 30px;
-            color: #813fd6;
+            color: #17081e;
         }
         .email-footer {
             background-color: #eeeeee;
@@ -75,7 +75,7 @@
             padding: 20px;
         }
         .email-footer a {
-            color: #813fd6;
+            color: #17081e;
             text-decoration: none;
         }
         .btn {
