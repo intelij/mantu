@@ -21,7 +21,7 @@ class ContactConfirmation extends Mailable
     public function build()
     {
         return $this->subject('✅ We received your request')
-                    ->view('emails.contact_confirmation');
+                    ->view('mail.contact_confirmation');
     }
 }
 

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Web;
 
 use App\Http\Controllers\Controller;
+use App\Mail\ContactConfirmation;
 use App\Mail\ContactSubmitted;
 use App\Models\Contact;
 use Illuminate\Http\Request;
