@@ -25,6 +25,8 @@ class ContactController extends Controller
         // Send email to admin (update this to your address)
         Mail::to('ks.mkhonza@gmail.com')->send(new ContactSubmitted($contact));
 
+        Mail::to('karenthebe@gmail.com')->send(new ContactSubmitted($contact));
+
         return back()->with('success', 'Your request has been submitted successfully!');
     }
 }
