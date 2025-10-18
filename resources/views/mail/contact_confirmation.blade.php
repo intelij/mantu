@@ -1,6 +1,6 @@
 <h2>Thank you, {{ $contact->first_name }}!</h2>
 
-<p>We’ve received your request for <strong>{{ ucfirst($contact->service_type) }}</strong>.</p>
+<p>We've received your request for <strong>{{ ucfirst($contact->service_type) }}</strong>.</p>
 
 @if($contact->description)
 <p><strong>Your message:</strong></p>
@@ -88,13 +88,15 @@
             margin-top: 20px;
             font-weight: 600;
         }
+
+        a { color: #813fd6}
     </style>
 </head>
 <body>
     <div class="email-wrapper">
         <div class="email-container">
             <div class="email-header">
-                <img src="https://mantu.co.zw/images/mantu-logo.png" alt="Mantu Logo">
+                <img src="https://mantu.co.zw/images/logo/logo.png" alt="Mantu Logo">
             </div>
 
             <div class="email-body">
