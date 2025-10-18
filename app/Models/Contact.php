@@ -11,5 +11,6 @@ class Contact extends Model
         'phone_number',
         'service_type',
         'description',
+        'email',
     ];
 }

@@ -216,6 +216,12 @@
                         </div>
 
                         <div class="custom-transfer-field">
+                            <span class="caption">Your Email</span>
+                            <input type="email" name="email" class="form-control sender"
+                                placeholder="you@example.com" style="margin-bottom: 20px; font-size: 16px;">
+                        </div>
+
+                        <div class="custom-transfer-field">
                             <span class="caption">WhatsApp Enable Number</span>
                             <input type="text" name="phone_number" class="form-control sender"
                                 placeholder="+44 79 1234 5678" style="margin-bottom: 20px; font-size: 16px;">
