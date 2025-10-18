@@ -21,6 +21,6 @@ class ContactSubmitted extends Mailable
     public function build()
     {
         return $this->subject('New Service Request')
-                    ->view('emails.contact_submitted');
+                    ->view('mail.contact_submitted');
     }
 }
