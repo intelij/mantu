@@ -3,8 +3,10 @@
 namespace App\Http\Controllers\Web;
 
 use App\Http\Controllers\Controller;
+use App\Mail\ContactSubmitted;
 use App\Models\Contact;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 
 class ContactController extends Controller
 {
@@ -21,7 +23,7 @@ class ContactController extends Controller
         $contact = Contact::create($validated);
 
         // Send email to admin (update this to your address)
-        // Mail::to('ks.mkhonza@gmail.com')->send(new ContactSubmitted($contact));
+        Mail::to('ks.mkhonza@gmail.com')->send(new ContactSubmitted($contact));
 
         return back()->with('success', 'Your request has been submitted successfully!');
     }
