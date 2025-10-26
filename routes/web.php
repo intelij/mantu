@@ -26,10 +26,22 @@ use Vanguard\UserActivity\Http\Controllers\Web\ActivityController as WebActivity
 use App\Http\Controllers\Web\InstallController;
 use Vanguard\UserActivity\Http\Controllers\Web\ActivityController;
 use App\Http\Controllers\Web\ProviderRequestController;
+use App\Http\Controllers\Web\ServiceController;
 
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/borehole', [ServiceController::class, 'borehole'])->name('services.borehole');
+Route::get('/construction', [ServiceController::class, 'construction'])->name('services.construction');
+Route::get('/kitchens', [ServiceController::class, 'kitchens'])->name('services.kitchens');
+Route::get('/plumbing', [ServiceController::class, 'plumbing'])->name('services.plumbing');
+Route::get('/shuttle', [ServiceController::class, 'shuttle'])->name('services.shuttle');
+Route::get('/solar-electricals', [ServiceController::class, 'solarElectricals'])->name('services.solar');
+Route::get('/trucks', [ServiceController::class, 'trucks'])->name('services.trucks');
+Route::get('/personal-shopper', [ServiceController::class, 'shopper'])->name('services.shopper');
+Route::get('/template', [ServiceController::class, 'template'])->name('services.template');
+
 
 Route::post('/contact', [ContactController::class, 'store'])->name('contact.store');
 

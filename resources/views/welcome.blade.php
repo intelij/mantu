@@ -103,6 +103,26 @@
         color: #fff;
         }
     </style>
+    <style>
+        .text-purple { color: #4B0082; } /* Deep Royal Purple */
+        .text-gold { color: #D4AF37; } /* Gold accent */
+        .hover-shadow:hover {
+            box-shadow: 0 10px 25px rgba(75, 0, 130, 0.15);
+            transform: translateY(-4px);
+        }
+        .transition { transition: all 0.3s ease-in-out; }
+
+        .header-auth-btn-register {
+            background-color: #f8a522;
+            display: inline-flex;
+            align-items: center;
+            color: #fff;
+            border-radius: 15px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        </style>
     </head>
 
   <body>
@@ -140,9 +160,29 @@
                 <li class="nav-item">
                   <a href="/" class="nav-link">Home</a>
                 </li>
-                <li class="nav-item">
-                  <a href="#about.html" class="nav-link">About</a>
+
+                {{-- Drop down menu start --}}
+                <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Services
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="servicesDropdown"  style="background: #17081e;">
+                    <li><a class="dropdown-item" href="/borehole"></a></li>
+                    <li><a class="dropdown-item" href="/borehole">Borehole Drilling</a></li>
+                    <li><a class="dropdown-item" href="/construction">Construction & Building</a></li>
+                    <li><a class="dropdown-item" href="/kitchens">Kitchens & Renovations</a></li>
+                    <li><a class="dropdown-item" href="/plumbing">Plumbing Services</a></li>
+                    <li><a class="dropdown-item" href="/shuttle">Shuttle & Transport</a></li>
+                    <li><a class="dropdown-item" href="/solar-electricals">Solar & Electricals</a></li>
+                    <li><a class="dropdown-item" href="/trucks">Trucks & Logistics</a></li>
+                </ul>
                 </li>
+                {{-- Drop down menu end --}}
+                <li class="nav-item">
+                  <a href="/" class="nav-link">About</a>
+                </li>
+
+
               </ul>
               <div class="navbar-action">
 
@@ -183,11 +223,11 @@
           <div class="row gy-5 justify-content-between align-items-center">
             <div class="col-lg-7 text-lg-start text-center">
               <div class="banner-content wow fadeInUp" data-wow-delay="0.3s" data-wow-duration="0.5s">
-                <div class="banner-top-title">Matebeleland&#039;s Trusted Traders Platform</div>
-                <h2 class="banner-title">Connecting Homeowners, Landlords, and Businesses with Verified Local Experts</h2>
-                <p class="text-white mt-3">Mantu makes it easy to find trusted and affordable service providers for every kind of home, property, or business need. Whether it’s fixing a leaky pipe, building a wall, or managing your property while you're away, Mantu connects you with vetted professionals you can rely on.</p>
+                <div class="banner-top-title">Matebeleland&#039;s Trusted Diaspora Companion Platform</div>
+                <h2 class="banner-title">Trusted, Accountable Project Delivery from Our Skilled Trades Teams</h2>
+                <p class="text-white mt-3">Mantu is a hands-on provider. Our builders, plumbers, electricians, borehole crews and transport teams deliver projects end-to-end for clients in the diaspora and locally. We protect your investment by ensuring transparent quotes, professional workmanship and documented progress at every stage.</p>
                 <div class="d-sm-flex d-none flex-wrap align-items-center justify-content-lg-start justify-content-center mt-2">
-                  <a href="#" class="btn main-btn me-3 mt-3">How It Works</a>
+                  {{-- <a href="#" class="btn main-btn me-3 mt-3">How It Works</a> --}}
                 <a href="assets/downloads/report.pdf" target="_blank" class="btn main-btn me-3 mt-3">View Sample Report</a>
                 {{-- <a href="#" data-rel="lightcase:myCollection" class="banner-video-btn mt-3">
                   <i class="fas fa-play"></i>
@@ -277,7 +317,7 @@
         <div class="container">
           <div class="row gy-4 justify-content-between align-items-center">
             <div class="col-lg-4 wow fadeInLeft" data-wow-delay="0.3s" data-wow-duration="0.5s">
-              <h2 class="counter-title text-white">Reliable &amp; Trusted Tradespeople Platform</h2>
+              <h2 class="counter-title text-white">Reliable &amp; Trusted Trades people Portal</h2>
             </div>
             <div class="col-lg-7 wow fadeInRight" data-wow-delay="0.5s" data-wow-duration="0.5s">
               <div class="counter-wrapper">
@@ -313,94 +353,76 @@
         </div>
       </div>
       <!-- counter section start -->
-      <section class="feature-section pt-100 pb-100">
-        <div class="container">
-          <div class="row justify-content-between gy-5">
-            <div class="col-lg-5 pe-lg-5 wow fadeInLeft" data-wow-delay="0.3s" data-wow-duration="0.5s">
-              <h2 class="section-title">Find the Right Expert<br/> for any Job</h2>
-              <div class="feature-item mt-4">
-                <div class="icon">
-                  <i class="fas fa-percent"></i>
-                </div>
-                <div class="content">
-                  <h3 class="title">Affordable Rates </h4>
-                    <p class="mt-2">Every Pound Saved Means More for Your Home or Property.</p>
-                </div>
-              </div>
-              <div class="feature-item mt-4">
-                <div class="icon">
-                  <i class="fas fa-exchange-alt"></i>
-                </div>
-                <div class="content">
-                  <h3 class="title">Hassle-free </h4>
-                    <p class="mt-2">No Need to Call Around or Wait—Book From Anywhere, Anytime.</p>
-                </div>
-              </div>
-              <div class="feature-item mt-4">
-                <div class="icon">
-                  <i class="fas fa-plane"></i>
-                </div>
-                <div class="content">
-                  <h3 class="title">Fast </h4>
-                    <p class="mt-2">Request Services Anytime. Our Tradespeople Are Ready to Start Within Hours.</p>
-                </div>
-              </div>
-              <div class="feature-item mt-4">
-                <div class="icon">
-                  <i class="fab fa-hotjar"></i>
-                </div>
-                <div class="content">
-                  <h3 class="title">Simple </h4>
-                    <p class="mt-2">With Just a Few Clicks, We Assign  Qualified Professionals for Home Repairs or Maintenance in Over 45+ recognized suburbs and localities.</p>
-                </div>
-              </div>
+
+    <section class="feature-section pt-100 pb-100">
+    <div class="container">
+        <div class="row justify-content-between gy-5 align-items-center">
+
+        <!-- Left Column: Mantu Features -->
+        <div class="col-lg-5 pe-lg-5 wow fadeInLeft" data-wow-delay="0.3s" data-wow-duration="0.5s" style="visibility: visible; animation-duration: 0.5s; animation-delay: 0.3s; animation-name: fadeInLeft;">
+            <h2 class="section-title text-purple">Why Choose Mantu</h2>
+            <p class="mt-3">As your trusted Diaspora Companion, Mantu delivers reliable, professional, and transparent services for every home or property project.</p>
+
+            <div class="feature-item mt-4">
+            <div class="icon"><i class="fas fa-tools"></i></div>
+            <div class="content">
+                <h3 class="title">Professional Tradesmen</h3>
+                <p class="mt-2">Our skilled in-house team handles every project — no outsourcing, no middlemen, just expert craftsmanship.</p>
             </div>
-            <div class="col-lg-6 wow fadeInRight" data-wow-delay="0.3s" data-wow-duration="0.5s">
+            </div>
+
+            <div class="feature-item mt-4">
+            <div class="icon"><i class="fas fa-handshake"></i></div>
+            <div class="content">
+                <h3 class="title">Trust & Transparency</h3>
+                <p class="mt-2">We keep you informed with verified updates, photos, and clear documentation at every stage of your project.</p>
+            </div>
+            </div>
+
+            <div class="feature-item mt-4">
+            <div class="icon"><i class="fas fa-clock"></i></div>
+            <div class="content">
+                <h3 class="title">Accountable & Timely Delivery</h3>
+                <p class="mt-2">From consultation to completion, we manage your project efficiently — ensuring quality, speed, and accountability.</p>
+            </div>
+            </div>
+        </div>
+
+        <!-- Right Column: How Mantu Supports Clients in the Diaspora -->
+        <div class="col-lg-6 wow fadeInRight" data-wow-delay="0.3s" data-wow-duration="0.5s" style="visibility: visible; animation-duration: 0.5s; animation-delay: 0.3s; animation-name: fadeInRight;">
               <div class="feature-thumb">
                 <img src="images/feature/63ce5c179e03d1674468375.jpg" alt="image">
               </div>
             </div>
-          </div>
+
         </div>
-      </section>
+    </div>
+    </section>
+
+
+
+
+
       <section class="how-work-section pt-100 pb-100">
         <div class="container">
           <div class="section-header">
             <div class="row">
               <div class="col-xxl-7 col-lg-10">
-                <span class="section-cation-title style-two mb-2">HOW IT WORKS</span>
+                <span class="section-cation-title style-two mb-2">How it works</span>
                 <h2 class="section-title text-white">Join the <span>thousands of users</span> worldwide trusting Mantu everyday </h2>
               </div>
             </div>
           </div>
           <div class="row gy-4 work-wrapper">
-            <div class="col-lg-4 col-sm-6  wow fadeInUp" data-wow-delay="0.3s" data-wow-duration="0.5s">
+
+            <div class="col-lg-12 col-sm-12  wow fadeInUp" data-wow-delay="0.3s" data-wow-duration="0.5s">
               <div class="work-item">
-                <div class="work-img">
-                  <img src="images/how_it_works/63ce5e17766491674468887.png" alt="image">
-                </div>
-                <h4 class="title text-white">Create a Free Account</h4>
-                <p class="text-white mt-2">From Anywhere In The World</p>
+                <h4 class="title text-white">Why this matters</h4>
+                <p class="text-white mt-2">Many clients living overseas have experienced project failures or poor workmanship from rogue contractors. Mantu removes risk by being the accountable service provider — employing, supervising and delivering the work ourselves, and keeping you informed every step of the way.</p>
               </div>
             </div>
-            <div class="col-lg-4 col-sm-6  wow fadeInUp" data-wow-delay="0.3s" data-wow-duration="0.5s">
-              <div class="work-item">
-                <div class="work-img">
-                  <img src="images/how_it_works/63ce5e21da29f1674468897.png" alt="image">
-                </div>
-                <h4 class="title text-white">Request a Service</h4>
-                <p class="text-white mt-2">Whatever you need done, we got you covered</p>
-              </div>
-            </div>
-            <div class="col-lg-4 col-sm-6  wow fadeInUp" data-wow-delay="0.3s" data-wow-duration="0.5s">
-              <div class="work-item">
-                <div class="work-img">
-                  <img src="images/how_it_works/63ce5e27af7411674468903.png" alt="image">
-                </div>
-                <h4 class="title text-white">We deploy trusted Trades people</h4>
-                <p class="text-white mt-2">Get realtime updates on your project</p>
-              </div>
-            </div>
+
+
           </div>
         </div>
       </section>
@@ -409,37 +431,50 @@
         <div class="container">
           <div class="row">
             <div class="col-lg-6 pe-xl-5">
-              <div class="section-header">
-                <h2 class="section-title">The Trusted Way to Find Skilled Tradespeople for Your Property.</h2>
-              </div>
-              <div class="row gy-4">
-                <div class="col-lg-12 col-md-6 wow fadeInUp" data-wow-delay="0.3s" data-wow-duration="0.5s">
-                  <div class="choose-item">
-                    <h4 class="title">Fast, Easy, and Reliable Trades Services</h4>
-                    <p>Mantu makes it simple to connect with certified tradespeople for all your home repair and maintenance needs. From plumbing to painting, find trusted experts quickly and hassle-free.</p>
-                  </div>
+                <div class="section-header">
+                    <h2 class="section-title">Your Trusted Diaspora Companion for Reliable Project Delivery</h2>
                 </div>
-                <div class="col-lg-12 col-md-6 wow fadeInUp" data-wow-delay="0.3s" data-wow-duration="0.5s">
-                  <div class="choose-item">
-                    <h4 class="title">Transparent Pricing, No Surprises</h4>
-                    <p>We value transparency. Use our platform to get upfront quotes from tradespeople, so you always know the cost before work begins. No hidden fees, no unexpected charges—just honest pricing.</p>
-                  </div>
+                <div class="row gy-4">
+
+                    <div class="col-lg-12 col-md-6 wow fadeInUp" data-wow-delay="0.3s" data-wow-duration="0.5s">
+                    <div class="choose-item">
+                        <h4 class="title">Consultation &amp; Quotation</h4>
+                        <p>We assess your project remotely or on-site and provide a clear, transparent written quote before any work begins.</p>
+                    </div>
+                    </div>
+
+                    <div class="col-lg-12 col-md-6 wow fadeInUp" data-wow-delay="0.3s" data-wow-duration="0.5s">
+                    <div class="choose-item">
+                        <h4 class="title">Dedicated Project Team</h4>
+                        <p>Mantu assigns a skilled team with a single point of contact who manages every phase of your project—ensuring accountability and consistent communication.</p>
+                    </div>
+                    </div>
+
+                    <div class="col-lg-12 col-md-6 wow fadeInUp" data-wow-delay="0.3s" data-wow-duration="0.5s">
+                    <div class="choose-item">
+                        <h4 class="title">Verified Procurement</h4>
+                        <p>All materials are sourced and supplied directly by Mantu, complete with receipts, supplier verification, and applicable warranties.</p>
+                    </div>
+                    </div>
+
+                    <div class="col-lg-12 col-md-6 wow fadeInUp" data-wow-delay="0.3s" data-wow-duration="0.5s">
+                    <div class="choose-item">
+                        <h4 class="title">Regular Reporting</h4>
+                        <p>Clients abroad receive detailed progress updates including milestone photos, expense reports, and transparent financial tracking throughout the project.</p>
+                    </div>
+                    </div>
+
+                    <div class="col-lg-12 col-md-6 wow fadeInUp" data-wow-delay="0.3s" data-wow-duration="0.5s">
+                    <div class="choose-item">
+                        <h4 class="title">Completion &amp; Handover</h4>
+                        <p>We conduct a final inspection and documented handover to guarantee every detail matches your specifications—delivered on time and to standard.</p>
+                    </div>
+                    </div>
+
                 </div>
-                <div class="col-lg-12 col-md-6 wow fadeInUp" data-wow-delay="0.3s" data-wow-duration="0.5s">
-                  <div class="choose-item">
-                    <h4 class="title">Quality Services for Landlords Abroad</h4>
-                    <p>Manage your property with ease from anywhere in the world. Mantu connects you with local, reliable tradespeople to handle repairs and renovations, so your investment stays in great shape, no matter where you are.</p>
-                  </div>
                 </div>
-                <div class="col-lg-12 col-md-6 wow fadeInUp" data-wow-delay="0.3s" data-wow-duration="0.5s">
-                  <div class="choose-item">
-                    <h4 class="title">Hire Tradespeople for Any Job</h4>
-                    <!-- <p>You Always Get The Real Exchange Rate. You&#039;ll Only Pay A Small Fee To Convert The Money In Your Account Into Another Currency.</p> -->
-                    <p>Need to fix a leaky roof, upgrade your kitchen, or tackle electrical repairs? Mantu helps you find the right professional for the job, ensuring quality service and peace of mind every step of the way.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
+
+
           </div>
         </div>
       </section>
@@ -447,86 +482,95 @@
 
       <!-- cta section end -->
       <section class="faq-section pt-100 pb-100 section-bg">
+
+
+        {{-- <section class="py-100 bg-light"> --}}
         <div class="container">
-          <div class="row gy-4 justify-content-between">
-            <div class="col-xl-5 col-lg-6 ps-xl-5  wow fadeInLeft" data-wow-delay="0.3s" data-wow-duration="0.5s">
-              <h2 class="section-title">Book Skilled Tradespeople with Confidence</h2>
-              <p class="mt-3 fs--18px">All tradespeople on Mantu are vetted for reliability and professionalism. Whether you're a landlord managing multiple properties or a homeowner in need of repairs, you can trust Mantu to deliver the right expertise.</p>
-              <div class="row gy-4 mt-4">
-                <div class="col-lg-10">
-                  <div class="faq-item">
-                    <h4 class="title">Committed to Transparency</h4>
-                    <p>At Mantu, we ensure every booking comes with clear expectations. If your tradesperson doesn’t deliver as promised, we’ll make it right—guaranteed.</p>
-                  </div>
-                </div>
-                <div class="col-lg-10">
-                  <div class="faq-item">
-                    <h4 class="title">Around-the-Clock Support</h4>
-                    <p>Our platform uses cutting-edge technology to safeguard your bookings and payments, and our support team is here 24/7 to assist you whenever you need help.</p>
-                  </div>
-                </div>
-              </div>
+            <div class="row mb-5 align-items-center justify-content-between">
+            <div class="col-xl-6 col-lg-7 wow fadeInLeft" data-wow-delay="0.3s" data-wow-duration="0.5s">
+                <h2 class="section-title text-dark">Our Core Services</h2>
+                <p class="mt-3 fs--18px text-muted">
+                End-to-end delivery by Mantu teams — we supply materials, manage works, and complete
+                quality sign-offs to the highest standards. Every project is handled by qualified professionals
+                ensuring reliability and transparency.
+                </p>
             </div>
-            <div class="col-lg-6  wow fadeInRight" data-wow-delay="0.7s" data-wow-duration="0.5s">
-              <div class="faq-wrapper">
-                <div class="accordion" id="accordionExample">
-                  <div class="accordion" id="accordionExample">
-                    <div class="accordion-item">
-                      <h2 class="accordion-header" id="heading-1">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="false" aria-controls="collapseSix"> How does Mantu ensure quality services? </button>
-                      </h2>
-                      <div id="collapse1" class="accordion-collapse collapse" aria-labelledby="heading-1" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                          <p> Mantu is a company built on expertise. All our tradespeople are fully qualified, experienced, and vetted to deliver professional and reliable services. Our team ensures every job is handled with the highest standards of quality and care.</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="accordion-item">
-                      <h2 class="accordion-header" id="heading-2">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapseSix"> Are all Mantu tradespeople licensed?</button>
-                      </h2>
-                      <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="heading-2" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                          <p> Yes, all tradespeople under Mantu are certified professionals with the qualifications and experience to handle your home repairs and maintenance needs. You&#039; hiring experts you can trust every time.</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="accordion-item">
-                      <h2 class="accordion-header" id="heading-3">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapseSix"> Can I rely on Mantu if I live abroad? </button>
-                      </h2>
-                      <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="heading-3" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                          <p> Absolutely! Mantu is the perfect solution for landlords or homeowners abroad. With our team of qualified tradespeople, you can confidently manage repairs and maintenance remotely, knowing your property is in expert hands.</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="accordion-item">
-                      <h2 class="accordion-header" id="heading-4">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapseSix"> What happens if I&#039; not happy with the work? </button>
-                      </h2>
-                      <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading-4" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                          <p> At Mantu, customer satisfaction is our top priority. If a job doesn&#039;t meet our quality standards, our team will address your concerns promptly and ensure the issue is resolved by a qualified expert.</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="accordion-item">
-                      <h2 class="accordion-header" id="heading-5">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapseSix"> How quickly can I get a qualified tradesperson? </button>
-                      </h2>
-                      <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="heading-5" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                          <p> With Mantu, you have access to a network of qualified and experienced tradespeople. Bookings are quick and easy, and many professionals are ready to start work within hours.</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+            <div class="col-lg-4 text-lg-end wow fadeInRight" data-wow-delay="0.4s" data-wow-duration="0.5s">
+                <a href="/services" class="btn btn-outline-dark rounded-pill px-4">
+                View All Services →
+                </a>
             </div>
-          </div>
+            </div>
+
+            <div class="row gy-4">
+            <div class="col-md-4 wow fadeInUp" data-wow-delay="0.2s" data-wow-duration="0.5s">
+                <div class="service-card p-4 h-100 bg-white rounded-4 shadow-sm hover-shadow transition">
+                <h4 class="text-purple mb-3">Construction &amp; Building</h4>
+                <p class="text-muted mb-3 small">
+                    Foundations, extensions, structural repairs and full builds — managed by Mantu site teams from start to finish.
+                </p>
+                <a href="/services/construction" class="text-decoration-none text-gold fw-semibold">Read More →</a>
+                </div>
+            </div>
+
+            <div class="col-md-4 wow fadeInUp" data-wow-delay="0.3s" data-wow-duration="0.5s">
+                <div class="service-card p-4 h-100 bg-white rounded-4 shadow-sm hover-shadow transition">
+                <h4 class="text-purple mb-3">Kitchens, Tiling &amp; Ceilings</h4>
+                <p class="text-muted mb-3 small">
+                    Design, carpentry, tiling and ceiling installations for durable, modern, and beautiful interiors built to last.
+                </p>
+                <a href="/services/interiors" class="text-decoration-none text-gold fw-semibold">Read More →</a>
+                </div>
+            </div>
+
+            <div class="col-md-4 wow fadeInUp" data-wow-delay="0.4s" data-wow-duration="0.5s">
+                <div class="service-card p-4 h-100 bg-white rounded-4 shadow-sm hover-shadow transition">
+                <h4 class="text-purple mb-3">Plumbing &amp; Borehole Drilling</h4>
+                <p class="text-muted mb-3 small">
+                    From leaks and reticulation to full water solutions — Mantu provides certified plumbers and borehole drilling crews.
+                </p>
+                <a href="/services/plumbing" class="text-decoration-none text-gold fw-semibold">Read More →</a>
+                </div>
+            </div>
+
+            <div class="col-md-4 wow fadeInUp" data-wow-delay="0.5s" data-wow-duration="0.5s">
+                <div class="service-card p-4 h-100 bg-white rounded-4 shadow-sm hover-shadow transition">
+                <h4 class="text-purple mb-3">Solar &amp; Electricals</h4>
+                <p class="text-muted mb-3 small">
+                    Design and installation of solar power systems, electrical upgrades, and certified wiring for homes and businesses.
+                </p>
+                <a href="/services/solar" class="text-decoration-none text-gold fw-semibold">Read More →</a>
+                </div>
+            </div>
+
+            <div class="col-md-4 wow fadeInUp" data-wow-delay="0.6s" data-wow-duration="0.5s">
+                <div class="service-card p-4 h-100 bg-white rounded-4 shadow-sm hover-shadow transition">
+                <h4 class="text-purple mb-3">Shuttle &amp; Transport</h4>
+                <p class="text-muted mb-3 small">
+                    Safe shuttle and transport solutions for crew, materials, and client errands across Matabeleland and beyond.
+                </p>
+                <a href="/services/transport" class="text-decoration-none text-gold fw-semibold">Read More →</a>
+                </div>
+            </div>
+
+            <div class="col-md-4 wow fadeInUp" data-wow-delay="0.7s" data-wow-duration="0.5s">
+                <div class="service-card p-4 h-100 bg-white rounded-4 shadow-sm hover-shadow transition">
+                <h4 class="text-purple mb-3">Trucks &amp; Logistics</h4>
+                <p class="text-muted mb-3 small">
+                    Reliable haulage, logistics, and relocation support for materials and equipment, delivered efficiently by Mantu.
+                </p>
+                <a href="/services/logistics" class="text-decoration-none text-gold fw-semibold">Read More →</a>
+                </div>
+            </div>
+            </div>
         </div>
+        {{-- </section> --}}
+
+
+
+
+
+
       </section>
       <section class="testimonial-section pt-120 pb-5">
         <div class="testimonial-shape"></div>
@@ -625,7 +669,7 @@
               <a href="/" class="footer-logo">
                 <img src="/images/logo/logo-white.png" alt="image">
               </a>
-              <p class="mt-3">In home maintenance and repairs, finding trusted tradespeople is essential to ensure every project is completed professionally and meets the highest quality standards possible.</p>
+              <p class="mt-3">Mantu provides in-house trades and project delivery services across Matabeleland. We guarantee accountable delivery and clear documentation for diaspora and local clients.</p>
               <div class="footer-payment mt-3">
                 <h6 class="text-white mb-2">Payment Methods:</h6>
                 <img src="images/footer/631c5dc0100391662803392.png" alt="">
