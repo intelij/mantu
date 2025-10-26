@@ -519,7 +519,7 @@
                 <p class="text-muted mb-3 small">
                     Design, carpentry, tiling and ceiling installations for durable, modern, and beautiful interiors built to last.
                 </p>
-                <a href="/kitchen" class="text-decoration-none text-gold fw-semibold">Read More →</a>
+                <a href="/kitchens" class="text-decoration-none text-gold fw-semibold">Read More →</a>
                 </div>
             </div>
 
