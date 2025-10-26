@@ -495,11 +495,11 @@
                 ensuring reliability and transparency.
                 </p>
             </div>
-            <div class="col-lg-4 text-lg-end wow fadeInRight" data-wow-delay="0.4s" data-wow-duration="0.5s">
+            {{-- <div class="col-lg-4 text-lg-end wow fadeInRight" data-wow-delay="0.4s" data-wow-duration="0.5s">
                 <a href="/services" class="btn btn-outline-dark rounded-pill px-4">
                 View All Services →
                 </a>
-            </div>
+            </div> --}}
             </div>
 
             <div class="row gy-4">
@@ -509,7 +509,7 @@
                 <p class="text-muted mb-3 small">
                     Foundations, extensions, structural repairs and full builds — managed by Mantu site teams from start to finish.
                 </p>
-                <a href="/services/construction" class="text-decoration-none text-gold fw-semibold">Read More →</a>
+                {{-- <a href="/services/construction" class="text-decoration-none text-gold fw-semibold">Read More →</a> --}}
                 </div>
             </div>
 
@@ -519,7 +519,7 @@
                 <p class="text-muted mb-3 small">
                     Design, carpentry, tiling and ceiling installations for durable, modern, and beautiful interiors built to last.
                 </p>
-                <a href="/services/interiors" class="text-decoration-none text-gold fw-semibold">Read More →</a>
+                <a href="/kitchen" class="text-decoration-none text-gold fw-semibold">Read More →</a>
                 </div>
             </div>
 
@@ -529,7 +529,7 @@
                 <p class="text-muted mb-3 small">
                     From leaks and reticulation to full water solutions — Mantu provides certified plumbers and borehole drilling crews.
                 </p>
-                <a href="/services/plumbing" class="text-decoration-none text-gold fw-semibold">Read More →</a>
+                {{-- <a href="/services/plumbing" class="text-decoration-none text-gold fw-semibold">Read More →</a> --}}
                 </div>
             </div>
 
@@ -539,7 +539,7 @@
                 <p class="text-muted mb-3 small">
                     Design and installation of solar power systems, electrical upgrades, and certified wiring for homes and businesses.
                 </p>
-                <a href="/services/solar" class="text-decoration-none text-gold fw-semibold">Read More →</a>
+                {{-- <a href="/services/solar" class="text-decoration-none text-gold fw-semibold">Read More →</a> --}}
                 </div>
             </div>
 
@@ -549,7 +549,7 @@
                 <p class="text-muted mb-3 small">
                     Safe shuttle and transport solutions for crew, materials, and client errands across Matabeleland and beyond.
                 </p>
-                <a href="/services/transport" class="text-decoration-none text-gold fw-semibold">Read More →</a>
+                {{-- <a href="/services/transport" class="text-decoration-none text-gold fw-semibold">Read More →</a> --}}
                 </div>
             </div>
 
@@ -559,7 +559,7 @@
                 <p class="text-muted mb-3 small">
                     Reliable haulage, logistics, and relocation support for materials and equipment, delivered efficiently by Mantu.
                 </p>
-                <a href="/services/logistics" class="text-decoration-none text-gold fw-semibold">Read More →</a>
+                {{-- <a href="/services/logistics" class="text-decoration-none text-gold fw-semibold">Read More →</a> --}}
                 </div>
             </div>
             </div>
