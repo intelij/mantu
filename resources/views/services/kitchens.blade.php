@@ -161,7 +161,7 @@
                 <li class="nav-item">
                   <a href="/" class="nav-link">Home</a>
                 </li>
-                <li class="nav-item dropdown">
+                {{-- <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Services </a>
                   <ul class="dropdown-menu" aria-labelledby="servicesDropdown" style="background: #17081e;">
                     <li>
@@ -189,7 +189,7 @@
                       <a class="dropdown-item" href="/trucks">Trucks &amp; Logistics</a>
                     </li>
                   </ul>
-                </li>
+                </li> --}}
                 <li class="nav-item">
                   <a href="/" class="nav-link">About</a>
                 </li>
