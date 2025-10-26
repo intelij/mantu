@@ -162,7 +162,7 @@
                 </li>
 
                 {{-- Drop down menu start --}}
-                <li class="nav-item dropdown">
+                {{-- <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     Services
                 </a>
@@ -176,7 +176,7 @@
                     <li><a class="dropdown-item" href="/solar-electricals">Solar & Electricals</a></li>
                     <li><a class="dropdown-item" href="/trucks">Trucks & Logistics</a></li>
                 </ul>
-                </li>
+                </li> --}}
                 {{-- Drop down menu end --}}
                 <li class="nav-item">
                   <a href="/" class="nav-link">About</a>
