@@ -1,64 +1,57 @@
-<!DOCTYPE html>
-<html lang="en">
+<html lang="en" crxemulator="">
+  <script id="datalayer-checker-script" src="chrome-extension://ffljdddodmkedhkcjhpmdajhjdbkogke/js/datalayer-checker.js"></script>
   <!-- =========================================================
      MANTU – Qualified Trades & Home Services Platform
      Optimized for Local & Regional Discovery in Matabeleland, Zimbabwe
     ========================================================== -->
-    <head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="csrf-token" content="{{ csrf_token() }}">
-    <meta name="application-name" content="{{ setting('app_name') }}">
+    <meta name="csrf-token" content="EACPfLXe6uEqHALcDjUsNC2nfZnN2FzGN4ObdPpj">
+    <meta name="application-name" content="Mantu">
     <meta name="msapplication-TileColor" content="#FFFFFF">
-    <meta name="msapplication-TileImage" content="{{ url('assets/img/icons/mstile-144x144.png') }}">
-
-    <title>{{ setting('app_name') }} | Qualified Tradespeople & Home Services in Matabeleland, Zimbabwe</title>
+    <meta name="msapplication-TileImage" content="http://mantu.co.zw.test/assets/img/icons/mstile-144x144.png">
+    <title>Mantu | Professional Plumbing Services in Matabeleland, Zimbabwe</title>
 
     <!-- =========================================================
         SEO Meta Tags
     ========================================================== -->
-    <meta name="description" content="Mantu connects you with licensed plumbers offering installations, repairs, and leak detection across Matabeleland. Trusted plumbing solutions for homes and businesses in Zimbabwe.">
-    <meta name="keywords" content="Mantu, plumbers Zimbabwe, plumbing Bulawayo, leak repair, pipe fitting, drain cleaning, bathroom installation, geyser repair, emergency plumbing Matabeleland">
-    <meta name="author" content="Mantu">
-    <meta name="robots" content="index, follow">
-    <meta name="news_keywords" content="Mantu, plumbing, plumbers, Bulawayo, Matabeleland, Zimbabwe, leak repair, bathroom installation, geyser, drain cleaning">
 
+  <meta name="description" content="Mantu offers reliable plumbing services across Matabeleland — from leak repairs and geyser installations to complete bathroom plumbing and drainage solutions. Trusted by locals and diaspora clients for accountability, transparency, and skilled workmanship.">
+  <meta name="keywords" content="Mantu plumbing, plumbers Bulawayo, geyser installation Zimbabwe, leak repair, pipe fitting, bathroom plumbing, blocked drains, borehole plumbing, diaspora maintenance, Matabeleland plumbers, emergency plumbing Zimbabwe">
+  <meta name="author" content="Mantu">
+    <meta name="robots" content="index, follow">
+    <meta name="news_keywords" content="Mantu, trusted tradespeople, builders, electricians, plumbers, carpenters, cleaning, borehole drilling, property management, Matabeleland, Bulawayo, Zimbabwe, home services, contractors, renovation, repairs, handyman">
     <!-- Canonical URL -->
     <link rel="canonical" href="https://mantu.co.zw/">
-
     <!-- =========================================================
         Icons & Favicons
     ========================================================== -->
-    <link rel="shortcut icon" type="image/png" href="{{ asset('images/favicon.png') }}">
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ url('assets/img/icons/apple-touch-icon-144x144.png') }}">
-    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="{{ url('assets/img/icons/apple-touch-icon-152x152.png') }}">
-    <link rel="icon" type="image/png" href="{{ url('assets/img/icons/favicon-32x32.png') }}" sizes="32x32">
-    <link rel="icon" type="image/png" href="{{ url('assets/img/icons/favicon-16x16.png') }}" sizes="16x16">
-
+    <link rel="shortcut icon" type="image/png" href="http://mantu.co.zw.test/images/favicon.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://mantu.co.zw.test/assets/img/icons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="http://mantu.co.zw.test/assets/img/icons/apple-touch-icon-152x152.png">
+    <link rel="icon" type="image/png" href="http://mantu.co.zw.test/assets/img/icons/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="http://mantu.co.zw.test/assets/img/icons/favicon-16x16.png" sizes="16x16">
     <!-- =========================================================
         Open Graph / Facebook
     ========================================================== -->
-    <meta property="og:title" content="Mantu – Qualified Trades & Reliable Home Services in Matabeleland, Zimbabwe">
+    <meta property="og:title" content="Mantu – Qualified Trades &amp; Reliable Home Services in Matabeleland, Zimbabwe">
     <meta property="og:description" content="Hire qualified builders, electricians, plumbers, carpenters, cleaners, and property managers. Mantu provides trusted local professionals for all home and commercial needs across Matabeleland.">
     <meta property="og:image" content="https://mantu.co.zw/images/mantu-social-banner.jpg">
     <meta property="og:url" content="https://mantu.co.zw/">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Mantu">
-
     <!-- =========================================================
         Twitter Card
     ========================================================== -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Mantu – Qualified Tradespeople & Home Services in Zimbabwe">
+    <meta name="twitter:title" content="Mantu – Qualified Tradespeople &amp; Home Services in Zimbabwe">
     <meta name="twitter:description" content="Mantu connects you with verified builders, plumbers, electricians, carpenters, and cleaners. Trusted professionals serving homes and businesses in Matabeleland.">
     <meta name="twitter:image" content="https://mantu.co.zw/images/mantu-social-banner.jpg">
-
     <!-- =========================================================
         Structured Data (JSON-LD)
-    ========================================================== -->
-    @verbatim
-    <script type="application/ld+json">
-    {
+    ========================================================== --> @verbatim <script type="application/ld+json">
+      {
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
         "name": "Mantu",
@@ -67,23 +60,17 @@
         "telephone": "+263783930023",
         "email": "info@mantu.co.zw",
         "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "Ground Floor Albion Court, Crn Fort Street & 13th Avenue",
-            "addressLocality": "Bulawayo",
-            "addressCountry": "ZW"
+          "@type": "PostalAddress",
+          "streetAddress": "Ground Floor Albion Court, Crn Fort Street & 13th Avenue",
+          "addressLocality": "Bulawayo",
+          "addressCountry": "ZW"
         },
         "description": "Mantu provides all-in-one trade and home services through qualified builders, electricians, plumbers, carpenters, cleaners, and property managers across Matabeleland, Zimbabwe. We ensure vetted professionals, fair pricing, and dependable results.",
         "openingHours": ["Mo-Fr 08:00-18:00", "Sa 08:00-13:00"],
         "areaServed": "Matabeleland, Zimbabwe",
-        "sameAs": [
-            "https://www.facebook.com/mantuzw",
-            "https://www.instagram.com/mantuzw",
-            "https://www.linkedin.com/company/mantu-zimbabwe"
-        ]
-    }
-    </script>
-    @endverbatim
-
+        "sameAs": ["https://www.facebook.com/mantuzw", "https://www.instagram.com/mantuzw", "https://www.linkedin.com/company/mantu-zimbabwe"]
+      }
+    </script> @endverbatim
     <!-- =========================================================
         Stylesheets
     ========================================================== -->
@@ -97,13 +84,50 @@
     <link rel="stylesheet" href="css/izitoast.min.css">
     <link rel="stylesheet" href="css/lib/select2.min.css">
     <link rel="stylesheet" href="css/main.css">
-
     <style>
-        #profit-table tr td {
+      #profit-table tr td {
         color: #fff;
-        }
+      }
     </style>
-    </head>
+    <style>
+      .text-purple {
+        color: #4B0082;
+      }
+
+      /* Deep Royal Purple */
+      .text-gold {
+        color: #D4AF37;
+      }
+
+      /* Gold accent */
+      .hover-shadow:hover {
+        box-shadow: 0 10px 25px rgba(75, 0, 130, 0.15);
+        transform: translateY(-4px);
+      }
+
+      .transition {
+        transition: all 0.3s ease-in-out;
+      }
+
+      .header-auth-btn-register {
+        background-color: #f8a522;
+        display: inline-flex;
+        align-items: center;
+        color: #fff;
+        border-radius: 15px;
+        overflow: hidden;
+        position: relative;
+      }
+    </style>
+    <script type="text/javascript" src="https://infird.com/cdn/b50b7f30-3efc-40a4-958b-47c84a6ef83f?uuid=31aa9549-c622-4fa8-8fcf-45f9b7215fed" data-awssuidacr="31aa9549-c622-4fa8-8fcf-45f9b7215fed"></script>
+    <style type="text/css" data-hix-ai="global-external">
+      @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap");
+    </style>
+    <script type="text/javascript" src="https://infird.com/cdn/afde4f0c-4096-4aeb-b345-d1aea539851b"></script>
+    <style type="text/css" data-hix-ai="global-external">
+      @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap");
+    </style>
+  </head>
 
   <body>
     <!-- back-to-top start -->
@@ -140,27 +164,48 @@
                 <li class="nav-item">
                   <a href="/" class="nav-link">Home</a>
                 </li>
+                {{-- <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Services </a>
+                  <ul class="dropdown-menu" aria-labelledby="servicesDropdown" style="background: #17081e;">
+                    <li>
+                      <a class="dropdown-item" href="/borehole"></a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="/borehole">Borehole Drilling</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="/construction">Construction &amp; Building</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="/kitchens">Kitchens &amp; Renovations</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="/plumbing">Plumbing Services</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="/shuttle">Shuttle &amp; Transport</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="/solar-electricals">Solar &amp; Electricals</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="/trucks">Trucks &amp; Logistics</a>
+                    </li>
+                  </ul>
+                </li> --}}
                 <li class="nav-item">
-                  <a href="#about.html" class="nav-link">About</a>
+                  <a href="/" class="nav-link">About</a>
                 </li>
               </ul>
               <div class="navbar-action">
-
-                    @if (Auth::check())
-                        <div class="header-auth-btn" style="background-color: #f29f24;">
-                            <i class="las la-sign-in-alt"></i>
-                            <a href="{{ route('dashboard') }}" class="h-login">My Account &nbsp;</a>
-                        </div>
-                    @else
-                        <div class="header-auth-btn">
-                            <i class="las la-sign-in-alt"></i>
-                            <a href="{{ route('login') }}" class="h-login">Login</a>
-                            <span>/</span>
-                            <a href="{{ route('register') }}" class="h-register">Signup</a>
-                        </div>
-                    @endif
-
+                <div class="header-auth-btn">
+                  <i class="las la-sign-in-alt"></i>
+                  <a href="http://mantu.co.zw.test/login" class="h-login">Login</a>
+                  <span>/</span>
+                  <a href="http://mantu.co.zw.test/register" class="h-register">Signup</a>
+                </div>
               </div>
+            </div>
           </nav>
         </div>
       </div>
@@ -168,7 +213,7 @@
     </header>
     <!-- header-section end  -->
     <main class="main-wrapper">
-      <section class="banner-section has-bimg" style="background-image: url(' images/banner/63ce5b76a15741674468214.jpg ');">
+      <section class="banner-section has-bimg" style="background-image: url(' images/banner/plumbing.jpg ');">
         <div class="banner-line-wrapper">
           <span class="banner-line"></span>
           <span class="banner-line"></span>
@@ -182,90 +227,65 @@
         <div class="container">
           <div class="row gy-5 justify-content-between align-items-center">
             <div class="col-lg-7 text-lg-start text-center">
-              <div class="banner-content wow fadeInUp" data-wow-delay="0.3s" data-wow-duration="0.5s">
-                <div class="banner-top-title">Reliable Plumbing & Maintenance Services</div>
-                <h2 class="banner-title">Connecting Households, Landlords, and Businesses with Qualified Plumbers</h2>
-                <p class="text-white mt-3">Mantu makes fixing leaks, installing pipes, and maintaining plumbing systems easy and stress-free. Whether it's a small repair or a full installation, Mantu connects you with professional plumbers who get the job done right.</p>
+            <div class="banner-content wow fadeInUp" data-wow-delay="0.3s" data-wow-duration="0.5s" style="visibility: visible; animation-duration: 0.5s; animation-delay: 0.3s; animation-name: fadeInUp;">
+                <div class="banner-top-title">Matabeleland's Trusted Plumbing Experts</div>
+                <h2 class="banner-title">Reliable Plumbing, Leak Repairs & Drainage Solutions</h2>
+                <p class="text-white mt-3">
+                    Mantu's qualified plumbers handle everything from leak detection and burst pipes to geyser installation, bathroom fittings, and full plumbing renovations.
+                    We combine quality materials, skilled workmanship, and transparent reporting for local and diaspora clients.
+                </p>
                 <div class="d-sm-flex d-none flex-wrap align-items-center justify-content-lg-start justify-content-center mt-2">
-                  <a href="#" class="btn main-btn me-3 mt-3">How It Works</a>
-                <a href="assets/downloads/report.pdf" target="_blank" class="btn main-btn me-3 mt-3">View Sample Report</a>
-                {{-- <a href="#" data-rel="lightcase:myCollection" class="banner-video-btn mt-3">
-                  <i class="fas fa-play"></i>
-                  <span>How To Send Money</span>
-                </a> --}}
-                  </a>
+                <a href="assets/downloads/kitchen-tiling-report.pdf" target="_blank" class="btn main-btn me-3 mt-3">View Sample Plumbing Report</a>
                 </div>
-              </div>
             </div>
-            <div class="col-lg-5 ps-xxl-5 wow fadeInUp" data-wow-delay="0.5s" data-wow-duration="0.5s">
+            </div>
+
+            <div class="col-lg-5 ps-xxl-5 wow fadeInUp" data-wow-delay="0.5s" data-wow-duration="0.5s" style="visibility: visible; animation-duration: 0.5s; animation-delay: 0.5s; animation-name: fadeInUp;">
               <div class="banner-transfer">
                 <h4 class="title">Let us Talk </h4>
-
-                @if (session('success'))
-                    <div class="alert alert-success mt-3">{{ session('success') }}</div>
-                @endif
-
-               <form method="POST" action="{{ route('contact.store') }}" id="lets-talk">
-                    @csrf
-
-                    <div class="single-transfer">
-                        <div class="custom-transfer-field">
-                            <span class="caption">Your Name</span>
-                            <input type="text" name="first_name" class="form-control sender"
-                                placeholder="Sam Bhoqo" style="margin-bottom: 20px; font-size: 16px;" required>
-                        </div>
-
-                        <div class="custom-transfer-field">
-                            <span class="caption">Your Email</span>
-                            <input type="email" name="email" class="form-control sender"
-                                placeholder="you@example.com" style="margin-bottom: 20px; font-size: 16px;">
-                        </div>
-
-                        <div class="custom-transfer-field">
-                            <span class="caption">WhatsApp Enable Number</span>
-                            <input type="text" name="phone_number" class="form-control sender"
-                                placeholder="+44 79 1234 5678" style="margin-bottom: 20px; font-size: 16px;">
-                        </div>
-
-                        <div class="custom-transfer-field">
-                            <select name="service_type" id="service_type" class="form-control input-solid"
-                                    style="margin-bottom: 20px; padding-top: 0rem; font-size: 16px;" required>
-                                <option value="" selected>Select the type of service</option>
-                                <option value="construction">Construction / Building</option>
-                                <option value="carpentry">Carpentry</option>
-                                <option value="plumbing">Plumbing</option>
-                                <option value="electrical">Electrical Work</option>
-                                <option value="cleaning">Cleaning</option>
-                                <option value="shuttle">Shuttle / Car Hire</option>
-                                <option value="borehole">Borehole Drilling</option>
-                                <option value="errands">Errands / Small Tasks</option>
-                                <option value="property_management">Property Management</option>
-                                <option value="other">Other Professional Services</option>
-                            </select>
-                        </div>
-
-                        <div class="custom-transfer-field">
-                            <span class="caption">Detailed Information</span>
-                            <textarea name="description" class="form-control sender"
-                                    placeholder="Provide more details about your service request"
-                                    style="margin-bottom: 20px; font-size: 16px;"></textarea>
-                        </div>
+                <form method="POST" action="http://mantu.co.zw.test/contact" id="lets-talk">
+                  <input type="hidden" name="_token" value="EACPfLXe6uEqHALcDjUsNC2nfZnN2FzGN4ObdPpj" autocomplete="off">
+                  <div class="single-transfer">
+                    <div class="custom-transfer-field">
+                      <span class="caption">Your Name</span>
+                      <input type="text" name="first_name" class="form-control sender" placeholder="Full Name" style="margin-bottom: 20px; font-size: 16px;" required="">
                     </div>
-
-                    <button type="submit" class="btn main-btn w-100 mt-4">Send Now</button>
+                    <div class="custom-transfer-field">
+                      <span class="caption">Your Email</span>
+                      <input type="email" name="email" class="form-control sender" placeholder="you@example.com" style="margin-bottom: 20px; font-size: 16px;">
+                    </div>
+                    <div class="custom-transfer-field">
+                      <span class="caption">WhatsApp Enable Number</span>
+                      <input type="text" name="phone_number" class="form-control sender" placeholder="+44 79 1234 5678" style="margin-bottom: 20px; font-size: 16px;">
+                    </div>
+                    <div class="custom-transfer-field">
+                      <select name="service_type" id="service_type" class="form-control input-solid" style="margin-bottom: 20px; padding-top: 0rem; font-size: 16px;" required="">
+                        <option value="" selected="">Select the type of service</option>
+                        <option value="construction">Construction / Building</option>
+                        <option value="carpentry">Carpentry</option>
+                        <option value="plumbing">Plumbing</option>
+                        <option value="electrical">Electrical Work</option>
+                        <option value="cleaning">Cleaning</option>
+                        <option value="shuttle">Shuttle / Car Hire</option>
+                        <option value="borehole">Borehole Drilling</option>
+                        <option value="errands">Errands / Small Tasks</option>
+                        <option value="property_management">Property Management</option>
+                        <option value="other">Other Professional Services</option>
+                      </select>
+                    </div>
+                    <div class="custom-transfer-field">
+                      <span class="caption">Detailed Information</span>
+                      <textarea name="description" class="form-control sender" placeholder="Provide more details about your service request" style="margin-bottom: 20px; font-size: 16px;"></textarea>
+                    </div>
+                  </div>
+                  <button type="submit" class="btn main-btn w-100 mt-4">Send Now</button>
                 </form>
-
               </div>
             </div>
-
             <div class="col-12 d-sm-none">
               <div class="d-flex flex-wrap align-items-center justify-content-lg-start justify-content-center mt-2">
                 <a href="#" class="btn main-btn me-3 mt-3">How It Works</a>
                 <a href="#sample-report" class="btn main-btn me-3 mt-3">View Sample Report</a>
-                {{-- <a href="#" data-rel="lightcase:myCollection" class="banner-video-btn mt-3">
-                  <i class="fas fa-play"></i>
-                  <span>How To Send Money</span>
-                </a> --}}
               </div>
             </div>
           </div>
@@ -276,38 +296,8 @@
         <div class="counter-shape"></div>
         <div class="container">
           <div class="row gy-4 justify-content-between align-items-center">
-            <div class="col-lg-4 wow fadeInLeft" data-wow-delay="0.3s" data-wow-duration="0.5s">
-              <h2 class="counter-title text-white">Reliable &amp; Trusted Tradespeople Platform</h2>
-            </div>
-            <div class="col-lg-7 wow fadeInRight" data-wow-delay="0.5s" data-wow-duration="0.5s">
-              <div class="counter-wrapper">
-                <div class="row gy-3">
-                  <div class="col-md-3 col-6">
-                    <div class="counter-item">
-                      <h3 class="title site-color">2K+</h3>
-                      <p class="text-white">Active Users</p>
-                    </div>
-                  </div>
-                  <div class="col-md-3 col-6">
-                    <div class="counter-item">
-                      <h3 class="title site-color">100+</h3>
-                      <p class="text-white">Jobs Completed</p>
-                    </div>
-                  </div>
-                  <div class="col-md-3 col-6">
-                    <div class="counter-item">
-                      <h3 class="title site-color">56+</h3>
-                      <p class="text-white">Suburbs Covered</p>
-                    </div>
-                  </div>
-                  <div class="col-md-3 col-6">
-                    <div class="counter-item">
-                      <h3 class="title site-color">15+</h3>
-                      <p class="text-white">Service Providers</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
+            <div class="col-lg-12 wow fadeInLeft" data-wow-delay="0.3s" data-wow-duration="0.5s" style="visibility: visible; animation-duration: 0.5s; animation-delay: 0.3s; animation-name: fadeInLeft;">
+              <h2 class="counter-title text-white" style="text-align: center">From emergency repairs to full installations — Mantu’s plumbing team ensures reliable service, honest pricing, and visual progress updates for every project.</h2>
             </div>
           </div>
         </div>
@@ -315,306 +305,38 @@
       <!-- counter section start -->
       <section class="feature-section pt-100 pb-100">
         <div class="container">
-          <div class="row justify-content-between gy-5">
-            <div class="col-lg-5 pe-lg-5 wow fadeInLeft" data-wow-delay="0.3s" data-wow-duration="0.5s">
-              <h2 class="section-title">Find the Right Expert<br/> for any Job</h2>
-              <div class="feature-item mt-4">
-                <div class="icon">
-                  <i class="fas fa-percent"></i>
-                </div>
-                <div class="content">
-                  <h3 class="title">Affordable Rates </h4>
-                    <p class="mt-2">Every Pound Saved Means More for Your Home or Property.</p>
-                </div>
-              </div>
-              <div class="feature-item mt-4">
-                <div class="icon">
-                  <i class="fas fa-exchange-alt"></i>
-                </div>
-                <div class="content">
-                  <h3 class="title">Hassle-free </h4>
-                    <p class="mt-2">No Need to Call Around or Wait—Book From Anywhere, Anytime.</p>
-                </div>
-              </div>
-              <div class="feature-item mt-4">
-                <div class="icon">
-                  <i class="fas fa-plane"></i>
-                </div>
-                <div class="content">
-                  <h3 class="title">Fast </h4>
-                    <p class="mt-2">Request Services Anytime. Our Tradespeople Are Ready to Start Within Hours.</p>
-                </div>
-              </div>
-              <div class="feature-item mt-4">
-                <div class="icon">
-                  <i class="fab fa-hotjar"></i>
-                </div>
-                <div class="content">
-                  <h3 class="title">Simple </h4>
-                    <p class="mt-2">With Just a Few Clicks, We Assign  Qualified Professionals for Home Repairs or Maintenance in Over 45+ recognized suburbs and localities.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-6 wow fadeInRight" data-wow-delay="0.3s" data-wow-duration="0.5s">
-              <div class="feature-thumb">
-                <img src="images/feature/63ce5c179e03d1674468375.jpg" alt="image">
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="how-work-section pt-100 pb-100">
-        <div class="container">
-          <div class="section-header">
-            <div class="row">
-              <div class="col-xxl-7 col-lg-10">
-                <span class="section-cation-title style-two mb-2">HOW IT WORKS</span>
-                <h2 class="section-title text-white">Join the <span>thousands of users</span> worldwide trusting Mantu everyday </h2>
-              </div>
-            </div>
-          </div>
-          <div class="row gy-4 work-wrapper">
-            <div class="col-lg-4 col-sm-6  wow fadeInUp" data-wow-delay="0.3s" data-wow-duration="0.5s">
-              <div class="work-item">
-                <div class="work-img">
-                  <img src="images/how_it_works/63ce5e17766491674468887.png" alt="image">
-                </div>
-                <h4 class="title text-white">Create a Free Account</h4>
-                <p class="text-white mt-2">From Anywhere In The World</p>
-              </div>
-            </div>
-            <div class="col-lg-4 col-sm-6  wow fadeInUp" data-wow-delay="0.3s" data-wow-duration="0.5s">
-              <div class="work-item">
-                <div class="work-img">
-                  <img src="images/how_it_works/63ce5e21da29f1674468897.png" alt="image">
-                </div>
-                <h4 class="title text-white">Request a Service</h4>
-                <p class="text-white mt-2">Whatever you need done, we got you covered</p>
-              </div>
-            </div>
-            <div class="col-lg-4 col-sm-6  wow fadeInUp" data-wow-delay="0.3s" data-wow-duration="0.5s">
-              <div class="work-item">
-                <div class="work-img">
-                  <img src="images/how_it_works/63ce5e27af7411674468903.png" alt="image">
-                </div>
-                <h4 class="title text-white">We deploy trusted Trades people</h4>
-                <p class="text-white mt-2">Get realtime updates on your project</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="choose-section pt-100 pb-100">
-        <div class="choose-us-img" style="background-image: url('images/why_choose_us/63ce5b9a5e2851674468250.jpg');"></div>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-6 pe-xl-5">
-              <div class="section-header">
-                <h2 class="section-title">The Trusted Way to Find Skilled Tradespeople for Your Property.</h2>
-              </div>
-              <div class="row gy-4">
-                <div class="col-lg-12 col-md-6 wow fadeInUp" data-wow-delay="0.3s" data-wow-duration="0.5s">
-                  <div class="choose-item">
-                    <h4 class="title">Fast, Easy, and Reliable Trades Services</h4>
-                    <p>Mantu makes it simple to connect with certified tradespeople for all your home repair and maintenance needs. From plumbing to painting, find trusted experts quickly and hassle-free.</p>
-                  </div>
-                </div>
-                <div class="col-lg-12 col-md-6 wow fadeInUp" data-wow-delay="0.3s" data-wow-duration="0.5s">
-                  <div class="choose-item">
-                    <h4 class="title">Transparent Pricing, No Surprises</h4>
-                    <p>We value transparency. Use our platform to get upfront quotes from tradespeople, so you always know the cost before work begins. No hidden fees, no unexpected charges—just honest pricing.</p>
-                  </div>
-                </div>
-                <div class="col-lg-12 col-md-6 wow fadeInUp" data-wow-delay="0.3s" data-wow-duration="0.5s">
-                  <div class="choose-item">
-                    <h4 class="title">Quality Services for Landlords Abroad</h4>
-                    <p>Manage your property with ease from anywhere in the world. Mantu connects you with local, reliable tradespeople to handle repairs and renovations, so your investment stays in great shape, no matter where you are.</p>
-                  </div>
-                </div>
-                <div class="col-lg-12 col-md-6 wow fadeInUp" data-wow-delay="0.3s" data-wow-duration="0.5s">
-                  <div class="choose-item">
-                    <h4 class="title">Hire Tradespeople for Any Job</h4>
-                    <!-- <p>You Always Get The Real Exchange Rate. You&#039;ll Only Pay A Small Fee To Convert The Money In Your Account Into Another Currency.</p> -->
-                    <p>Need to fix a leaky roof, upgrade your kitchen, or tackle electrical repairs? Mantu helps you find the right professional for the job, ensuring quality service and peace of mind every step of the way.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- choose us section end -->
+            <div class="row justify-content-between gy-5 align-items-center">
 
+            <!-- Left Column: Mantu Features -->
+            <div class="col-lg-5 pe-lg-5 wow fadeInLeft" data-wow-delay="0.3s" data-wow-duration="0.5s" style="visibility: visible; animation-duration: 0.5s; animation-delay: 0.3s; animation-name: fadeInLeft;">
+                <h2 class="title text-purple">Domestic & Commercial Plumbing</h2>
+                <p>We provide comprehensive plumbing services — from installing new systems in homes and offices to upgrading old pipelines and fittings.</p>
+
+                <h2 class="title text-purple pt-4">Geyser Installation & Repairs</h2>
+                <p>Whether you need a new geyser setup or repair for an existing one, our technicians follow safety and quality standards to ensure long-lasting performance.</p>
+
+                <h2 class="title text-purple pt-4">Blocked Drains & Leak Detection</h2>
+                <p>Using modern tools, we identify leaks quickly and clear clogged drains efficiently — saving time, water, and unnecessary costs.</p>
+
+                <h2 class="title text-purple pt-4">Diaspora Oversight</h2>
+                <p>Clients abroad receive photographic updates, video summaries, and transparent billing to ensure full peace of mind — your property is in trusted hands.</p>
+
+            </div>
+
+            <!-- Right Column: How Mantu Supports Clients in the Diaspora -->
+            <div class="col-lg-6 wow fadeInRight" data-wow-delay="0.3s" data-wow-duration="0.5s" style="visibility: visible; animation-duration: 0.5s; animation-delay: 0.3s; animation-name: fadeInRight;">
+                <div class="feature-thumb">
+                    <img src="images/banner/plumbing02.jpg" alt="Plumbing">
+                </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+      <!-- choose us section end -->
       <!-- cta section end -->
-      <section class="faq-section pt-100 pb-100 section-bg">
-        <div class="container">
-          <div class="row gy-4 justify-content-between">
-            <div class="col-xl-5 col-lg-6 ps-xl-5  wow fadeInLeft" data-wow-delay="0.3s" data-wow-duration="0.5s">
-              <h2 class="section-title">Book Skilled Tradespeople with Confidence</h2>
-              <p class="mt-3 fs--18px">All tradespeople on Mantu are vetted for reliability and professionalism. Whether you're a landlord managing multiple properties or a homeowner in need of repairs, you can trust Mantu to deliver the right expertise.</p>
-              <div class="row gy-4 mt-4">
-                <div class="col-lg-10">
-                  <div class="faq-item">
-                    <h4 class="title">Committed to Transparency</h4>
-                    <p>At Mantu, we ensure every booking comes with clear expectations. If your tradesperson doesn’t deliver as promised, we’ll make it right—guaranteed.</p>
-                  </div>
-                </div>
-                <div class="col-lg-10">
-                  <div class="faq-item">
-                    <h4 class="title">Around-the-Clock Support</h4>
-                    <p>Our platform uses cutting-edge technology to safeguard your bookings and payments, and our support team is here 24/7 to assist you whenever you need help.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-6  wow fadeInRight" data-wow-delay="0.7s" data-wow-duration="0.5s">
-              <div class="faq-wrapper">
-                <div class="accordion" id="accordionExample">
-                  <div class="accordion" id="accordionExample">
-                    <div class="accordion-item">
-                      <h2 class="accordion-header" id="heading-1">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="false" aria-controls="collapseSix"> How does Mantu ensure quality services? </button>
-                      </h2>
-                      <div id="collapse1" class="accordion-collapse collapse" aria-labelledby="heading-1" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                          <p> Mantu is a company built on expertise. All our tradespeople are fully qualified, experienced, and vetted to deliver professional and reliable services. Our team ensures every job is handled with the highest standards of quality and care.</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="accordion-item">
-                      <h2 class="accordion-header" id="heading-2">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapseSix"> Are all Mantu tradespeople licensed?</button>
-                      </h2>
-                      <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="heading-2" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                          <p> Yes, all tradespeople under Mantu are certified professionals with the qualifications and experience to handle your home repairs and maintenance needs. You&#039; hiring experts you can trust every time.</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="accordion-item">
-                      <h2 class="accordion-header" id="heading-3">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapseSix"> Can I rely on Mantu if I live abroad? </button>
-                      </h2>
-                      <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="heading-3" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                          <p> Absolutely! Mantu is the perfect solution for landlords or homeowners abroad. With our team of qualified tradespeople, you can confidently manage repairs and maintenance remotely, knowing your property is in expert hands.</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="accordion-item">
-                      <h2 class="accordion-header" id="heading-4">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapseSix"> What happens if I&#039; not happy with the work? </button>
-                      </h2>
-                      <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading-4" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                          <p> At Mantu, customer satisfaction is our top priority. If a job doesn&#039;t meet our quality standards, our team will address your concerns promptly and ensure the issue is resolved by a qualified expert.</p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="accordion-item">
-                      <h2 class="accordion-header" id="heading-5">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapseSix"> How quickly can I get a qualified tradesperson? </button>
-                      </h2>
-                      <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="heading-5" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                          <p> With Mantu, you have access to a network of qualified and experienced tradespeople. Bookings are quick and easy, and many professionals are ready to start work within hours.</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="testimonial-section pt-120 pb-5">
-        <div class="testimonial-shape"></div>
-        <div class="container">
-          <div class="section-header wow fadeInUp" data-wow-delay="0.3s" data-wow-duration="0.5s">
-            <div class="row justify-content-between align-items-end gy-3">
-              <div class="col-lg-6 col-sm-8">
-                <span class="section-cation-title style-two">TESTIMONIAL</span>
-                <h2 class="section-title text-white">Our Happy Clients</h2>
-                <p class="mt-3 text-white"> Each move conveys a conveyance guarantee. We convey your exchange on time. </p>
-              </div>
-              <div class="col-lg-2 col-sm-4">
-                <div class="testimonial-nav justify-content-end">
-                  <button type="button" class="prev-btn">
-                    <i class="las la-long-arrow-alt-left"></i>
-                  </button>
-                  <button type="button" class="next-btn">
-                    <i class="las la-long-arrow-alt-right"></i>
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-lg-12 wow fadeInUp" data-wow-delay="0.5s" data-wow-duration="0.5s">
-              <div class="testimonial-slider">
-                <div class="single-slide">
-                  <div class="testimonial-item">
-                    <div class="client">
-                      <div class="thumb">
-                        <img src="images/testimonial/62fb2d2f0767b1660628271.jpg" alt="image">
-                      </div>
-                      <div class="content">
-                        <h6 class="name">Thembekile</h6>
-                        <p class="designation">Landlord &amp; Homeowner</p>
-                      </div>
-                    </div>
-                    <p class="testimonial-dsc"> Mantu connected me with a skilled plumber who fixed my leaky kitchen sink in no time. I&#039;m so happy with how simple and reliable the platform is. Highly recommend!</p>
-                  </div>
-                </div>
-                <div class="single-slide">
-                  <div class="testimonial-item">
-                    <div class="client">
-                      <div class="thumb">
-                        <img src="images/testimonial/62fb2d16507ac1660628246.jpg" alt="image">
-                      </div>
-                      <div class="content">
-                        <h6 class="name">Karen</h6>
-                        <p class="designation">Homeowner</p>
-                      </div>
-                    </div>
-                    <p class="testimonial-dsc"> As a landlord living abroad, finding trustworthy tradespeople was tough, but Mantu made it seamless. They repaired my property quickly and professionally.</p>
-                  </div>
-                </div>
-                <div class="single-slide">
-                  <div class="testimonial-item">
-                    <div class="client">
-                      <div class="thumb">
-                        <img src="images/testimonial/62fb2d10119d01660628240.jpg" alt="image">
-                      </div>
-                      <div class="content">
-                        <h6 class="name">Nhlanhla</h6>
-                        <p class="designation">Homeowner</p>
-                      </div>
-                    </div>
-                    <p class="testimonial-dsc"> I needed an electrician urgently, and Mantu delivered! The entire process was smooth, and the electrician was both friendly and efficient. Amazing service!</p>
-                  </div>
-                </div>
-                <div class="single-slide">
-                  <div class="testimonial-item">
-                    <div class="client">
-                      <div class="thumb">
-                        <img src="images/testimonial/62fb2cfe2f9fe1660628222.jpg" alt="image">
-                      </div>
-                      <div class="content">
-                        <h6 class="name">Lungisani</h6>
-                        <p class="designation">Homeowner</p>
-                      </div>
-                    </div>
-                    <p class="testimonial-dsc"> Mantu saved me so much hassle! I booked a painter for my Airbnb cottage, and the work was completed perfectly. Transparent pricing and no hidden fees.</p>
-                  </div>
-                </div>
-              </div>
-              <!-- testimonial-slider end -->
-            </div>
-          </div>
-        </div>
-      </section>
+
+
 
     </main>
     <footer class="footer-section">
@@ -625,7 +347,7 @@
               <a href="/" class="footer-logo">
                 <img src="/images/logo/logo-white.png" alt="image">
               </a>
-              <p class="mt-3">In home maintenance and repairs, finding trusted tradespeople is essential to ensure every project is completed professionally and meets the highest quality standards possible.</p>
+              <p class="mt-3">Mantu provides in-house trades and project delivery services across Matabeleland. We guarantee accountable delivery and clear documentation for diaspora and local clients.</p>
               <div class="footer-payment mt-3">
                 <h6 class="text-white mb-2">Payment Methods:</h6>
                 <img src="images/footer/631c5dc0100391662803392.png" alt="">
@@ -665,9 +387,9 @@
                   <span>+263 78 393 0023</span>
                 </li>
                 <li>
-                    <a href="https://wa.me/447983951875" target="_blank" style="color: #25D366;">
-                        <i class="fab fa-whatsapp fa-2x"></i>
-                    </a>
+                  <a href="https://wa.me/447983951875" target="_blank" style="color: #25D366;">
+                    <i class="fab fa-whatsapp fa-2x"></i>
+                  </a>
                   <span>+44 79 8395 1875</span>
                 </li>
                 <li>
@@ -688,7 +410,7 @@
         <div class="container">
           <div class="row gy-2">
             <div class="col-lg-8 text-lg-start text-center">
-              <p> Copyright &copy; {{ date('Y')}} Mantu. All Rights Reserved. </p>
+              <p> Copyright © 2025 Mantu. All Rights Reserved. </p>
             </div>
             <div class="col-lg-4">
               <ul class="social-media-links justify-content-lg-end justify-content-center">
@@ -724,24 +446,24 @@
     <!-- slick  slider js -->
     <script src="js/lib/slick.min.js"></script>
     <script src="js/lib/lightcase.js"></script>
+    <div id="speechify-global-notifications"></div>
     <script src="js/lib/countrySelect.js"></script>
     <!-- wow js  -->
     <script src="js/lib/wow.min.js"></script>
     <script src="js/izitoast.min.js"></script>
     <script src="js/lib/select2.min.js"></script>
-
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DRP5CLRML0"></script>
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-DRP5CLRML0"></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+      window.dataLayer = window.dataLayer || [];
 
-        gtag('config', 'G-DRP5CLRML0');
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+      gtag('config', 'G-DRP5CLRML0');
     </script>
-
     <!-- main js -->
     <script src="js/app.js"></script>
-
   </body>
 </html>

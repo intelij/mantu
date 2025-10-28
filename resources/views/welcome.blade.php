@@ -509,7 +509,7 @@
                 <p class="text-muted mb-3 small">
                     Foundations, extensions, structural repairs and full builds — managed by Mantu site teams from start to finish.
                 </p>
-                {{-- <a href="/services/construction" class="text-decoration-none text-gold fw-semibold">Read More →</a> --}}
+                <a href="/construction" class="text-decoration-none text-gold fw-semibold">Read More →</a>
                 </div>
             </div>
 
@@ -529,7 +529,7 @@
                 <p class="text-muted mb-3 small">
                     From leaks and reticulation to full water solutions — Mantu provides certified plumbers and borehole drilling crews.
                 </p>
-                {{-- <a href="/services/plumbing" class="text-decoration-none text-gold fw-semibold">Read More →</a> --}}
+                <a href="/plumbing" class="text-decoration-none text-gold fw-semibold">Read More →</a>
                 </div>
             </div>
 

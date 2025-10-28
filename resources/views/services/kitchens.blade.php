@@ -126,13 +126,14 @@
       @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap");
     </style>
   </head>
-  <body hix-version="3.1.8" hix-id="njggknpmkjapgklcfhaiigafiiebpchm" data-new-gr-c-s-check-loaded="14.1259.0" data-gr-ext-installed="">
+
+  <body>
     <!-- back-to-top start -->
-    <div class="back-to-top" style="display: none;">
+    <div class="back-to-top">
       <i class="las la-arrow-up"></i>
     </div>
     <!-- back-to-top end -->
-    <div class="preloader-holder" style="opacity: 0; display: none;">
+    <div class="preloader-holder">
       <div class="preloader">
         <div></div>
         <div></div>
@@ -474,27 +475,5 @@
     </script>
     <!-- main js -->
     <script src="js/app.js"></script>
-    <div id="speechify-settings-modal" style="position: absolute; bottom: 0px; right: 0px;"></div>
-    <div id="speechify-screenshot-mode" style="position: fixed; top: 0px; right: 0px; width: 100%; min-height: 100%; z-index: 2147483640; display: none !important;"></div>
-    <div id="speechify-hover-player-shadow-root"></div>
-    <hix-ai-sidebar data-wxt-shadow-root=""></hix-ai-sidebar>
-    <script>
-      (() => {
-        window.addoncropExtensions = window.addoncropExtensions || [];
-        window.addoncropExtensions.push({
-          mode: 'emulator',
-          emulator: 'CRXEmulator',
-          extension: {
-            id: 44,
-            name: 'YouTube Downloader by Addoncrop',
-            version: '17.6.5',
-            date: 'August 21, 2025',
-          },
-          flixmateConnected: false,
-        });
-      })();
-    </script>
   </body>
-  <hix-sidebar-entry data-wxt-shadow-root=""></hix-sidebar-entry>
-  <grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration>
 </html>
