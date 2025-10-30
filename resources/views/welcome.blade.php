@@ -162,7 +162,7 @@
                 </li>
 
                 {{-- Drop down menu start --}}
-                {{-- <li class="nav-item dropdown">
+                <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     Services
                 </a>
@@ -176,7 +176,7 @@
                     <li><a class="dropdown-item" href="/solar-electricals">Solar & Electricals</a></li>
                     <li><a class="dropdown-item" href="/trucks">Trucks & Logistics</a></li>
                 </ul>
-                </li> --}}
+                </li>
                 {{-- Drop down menu end --}}
                 <li class="nav-item">
                   <a href="/" class="nav-link">About</a>
@@ -539,13 +539,13 @@
                 <p class="text-muted mb-3 small">
                     Design and installation of solar power systems, electrical upgrades, and certified wiring for homes and businesses.
                 </p>
-                {{-- <a href="/services/solar" class="text-decoration-none text-gold fw-semibold">Read More →</a> --}}
+                <a href="/images/banner/solar.jpg" class="text-decoration-none text-gold fw-semibold">Read More →</a>
                 </div>
             </div>
 
             <div class="col-md-4 wow fadeInUp" data-wow-delay="0.6s" data-wow-duration="0.5s">
                 <div class="service-card p-4 h-100 bg-white rounded-4 shadow-sm hover-shadow transition">
-                <h4 class="text-purple mb-3">Shuttle &amp; Transport</h4>
+                <h4 class="text-purple mb-3">Shuttle, Transport &amp; Logistics</h4>
                 <p class="text-muted mb-3 small">
                     Safe shuttle and transport solutions for crew, materials, and client errands across Matabeleland and beyond.
                 </p>
@@ -555,7 +555,7 @@
 
             <div class="col-md-4 wow fadeInUp" data-wow-delay="0.7s" data-wow-duration="0.5s">
                 <div class="service-card p-4 h-100 bg-white rounded-4 shadow-sm hover-shadow transition">
-                <h4 class="text-purple mb-3">Trucks &amp; Logistics</h4>
+                <h4 class="text-purple mb-3">Ondemand Personal Shopper</h4>
                 <p class="text-muted mb-3 small">
                     Reliable haulage, logistics, and relocation support for materials and equipment, delivered efficiently by Mantu.
                 </p>
@@ -565,12 +565,6 @@
             </div>
         </div>
         {{-- </section> --}}
-
-
-
-
-
-
       </section>
       <section class="testimonial-section pt-120 pb-5">
         <div class="testimonial-shape"></div>
