@@ -140,9 +140,29 @@
                 <li class="nav-item">
                   <a href="/" class="nav-link">Home</a>
                 </li>
-                <li class="nav-item">
-                  <a href="#about.html" class="nav-link">About</a>
+
+                {{-- Drop down menu start --}}
+                <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Services
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="servicesDropdown"  style="background: #17081e;">
+                    <li><a class="dropdown-item" href="/borehole"></a></li>
+                    <li><a class="dropdown-item" href="/borehole">Borehole Drilling</a></li>
+                    <li><a class="dropdown-item" href="/construction">Construction & Building</a></li>
+                    <li><a class="dropdown-item" href="/kitchens">Kitchens & Renovations</a></li>
+                    <li><a class="dropdown-item" href="/plumbing">Plumbing Services</a></li>
+                    <li><a class="dropdown-item" href="/shuttle">Shuttle & Transport</a></li>
+                    <li><a class="dropdown-item" href="/solar-electricals">Solar & Electricals</a></li>
+                    <li><a class="dropdown-item" href="/trucks">Trucks & Logistics</a></li>
+                </ul>
                 </li>
+                {{-- Drop down menu end --}}
+                <li class="nav-item">
+                  <a href="/" class="nav-link">About</a>
+                </li>
+
+
               </ul>
               <div class="navbar-action">
 

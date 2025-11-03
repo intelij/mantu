@@ -124,48 +124,60 @@
     <!-- Header -->
     <header class="shadow-sm bg-white">
       <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-light">
-          <a class="navbar-brand site-logo" href="/">
-            <img src="images/logo/logo.png" alt="Mantu logo">
-          </a>
+        <nav class="navbar navbar-expand-xl p-0 align-items-center">
+            <a class="site-logo site-title" href="/">
+              <img src="images/logo/logo.png" alt="logo">
+            </a>
+            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="menu-toggle"></span>
+            </button>
+            <div class="collapse navbar-collapse mt-lg-0 mt-3" id="mainNavbar">
+              <ul class="nav navbar-nav main-menu ms-auto me-3">
+                <li class="nav-item">
+                  <a href="/" class="nav-link">Home</a>
+                </li>
 
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-
-          <div class="collapse navbar-collapse" id="mainNavbar">
-            <ul class="navbar-nav ms-auto me-3 align-items-lg-center">
-              <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
-
-              <li class="nav-item dropdown">
+                {{-- Drop down menu start --}}
+                <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Services
+                    Services
                 </a>
-                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="servicesDropdown">
-                  <li><a class="dropdown-item" href="/borehole">Borehole Drilling</a></li>
-                  <li><a class="dropdown-item" href="/construction">Construction &amp; Building</a></li>
-                  <li><a class="dropdown-item" href="/kitchens">Kitchens &amp; Renovations</a></li>
-                  <li><a class="dropdown-item" href="/plumbing">Plumbing Services</a></li>
-                  <li><a class="dropdown-item" href="/shuttle">Shuttle &amp; Transport</a></li>
-                  <li><a class="dropdown-item" href="/solar-electricals">Solar &amp; Electricals</a></li>
-                  <li><a class="dropdown-item" href="/trucks">Trucks &amp; Logistics</a></li>
+                <ul class="dropdown-menu" aria-labelledby="servicesDropdown"  style="background: #17081e;">
+                    <li><a class="dropdown-item" href="/borehole"></a></li>
+                    <li><a class="dropdown-item" href="/borehole">Borehole Drilling</a></li>
+                    <li><a class="dropdown-item" href="/construction">Construction & Building</a></li>
+                    <li><a class="dropdown-item" href="/kitchens">Kitchens & Renovations</a></li>
+                    <li><a class="dropdown-item" href="/plumbing">Plumbing Services</a></li>
+                    <li><a class="dropdown-item" href="/shuttle">Shuttle & Transport</a></li>
+                    <li><a class="dropdown-item" href="/solar-electricals">Solar & Electricals</a></li>
+                    <li><a class="dropdown-item" href="/trucks">Trucks & Logistics</a></li>
                 </ul>
-              </li>
+                </li>
+                {{-- Drop down menu end --}}
+                <li class="nav-item">
+                  <a href="/" class="nav-link">About</a>
+                </li>
 
-              <li class="nav-item"><a class="nav-link" href="/about">About</a></li>
-              <li class="nav-item"><a class="nav-link" href="/contact">Contact</a></li>
-            </ul>
 
-            <div class="d-flex align-items-center">
-              @if (Auth::check())
-                <a href="{{ route('dashboard') }}" class="btn btn-sm btn-outline-secondary me-2">Dashboard</a>
-              @else
-                <a href="{{ route('login') }}" class="btn btn-sm btn-outline-primary me-2">Login</a>
-                <a href="{{ route('register') }}" class="btn btn-sm btn-mantu">Get Started</a>
-              @endif
-            </div>
-          </div>
-        </nav>
+              </ul>
+              <div class="navbar-action">
+
+                    @if (Auth::check())
+                        <div class="header-auth-btn" style="background-color: #f29f24;">
+                            <i class="las la-sign-in-alt"></i>
+                            <a href="{{ route('dashboard') }}" class="h-login">My Account &nbsp;</a>
+                        </div>
+                    @else
+                        <div class="header-auth-btn">
+                            <i class="las la-sign-in-alt"></i>
+                            <a href="{{ route('login') }}" class="h-login">Login</a>
+                            <span>/</span>
+                            <a href="{{ route('register') }}" class="h-register">Signup</a>
+                        </div>
+                    @endif
+
+              </div>
+          </nav>
       </div>
     </header>
 

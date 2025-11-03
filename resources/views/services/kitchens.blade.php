@@ -162,48 +162,47 @@
                 <li class="nav-item">
                   <a href="/" class="nav-link">Home</a>
                 </li>
-                {{-- <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Services </a>
-                  <ul class="dropdown-menu" aria-labelledby="servicesDropdown" style="background: #17081e;">
-                    <li>
-                      <a class="dropdown-item" href="/borehole"></a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="/borehole">Borehole Drilling</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="/construction">Construction &amp; Building</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="/kitchens">Kitchens &amp; Renovations</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="/plumbing">Plumbing Services</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="/shuttle">Shuttle &amp; Transport</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="/solar-electricals">Solar &amp; Electricals</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="/trucks">Trucks &amp; Logistics</a>
-                    </li>
-                  </ul>
-                </li> --}}
+
+                {{-- Drop down menu start --}}
+                <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Services
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="servicesDropdown"  style="background: #17081e;">
+                    <li><a class="dropdown-item" href="/borehole"></a></li>
+                    <li><a class="dropdown-item" href="/borehole">Borehole Drilling</a></li>
+                    <li><a class="dropdown-item" href="/construction">Construction & Building</a></li>
+                    <li><a class="dropdown-item" href="/kitchens">Kitchens & Renovations</a></li>
+                    <li><a class="dropdown-item" href="/plumbing">Plumbing Services</a></li>
+                    <li><a class="dropdown-item" href="/shuttle">Shuttle & Transport</a></li>
+                    <li><a class="dropdown-item" href="/solar-electricals">Solar & Electricals</a></li>
+                    <li><a class="dropdown-item" href="/trucks">Trucks & Logistics</a></li>
+                </ul>
+                </li>
+                {{-- Drop down menu end --}}
                 <li class="nav-item">
                   <a href="/" class="nav-link">About</a>
                 </li>
+
+
               </ul>
               <div class="navbar-action">
-                <div class="header-auth-btn">
-                  <i class="las la-sign-in-alt"></i>
-                  <a href="http://mantu.co.zw.test/login" class="h-login">Login</a>
-                  <span>/</span>
-                  <a href="http://mantu.co.zw.test/register" class="h-register">Signup</a>
-                </div>
+
+                    @if (Auth::check())
+                        <div class="header-auth-btn" style="background-color: #f29f24;">
+                            <i class="las la-sign-in-alt"></i>
+                            <a href="{{ route('dashboard') }}" class="h-login">My Account &nbsp;</a>
+                        </div>
+                    @else
+                        <div class="header-auth-btn">
+                            <i class="las la-sign-in-alt"></i>
+                            <a href="{{ route('login') }}" class="h-login">Login</a>
+                            <span>/</span>
+                            <a href="{{ route('register') }}" class="h-register">Signup</a>
+                        </div>
+                    @endif
+
               </div>
-            </div>
           </nav>
         </div>
       </div>

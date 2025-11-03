@@ -539,7 +539,7 @@
                 <p class="text-muted mb-3 small">
                     Design and installation of solar power systems, electrical upgrades, and certified wiring for homes and businesses.
                 </p>
-                <a href="/images/banner/solar.jpg" class="text-decoration-none text-gold fw-semibold">Read More →</a>
+                <a href="/solar-electricals" class="text-decoration-none text-gold fw-semibold">Read More →</a>
                 </div>
             </div>
 

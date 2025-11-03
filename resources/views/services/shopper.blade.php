@@ -105,32 +105,57 @@
         <div class="container">
           <nav class="navbar navbar-expand-xl p-0 align-items-center">
             <a class="site-logo site-title" href="/">
-              <img src="images/logo/logo.png" alt="Mantu Logo">
+              <img src="images/logo/logo.png" alt="logo">
             </a>
-            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
               <span class="menu-toggle"></span>
             </button>
-            <div class="collapse navbar-collapse" id="mainNavbar">
+            <div class="collapse navbar-collapse mt-lg-0 mt-3" id="mainNavbar">
               <ul class="nav navbar-nav main-menu ms-auto me-3">
-                <li class="nav-item"><a href="/" class="nav-link">Home</a></li>
-                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item">
+                  <a href="/" class="nav-link">Home</a>
+                </li>
+
+                {{-- Drop down menu start --}}
+                <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Services
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="servicesDropdown"  style="background: #17081e;">
+                    <li><a class="dropdown-item" href="/borehole"></a></li>
+                    <li><a class="dropdown-item" href="/borehole">Borehole Drilling</a></li>
+                    <li><a class="dropdown-item" href="/construction">Construction & Building</a></li>
+                    <li><a class="dropdown-item" href="/kitchens">Kitchens & Renovations</a></li>
+                    <li><a class="dropdown-item" href="/plumbing">Plumbing Services</a></li>
+                    <li><a class="dropdown-item" href="/shuttle">Shuttle & Transport</a></li>
+                    <li><a class="dropdown-item" href="/solar-electricals">Solar & Electricals</a></li>
+                    <li><a class="dropdown-item" href="/trucks">Trucks & Logistics</a></li>
+                </ul>
+                </li>
+                {{-- Drop down menu end --}}
+                <li class="nav-item">
+                  <a href="/" class="nav-link">About</a>
+                </li>
+
+
               </ul>
               <div class="navbar-action">
-                @if (Auth::check())
-                  <div class="header-auth-btn" style="background-color: #f29f24;">
-                    <i class="las la-user"></i>
-                    <a href="{{ route('dashboard') }}" class="h-login">My Account</a>
-                  </div>
-                @else
-                  <div class="header-auth-btn">
-                    <i class="las la-sign-in-alt"></i>
-                    <a href="{{ route('login') }}" class="h-login">Login</a>
-                    <span>/</span>
-                    <a href="{{ route('register') }}" class="h-register">Signup</a>
-                  </div>
-                @endif
+
+                    @if (Auth::check())
+                        <div class="header-auth-btn" style="background-color: #f29f24;">
+                            <i class="las la-sign-in-alt"></i>
+                            <a href="{{ route('dashboard') }}" class="h-login">My Account &nbsp;</a>
+                        </div>
+                    @else
+                        <div class="header-auth-btn">
+                            <i class="las la-sign-in-alt"></i>
+                            <a href="{{ route('login') }}" class="h-login">Login</a>
+                            <span>/</span>
+                            <a href="{{ route('register') }}" class="h-register">Signup</a>
+                        </div>
+                    @endif
+
               </div>
-            </div>
           </nav>
         </div>
       </div>
@@ -151,27 +176,94 @@
             <div class="col-lg-5">
               <div class="banner-transfer">
                 <h4 class="title">Request a Personal Shopper</h4>
-                <form method="POST" action="{{ route('contact.store') }}" id="shopper-form">
-                  @csrf
-                  <div class="custom-transfer-field">
-                    <span class="caption">Your Name</span>
-                    <input type="text" name="first_name" class="form-control" placeholder="Your full name" required>
+                <form method="POST" action="http://mantu.co.zw.test/contact" id="lets-talk">
+                  <input type="hidden" name="_token" value="EACPfLXe6uEqHALcDjUsNC2nfZnN2FzGN4ObdPpj" autocomplete="off">
+                  <div class="single-transfer">
+                    <div class="custom-transfer-field">
+                      <span class="caption">Your Name</span>
+                      <input type="text" name="first_name" class="form-control sender" placeholder="Full Name" style="margin-bottom: 20px; font-size: 16px;" required="">
+                    </div>
+                    <div class="custom-transfer-field">
+                      <span class="caption">Your Email</span>
+                      <input type="email" name="email" class="form-control sender" placeholder="you@example.com" style="margin-bottom: 20px; font-size: 16px;">
+                    </div>
+                    <div class="custom-transfer-field">
+                      <span class="caption">WhatsApp Enable Number</span>
+                      <input type="text" name="phone_number" class="form-control sender" placeholder="+44 79 1234 5678" style="margin-bottom: 20px; font-size: 16px;">
+                    </div>
+                    <div class="custom-transfer-field">
+                      <select name="service_type" id="service_type" class="form-control input-solid" style="margin-bottom: 20px; padding-top: 0rem; font-size: 16px;" required="">
+                        <option value="" selected="">Select the type of service</option>
+                        <option value="construction">Construction / Building</option>
+                        <option value="carpentry">Carpentry</option>
+                        <option value="plumbing">Plumbing</option>
+                        <option value="electrical">Electrical Work</option>
+                        <option value="cleaning">Cleaning</option>
+                        <option value="shuttle">Shuttle / Car Hire</option>
+                        <option value="borehole">Borehole Drilling</option>
+                        <option value="errands">Errands / Small Tasks</option>
+                        <option value="property_management">Property Management</option>
+                        <option value="other">Other Professional Services</option>
+                      </select>
+                    </div>
+                    <div class="custom-transfer-field">
+                      <span class="caption">Detailed Information</span>
+                      <textarea name="description" class="form-control sender" placeholder="Provide more details about your service request" style="margin-bottom: 20px; font-size: 16px;"></textarea>
+                    </div>
                   </div>
-                  <div class="custom-transfer-field">
-                    <span class="caption">WhatsApp or Phone</span>
-                    <input type="text" name="phone_number" class="form-control" placeholder="+263 78 000 0000" required>
-                  </div>
-                  <div class="custom-transfer-field">
-                    <span class="caption">Shopping List / Details</span>
-                    <textarea name="description" class="form-control" placeholder="List groceries or items you want purchased" required></textarea>
-                  </div>
-                  <button type="submit" class="btn main-btn w-100 mt-4">Submit Request</button>
+                  <button type="submit" class="btn main-btn w-100 mt-4">Send Now</button>
                 </form>
               </div>
             </div>
           </div>
         </div>
       </section>
+
+      <section class="rt-how-work rt-section-pt rt-section-pb overflow-hidden">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xxl-6 col-xl-8 col-lg-10 aos-init aos-animate" data-aos="fade-up" data-aos-delay="50" data-aos-duration="1500">
+                    <div class="rt-section-header text-center">
+                        <span class="rt-section-caption">How to Work</span>
+                        <h2 class="rt-section-title">How to Send Money</h2>
+                        <p>Send money effortlessly! Create and verify your account, add a recipient, enter the amount, and track your transfer—all in one secure platform.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row gy-5 justify-content-center rt-how-work-wrapper">
+                            <div class="col-lg-4">
+                    <div class="rt-how-work-single">
+                        <div class="icon">
+                            <i class="bi bi-person-check"></i>                    </div>
+                        <div class="content">
+                            <h3 class="h4">Create and verify your account</h3>
+                            <p class="mb-0">Start by creating an account and completing the verification process. This ensures secure and seamless money transfers.</p>
+                        </div>
+                    </div>
+                </div>
+                            <div class="col-lg-4">
+                    <div class="rt-how-work-single">
+                        <div class="icon">
+                            <i class="bi bi-receipt"></i>                    </div>
+                        <div class="content">
+                            <h3 class="h4">Add recipient</h3>
+                            <p class="mb-0">Add your recipient's details, like their contact information or bank account, to ensure your funds reach the right person.</p>
+                        </div>
+                    </div>
+                </div>
+                            <div class="col-lg-4">
+                    <div class="rt-how-work-single">
+                        <div class="icon">
+                            <i class="bi bi-arrow-left-right"></i>                    </div>
+                        <div class="content">
+                            <h3 class="h4">Enter amount to transfer</h3>
+                            <p class="mb-0">Input the exact amount you wish to send. Confirm any fees or exchange rates to see the total transfer cost.</p>
+                        </div>
+                    </div>
+                </div>
+                        </div>
+        </div>
+    </section>
 
       <!-- How It Works -->
       <section id="how-it-works" class="how-work-section pt-100 pb-100">
@@ -193,6 +285,8 @@
           </div>
         </div>
       </section>
+
+
     </main>
   </body>
 </html>
