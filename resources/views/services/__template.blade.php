@@ -153,7 +153,7 @@
                     <li><a class="dropdown-item" href="/kitchens">Kitchens &amp; Renovations</a></li>
                     <li><a class="dropdown-item" href="/tiling">Tiling</a></li>
                     <li><a class="dropdown-item" href="/ceiling">Ceiling Installation</a></li>
-                    <li><a class="dropdown-item" href="/plumbing">Plumbing Services</a></li>
+                    <li><a class="dropdown-item" href="/plumbing">Plumbing Services</a></li><li><a class="dropdown-item" href="/swimming-pool">Swimming Pools</a></li>li><a class="dropdown-item" href="/hampers">Hampers & Gifts</a></li>
                     <li><a class="dropdown-item" href="/solar-electricals">Solar &amp; Electricals</a></li>
                     <li><a class="dropdown-item" href="/borehole">Borehole Drilling</a></li>
                     <li><a class="dropdown-item" href="/trucks">Trucks &amp; Logistics</a></li>

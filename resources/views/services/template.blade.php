@@ -147,7 +147,7 @@
                     <li><a class="dropdown-item" href="/borehole">Borehole Drilling</a></li>
                     <li><a class="dropdown-item" href="/construction">Construction & Building</a></li>
                     <li><a class="dropdown-item" href="/kitchens">Kitchens & Renovations</a></li>
-                    <li><a class="dropdown-item" href="/plumbing">Plumbing Services</a></li>
+                    <li><a class="dropdown-item" href="/plumbing">Plumbing Services</a></li><li><a class="dropdown-item" href="/swimming-pool">Swimming Pools</a></li>li><a class="dropdown-item" href="/hampers">Hampers & Gifts</a></li>
                     <li><a class="dropdown-item" href="/shuttle">Shuttle & Transport</a></li>
                     <li><a class="dropdown-item" href="/solar-electricals">Solar & Electricals</a></li>
                     <li><a class="dropdown-item" href="/trucks">Trucks & Logistics</a></li>
