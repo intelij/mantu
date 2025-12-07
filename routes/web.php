@@ -41,6 +41,9 @@ Route::get('/solar-electricals', [ServiceController::class, 'solarElectricals'])
 Route::get('/trucks', [ServiceController::class, 'trucks'])->name('services.trucks');
 Route::get('/personal-shopper', [ServiceController::class, 'shopper'])->name('services.shopper');
 Route::get('/template', [ServiceController::class, 'template'])->name('services.template');
+Route::get('/calculator', [ServiceController::class, 'calculator'])->name('services.calculator');
+Route::get('/swimming-pool', [ServiceController::class, 'swimming'])->name('services.swimming-pool');
+Route::get('/hampers', [ServiceController::class, 'calculator'])->name('services.hampers');
 
 
 Route::post('/contact', [ContactController::class, 'store'])->name('contact.store');

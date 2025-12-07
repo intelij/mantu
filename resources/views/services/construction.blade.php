@@ -11,19 +11,21 @@
     <meta name="application-name" content="Mantu">
     <meta name="msapplication-TileColor" content="#FFFFFF">
     <meta name="msapplication-TileImage" content="http://mantu.co.zw.test/assets/img/icons/mstile-144x144.png">
-    <title>Mantu | Professional Plumbing Services in Matabeleland, Zimbabwe</title>
+    <title>Mantu | Professional Building, Durawall Construction & Paving Services in Matabeleland, Zimbabwe</title>
 
     <!-- =========================================================
         SEO Meta Tags
     ========================================================== -->
 
-  <meta name="description" content="Mantu offers reliable plumbing services across Matabeleland — from leak repairs and geyser installations to complete bathroom plumbing and drainage solutions. Trusted by locals and diaspora clients for accountability, transparency, and skilled workmanship.">
-  <meta name="keywords" content="Mantu plumbing, plumbers Bulawayo, geyser installation Zimbabwe, leak repair, pipe fitting, bathroom plumbing, blocked drains, borehole plumbing, diaspora maintenance, Matabeleland plumbers, emergency plumbing Zimbabwe">
-  <meta name="author" content="Mantu">
+    <meta name="description" content="Mantu delivers expert building, durawall construction, paving, renovations, and general contracting services across Matabeleland. Trusted by diaspora clients for transparency, accountability, and professional workmanship in all residential and commercial projects.">
+    <meta name="keywords" content="Mantu construction, builders Bulawayo, durawall construction Zimbabwe, paving contractors Matabeleland, driveway paving Zimbabwe, house construction Bulawayo, renovations Zimbabwe, building contractors Matabeleland, diaspora construction support, retaining walls, yard paving, durawalls Bulawayo">
+    <meta name="author" content="Mantu">
     <meta name="robots" content="index, follow">
-    <meta name="news_keywords" content="Mantu, trusted tradespeople, builders, electricians, plumbers, carpenters, cleaning, borehole drilling, property management, Matabeleland, Bulawayo, Zimbabwe, home services, contractors, renovation, repairs, handyman">
+    <meta name="news_keywords" content="construction Zimbabwe, durawalls Bulawayo, driveway paving, builders Matabeleland, trusted contractors Zimbabwe, renovations, property upgrades, paving companies Bulawayo">
+
     <!-- Canonical URL -->
     <link rel="canonical" href="https://mantu.co.zw/">
+
     <!-- =========================================================
         Icons & Favicons
     ========================================================== -->
@@ -32,15 +34,17 @@
     <link rel="apple-touch-icon-precomposed" sizes="152x152" href="http://mantu.co.zw.test/assets/img/icons/apple-touch-icon-152x152.png">
     <link rel="icon" type="image/png" href="http://mantu.co.zw.test/assets/img/icons/favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="http://mantu.co.zw.test/assets/img/icons/favicon-16x16.png" sizes="16x16">
+
     <!-- =========================================================
         Open Graph / Facebook
     ========================================================== -->
-    <meta property="og:title" content="Mantu – Qualified Trades &amp; Reliable Home Services in Matabeleland, Zimbabwe">
-    <meta property="og:description" content="Hire qualified builders, electricians, plumbers, carpenters, cleaners, and property managers. Mantu provides trusted local professionals for all home and commercial needs across Matabeleland.">
+    <meta property="og:title" content="Mantu – Professional Building, Durawall & Paving Services in Matabeleland">
+    <meta property="og:description" content="Reliable builders for durawalls, paving, renovations, driveway works, and full construction services. Trusted by locals and diaspora clients across Matabeleland.">
     <meta property="og:image" content="https://mantu.co.zw/images/mantu-social-banner.jpg">
     <meta property="og:url" content="https://mantu.co.zw/">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Mantu">
+
     <!-- =========================================================
         Twitter Card
     ========================================================== -->
@@ -212,7 +216,7 @@
     </header>
     <!-- header-section end  -->
     <main class="main-wrapper">
-      <section class="banner-section has-bimg" style="background-image: url(' images/banner/building02.jpg ');">
+      <section class="banner-section has-bimg" style="background-image: url(' images/banner/building-house.jpg ');">
         <div class="banner-line-wrapper">
           <span class="banner-line"></span>
           <span class="banner-line"></span>
@@ -327,7 +331,7 @@
             <!-- Right Column: How Mantu Supports Clients in the Diaspora -->
             <div class="col-lg-6 wow fadeInRight" data-wow-delay="0.3s" data-wow-duration="0.5s" style="visibility: visible; animation-duration: 0.5s; animation-delay: 0.3s; animation-name: fadeInRight;">
                 <div class="feature-thumb">
-                    <img src="images/banner/building.jpg" alt="Plumbing">
+                    <img src="images/banner/durawall.png" alt="Plumbing">
                 </div>
                 </div>
 

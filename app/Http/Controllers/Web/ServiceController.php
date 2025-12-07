@@ -46,4 +46,12 @@ class ServiceController extends Controller
     public function template() {
         return view('services.template');
     }
+
+    public function swimming() {
+        return view('services.swimming');
+    }
+
+    public function calculator() {
+        return view('services.calculator');
+    }
 }

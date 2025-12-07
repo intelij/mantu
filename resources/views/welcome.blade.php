@@ -224,8 +224,8 @@
             <div class="col-lg-7 text-lg-start text-center">
               <div class="banner-content wow fadeInUp" data-wow-delay="0.3s" data-wow-duration="0.5s">
                 <div class="banner-top-title">Matebeleland&#039;s Trusted Diaspora Companion Platform</div>
-                <h2 class="banner-title">Trusted, Accountable Project Delivery from Our Skilled Trades Teams</h2>
-                <p class="text-white mt-3">Mantu is a hands-on provider. Our builders, plumbers, electricians, borehole crews and transport teams deliver projects end-to-end for clients in the diaspora and locally. We protect your investment by ensuring transparent quotes, professional workmanship and documented progress at every stage.</p>
+                <h2 class="banner-title">A Service Built to Restore Trust After Years of Disappointment</h2>
+                <p class="text-white mt-3">For years, many in the diaspora have faced disappointment — missed deadlines, lost money, poorly executed work, and broken promises from unreliable relatives and unqualified workers. Mantu was created to bring an end to that frustration and rebuild trust where it has been lost.</p>
                 <div class="d-sm-flex d-none flex-wrap align-items-center justify-content-lg-start justify-content-center mt-2">
                   {{-- <a href="#" class="btn main-btn me-3 mt-3">How It Works</a> --}}
                 <a href="assets/downloads/report.pdf" target="_blank" class="btn main-btn me-3 mt-3">View Sample Report</a>
@@ -550,6 +550,26 @@
                     Safe shuttle and transport solutions for crew, materials, and client errands across Matabeleland and beyond.
                 </p>
                 {{-- <a href="/services/transport" class="text-decoration-none text-gold fw-semibold">Read More →</a> --}}
+                </div>
+            </div>
+
+            <div class="col-md-4 wow fadeInUp" data-wow-delay="0.7s" data-wow-duration="0.5s">
+                <div class="service-card p-4 h-100 bg-white rounded-4 shadow-sm hover-shadow transition">
+                <h4 class="text-purple mb-3">Swimming Pool Construction & Repair</h4>
+                <p class="text-muted mb-3 small">
+                    From custom-designed pools to precision repairs, we bring your vision to life and keep your pool in perfect condition all year round.
+                </p>
+                <a href="/swimming-pool" class="text-decoration-none text-gold fw-semibold">Read More →</a>
+                </div>
+            </div>
+
+            <div class="col-md-4 wow fadeInUp" data-wow-delay="0.7s" data-wow-duration="0.5s">
+                <div class="service-card p-4 h-100 bg-white rounded-4 shadow-sm hover-shadow transition">
+                <h4 class="text-purple mb-3">Christmas Hampers</h4>
+                <p class="text-muted mb-3 small">
+                    Delight your loved ones or clients with bespoke Christmas hampers carefully sourced, beautifully packaged, and delivered on time by Mantu.
+                </p>
+                <a href="/hampers" class="text-decoration-none text-gold fw-semibold">Read More →</a>
                 </div>
             </div>
 

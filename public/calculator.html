@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Mantu Project Cost Calculator</title>
+
+<!-- Mantu Brand Styling -->
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: #f7f7f9;
+        margin: 0;
+        padding: 20px;
+        color: #333;
+    }
+
+    .calculator-container {
+        max-width: 680px;
+        margin: auto;
+        background: white;
+        padding: 25px;
+        border-radius: 12px;
+        box-shadow: 0 4px 18px rgba(0,0,0,0.08);
+        border-top: 5px solid #4B0082;
+    }
+
+    h2 {
+        text-align: center;
+        color: #4B0082;
+        margin-bottom: 25px;
+    }
+
+    label {
+        font-weight: bold;
+        display: block;
+        margin: 12px 0 6px;
+    }
+
+    input {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+    }
+
+    .btn {
+        width: 100%;
+        background: #4B0082;
+        color: white;
+        padding: 14px;
+        border: none;
+        margin-top: 18px;
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: 17px;
+        font-weight: bold;
+    }
+
+    .btn:hover {
+        background: #350060;
+    }
+
+    .result-box {
+        margin-top: 20px;
+        padding: 20px;
+        background: #EFE6FF;
+        border-left: 5px solid #4B0082;
+        border-radius: 8px;
+    }
+
+    .pdf-btn {
+        background: #D4AF37;
+        color: #000;
+        margin-top: 10px;
+    }
+</style>
+</head>
+<body>
+
+<div class="calculator-container">
+    <h2>Mantu Project Cost Calculator</h2>
+
+    <label>Daily Rate (USD)</label>
+    <input id="dailyRate" type="number" placeholder="e.g. 150">
+
+    <label>Number of Days</label>
+    <input id="days" type="number" placeholder="e.g. 10">
+
+    <label>Admin Overheads (%)</label>
+    <input id="admin" type="number" placeholder="e.g. 10">
+
+    <label>Risk Contingency (%)</label>
+    <input id="risk" type="number" placeholder="e.g. 5">
+
+    <label>Travel Cost (USD)</label>
+    <input id="travel" type="number" placeholder="e.g. 80">
+
+    <button class="btn" onclick="calculate()">Calculate Project Cost</button>
+
+    <div id="result" class="result-box" style="display:none;"></div>
+
+    <button id="pdfBtn" class="btn pdf-btn" style="display:none;" onclick="downloadPDF()">Download PDF</button>
+</div>
+
+<!-- jsPDF for PDF Export -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+<script>
+function calculate() {
+    let rate = parseFloat(document.getElementById("dailyRate").value);
+    let days = parseFloat(document.getElementById("days").value);
+    let admin = parseFloat(document.getElementById("admin").value);
+    let risk = parseFloat(document.getElementById("risk").value);
+    let travel = parseFloat(document.getElementById("travel").value);
+
+    let base = rate * days;
+    let adminCost = (admin / 100) * base;
+    let riskCost = (risk / 100) * base;
+    let total = base + adminCost + riskCost + travel;
+
+    let resultDiv = document.getElementById("result");
+    resultDiv.style.display = "block";
+    document.getElementById("pdfBtn").style.display = "block";
+
+    resultDiv.innerHTML = `
+        <strong>Project Cost Breakdown</strong><br><br>
+        Base Cost: <b>$${base.toFixed(2)}</b><br>
+        Admin Overheads (${admin}%): <b>$${adminCost.toFixed(2)}</b><br>
+        Risk Contingency (${risk}%): <b>$${riskCost.toFixed(2)}</b><br>
+        Travel Cost: <b>$${travel.toFixed(2)}</b><br><br>
+        <strong>Total Project Cost: <span style="color:#4B0082;">$${total.toFixed(2)}</span></strong>
+    `;
+
+    window.finalCost = {
+        base, adminCost, riskCost, travel, total, rate, days, admin, risk
+    };
+}
+
+function downloadPDF() {
+    const { jsPDF } = window.jspdf;
+    const pdf = new jsPDF();
+
+    let c = window.finalCost;
+
+    pdf.setFontSize(18);
+    pdf.setTextColor(75, 0, 130);
+    pdf.text("Mantu Project Cost Estimate", 20, 20);
+
+    pdf.setFontSize(12);
+    pdf.setTextColor(0,0,0);
+
+    pdf.text(`Daily Rate: $${c.rate}`, 20, 40);
+    pdf.text(`Project Days: ${c.days}`, 20, 50);
+    pdf.text(`Base Cost: $${c.base.toFixed(2)}`, 20, 60);
+
+    pdf.text(`Admin Overheads (${c.admin}%): $${c.adminCost.toFixed(2)}`, 20, 80);
+    pdf.text(`Risk Contingency (${c.risk}%): $${c.riskCost.toFixed(2)}`, 20, 90);
+    pdf.text(`Travel Cost: $${c.travel.toFixed(2)}`, 20, 100);
+
+    pdf.setFontSize(14);
+    pdf.setTextColor(75, 0, 130);
+    pdf.text(`TOTAL: $${c.total.toFixed(2)}`, 20, 120);
+
+    pdf.save("Mantu_Project_Cost_Estimate.pdf");
+}
+</script>
+
+</body>
+</html>
