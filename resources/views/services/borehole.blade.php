@@ -11,43 +11,54 @@
     <meta name="application-name" content="Mantu">
     <meta name="msapplication-TileColor" content="#FFFFFF">
     <meta name="msapplication-TileImage" content="http://mantu.co.zw.test/assets/img/icons/mstile-144x144.png">
-    <title>Mantu | Professional Plumbing Services in Matabeleland, Zimbabwe</title>
+   <title>Mantu | Professional Borehole Drilling, Casing & Water Pump Installation in Matabeleland, Zimbabwe</title>
 
     <!-- =========================================================
         SEO Meta Tags
     ========================================================== -->
 
-  <meta name="description" content="Mantu offers reliable plumbing services across Matabeleland — from leak repairs and geyser installations to complete bathroom plumbing and drainage solutions. Trusted by locals and diaspora clients for accountability, transparency, and skilled workmanship.">
-  <meta name="keywords" content="Mantu plumbing, plumbers Bulawayo, geyser installation Zimbabwe, leak repair, pipe fitting, bathroom plumbing, blocked drains, borehole plumbing, diaspora maintenance, Matabeleland plumbers, emergency plumbing Zimbabwe">
-  <meta name="author" content="Mantu">
+    <meta name="description" content="Mantu offers professional borehole drilling, steel & PVC casing installation, pump fitting, and full water system setup across Matabeleland. We supply and install both solar-powered and electric water pumps. Trusted by locals and diaspora clients for transparency, accountability, and reliable workmanship.">
+
+    <meta name="keywords" content="borehole drilling Zimbabwe, borehole casing Bulawayo, steel casing, PVC casing, solar borehole pump installation, electric water pumps, borehole testing, borehole flushing, water system installation Matabeleland, diaspora borehole projects, Mantu borehole services, trusted borehole drilling Zimbabwe">
+
+    <meta name="author" content="Mantu">
     <meta name="robots" content="index, follow">
-    <meta name="news_keywords" content="Mantu, trusted tradespeople, builders, electricians, plumbers, carpenters, cleaning, borehole drilling, property management, Matabeleland, Bulawayo, Zimbabwe, home services, contractors, renovation, repairs, handyman">
+
+    <meta name="news_keywords" content="borehole drilling, borehole installation Zimbabwe, solar pumps, electric pumps, borehole casing, water supply systems, Matabeleland boreholes, Bulawayo drilling, trusted contractors, diaspora borehole projects">
+
     <!-- Canonical URL -->
     <link rel="canonical" href="https://mantu.co.zw/">
+
     <!-- =========================================================
         Icons & Favicons
     ========================================================== -->
-    <link rel="shortcut icon" type="image/png" href="http://mantu.co.zw.test/images/favicon.png">
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://mantu.co.zw.test/assets/img/icons/apple-touch-icon-144x144.png">
-    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="http://mantu.co.zw.test/assets/img/icons/apple-touch-icon-152x152.png">
-    <link rel="icon" type="image/png" href="http://mantu.co.zw.test/assets/img/icons/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="http://mantu.co.zw.test/assets/img/icons/favicon-16x16.png" sizes="16x16">
+
+    <link rel="shortcut icon" type="image/png" href="https://mantu.co.zw/images/favicon.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://mantu.co.zw/assets/img/icons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="https://mantu.co.zw/assets/img/icons/apple-touch-icon-152x152.png">
+    <link rel="icon" type="image/png" href="https://mantu.co.zw/assets/img/icons/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://mantu.co.zw/assets/img/icons/favicon-16x16.png" sizes="16x16">
+
     <!-- =========================================================
         Open Graph / Facebook
     ========================================================== -->
-    <meta property="og:title" content="Mantu – Qualified Trades &amp; Reliable Home Services in Matabeleland, Zimbabwe">
-    <meta property="og:description" content="Hire qualified builders, electricians, plumbers, carpenters, cleaners, and property managers. Mantu provides trusted local professionals for all home and commercial needs across Matabeleland.">
+
+    <meta property="og:title" content="Mantu – Professional Borehole Drilling & Water Pump Installation in Matabeleland, Zimbabwe">
+    <meta property="og:description" content="Get reliable borehole drilling, full casing installation, pump supply and fitting — including solar and electric systems. Mantu provides transparent, accountable service for clients in Zimbabwe and in the diaspora.">
     <meta property="og:image" content="https://mantu.co.zw/images/mantu-social-banner.jpg">
     <meta property="og:url" content="https://mantu.co.zw/">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Mantu">
+
     <!-- =========================================================
         Twitter Card
     ========================================================== -->
+
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Mantu – Qualified Tradespeople &amp; Home Services in Zimbabwe">
-    <meta name="twitter:description" content="Mantu connects you with verified builders, plumbers, electricians, carpenters, and cleaners. Trusted professionals serving homes and businesses in Matabeleland.">
+    <meta name="twitter:title" content="Mantu – Borehole Drilling, Casing & Solar Water Pump Installation in Zimbabwe">
+    <meta name="twitter:description" content="Professional borehole drilling, casing installation, pump fitting, and water system setup across Matabeleland — trusted by locals and diaspora clients.">
     <meta name="twitter:image" content="https://mantu.co.zw/images/mantu-social-banner.jpg">
+
     <!-- =========================================================
         Structured Data (JSON-LD)
     ========================================================== --> @verbatim <script type="application/ld+json">

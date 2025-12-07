@@ -43,6 +43,10 @@ class ServiceController extends Controller
         return view('services.shopper');
     }
 
+    public function hamper() {
+        return view('services.hamper');
+    }
+
     public function template() {
         return view('services.template');
     }
