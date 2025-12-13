@@ -11,7 +11,7 @@
     <meta name="application-name" content="Mantu">
     <meta name="msapplication-TileColor" content="#FFFFFF">
     <meta name="msapplication-TileImage" content="http://mantu.co.zw.test/assets/img/icons/mstile-144x144.png">
-    <title>Mantu | Christmas Hampers, Custom Gift Hampers & Family Shopping Delivery in Zimbabwe</title>
+    <title>Mantu | Christmas Hampers, Custom Gift Hampers & Family Shopping Delivery in Bulawayo</title>
 
     <!-- =========================================================
         SEO Meta Tags
