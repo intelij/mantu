@@ -37,7 +37,7 @@
     <!-- =========================================================
         Open Graph / Facebook
     ========================================================== -->
-    <meta property="og:title" content="Mantu – Christmas Hampers & Custom Gift Hampers Delivered Across Zimbabwe">
+    <meta property="og:title" content="Mantu – Christmas Hampers & Custom Gift Hampers Delivered Across Bulawayo">
     <meta property="og:description" content="Send festive hampers, groceries, and personalised care packages to loved ones in Zimbabwe. Choose a predefined hamper or build your own for Christmas, birthdays, or monthly support. Trusted by the diaspora for reliable delivery.">
     <meta property="og:image" content="https://mantu.co.zw/images/mantu-social-banner.jpg">
     <meta property="og:url" content="https://mantu.co.zw/">
