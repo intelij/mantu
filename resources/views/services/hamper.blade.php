@@ -92,9 +92,26 @@
     <link rel="stylesheet" href="css/lib/select2.min.css">
     <link rel="stylesheet" href="css/main.css">
     <style>
+        .hamper li {
+            margin: 10px;
+        }
+        .card_ {
+            border-color: purple!important;
+            border-radius: 10px;
+        }
+
       #profit-table tr td {
         color: #fff;
       }
+      .card-header {
+            background-color: var(--main-color2);
+            color: #fff!important;
+      }
+
+      .hamper h5 {
+        color: #fff;
+      }
+
     </style>
     <style>
       .text-purple {
@@ -374,8 +391,118 @@
         </div>
     </section>
       <!-- choose us section end -->
-      <!-- cta section end -->
 
+
+
+      <!-- Christmas Hampers Section Start -->
+    <section class="bg-light py-5">
+    <div class="container">
+
+        <!-- Section Header -->
+        <div class="text-center mb-5">
+        {{-- <span class="page-title text-purple">CHRISTMAS HAMPERS</span> --}}
+        <h2 class="title text-purple" style="padding-top: 20px">Christmas Hampers 🎁 </h2>
+        <h2 class="mt-2">Thoughtfully Packed Hampers for Loved Ones Back Home</h2>
+        <p class="mt-3 text-muted">
+            Predefined or custom-selected hampers, carefully packed and delivered with accountability —
+            perfect for diaspora families supporting loved ones in Bulawayo.
+        </p>
+        </div>
+
+        <!-- Hampers Grid -->
+        <div class="row g-4">
+
+        <!-- Hamper 1 -->
+        <div class="col-lg-4 col-md-6">
+            <div class="card_ h-100 shadow-sm border border-purple">
+            <div class="card-header hamper">
+                <h4 class="text-white">Value Hamper</h4>
+                <h5 class="mt-2">USD $25.00 <span class="text-muted" style="font-size: 1rem;">(was $30.00)</span></h5>
+            </div>
+            <div class="card-body">
+                <ul class="mt-3 hamper">
+                <li>Colgate Toothpaste 100ml</li>
+                <li>Perfection Green Bar Soap</li>
+                <li>Better Buy Rice 2kg</li>
+                <li>Blue Ribbon Self-Raising Flour 2kg</li>
+                <li>Ingwe Bucket 11L</li>
+                <li>Huletts Brown Sugar 2kg</li>
+                <li>Better Buy Macaroni 400g</li>
+                <li>Romance Bath Soap 250g</li>
+                <li>Puredrop Cooking Oil 750ml</li>
+                </ul>
+            </div>
+            </div>
+        </div>
+
+        <!-- Hamper 2 -->
+        <div class="col-lg-4 col-md-6">
+            <div class="card_ h-100 shadow-sm border border-purple">
+            <div class="card-header hamper">
+                <h4 class="text-white">Family Hamper</h4>
+                <h5 class="mt-2">USD $35.00 <span class="text-muted" style="font-size: 1rem;">(was $40.00)</span></h5>
+            </div>
+            <div class="card-body">
+                <ul class="mt-3 hamper">
+                <li>Huletts Brown Sugar 2kg</li>
+                <li>Fine Salt 1kg</li>
+                <li>Mazoe Syrup 2L</li>
+                <li>White Rice 2kg</li>
+                <li>Tea Bags (Box of 100)</li>
+                <li>Bath Soap Tablets 250g</li>
+                <li>Assorted Sweets 280g</li>
+                <li>Loose Biscuits 500g</li>
+                <li>Tomato Sauce 375ml</li>
+                <li>Cooking Oil 2L</li>
+                <li>Self-Raising Flour 2kg</li>
+                <li>Mixed Fruit Jam 500g</li>
+                <li>Powdered Milk 750g</li>
+                </ul>
+            </div>
+            </div>
+        </div>
+
+        <!-- Hamper 3 -->
+        <div class="col-lg-4 col-md-6">
+            <div class="card_ h-100 shadow-sm border border-purple">
+            <div class="card-header hamper">
+                <h4 class="text-white">Premium Hamper</h4>
+                <h5 class="mt-2">USD $40.00 <span class="text-muted" style="font-size: 1rem;">(was $45.00)</span></h5>
+            </div>
+            <div class="card-body">
+                <ul class="mt-3 hamper">
+                <li>Better Buy Rice 2kg</li>
+                <li>Golden Glow Cooking Oil 2L</li>
+                <li>Blue Ribbon Self-Raising Flour 2kg</li>
+                <li>Perfection Green Bar Soap</li>
+                <li>Colgate Toothpaste 100ml</li>
+                <li>Royco Chicken Usavi 50g</li>
+                <li>Ingwe Bucket 20L</li>
+                <li>Capri Spaghetti 400g</li>
+                <li>Better Buy Macaroni 400g</li>
+                <li>Cashel Valley Baked Beans 410g</li>
+                <li>Mixed Fruit Jam 400g</li>
+                <li>Squish (Lime / Breakfast Orange) 2L</li>
+                <li>Coral Classic Tissues (4’s)</li>
+                <li>Jasbro Fine Salt 2kg</li>
+                <li>Romance Bath Soap 250g</li>
+                <li>Huletts Brown Sugar 2kg</li>
+                </ul>
+            </div>
+            </div>
+        </div>
+
+        </div>
+
+        {{-- <!-- Delivery Info -->
+        <div class="text-center mt-5">
+        <p class="fw-bold">🚚 Delivery Fee: USD $10.00</p>
+        <p class="text-muted">Coverage: Around Bulawayo • Terms & Conditions Apply</p>
+        </div> --}}
+
+    </div>
+    </section>
+    <!-- Christmas Hampers Section End -->
 
 
     </main>
