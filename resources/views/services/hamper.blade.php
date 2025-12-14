@@ -417,7 +417,7 @@
             <div class="card_ h-100 shadow-sm border border-purple">
             <div class="card-header hamper">
                 <h4 class="text-white">Value Hamper</h4>
-                <h5 class="mt-2">USD $25.00 <span class="text-muted" style="font-size: 1rem;">(was $30.00)</span></h5>
+                <h5 class="mt-2">USD $20.00 <span class="text-muted" style="font-size: 1rem;">(was $30.00)</span></h5>
             </div>
             <div class="card-body">
                 <ul class="mt-3 hamper">
@@ -440,7 +440,7 @@
             <div class="card_ h-100 shadow-sm border border-purple">
             <div class="card-header hamper">
                 <h4 class="text-white">Family Hamper</h4>
-                <h5 class="mt-2">USD $35.00 <span class="text-muted" style="font-size: 1rem;">(was $40.00)</span></h5>
+                <h5 class="mt-2">USD $30.00 <span class="text-muted" style="font-size: 1rem;">(was $40.00)</span></h5>
             </div>
             <div class="card-body">
                 <ul class="mt-3 hamper">
@@ -467,7 +467,7 @@
             <div class="card_ h-100 shadow-sm border border-purple">
             <div class="card-header hamper">
                 <h4 class="text-white">Premium Hamper</h4>
-                <h5 class="mt-2">USD $40.00 <span class="text-muted" style="font-size: 1rem;">(was $45.00)</span></h5>
+                <h5 class="mt-2">USD $35.00 <span class="text-muted" style="font-size: 1rem;">(was $45.00)</span></h5>
             </div>
             <div class="card-body">
                 <ul class="mt-3 hamper">
