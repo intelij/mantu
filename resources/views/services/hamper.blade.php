@@ -275,42 +275,54 @@
             <div class="col-lg-5 ps-xxl-5 wow fadeInUp" data-wow-delay="0.5s" data-wow-duration="0.5s" style="visibility: visible; animation-duration: 0.5s; animation-delay: 0.5s; animation-name: fadeInUp;">
               <div class="banner-transfer">
                 <h4 class="title">Let us Talk </h4>
-                <form method="POST" action="https://mantu.co.zw/contact" id="lets-talk">
-                  <input type="hidden" name="_token" value="EACPfLXe6uEqHALcDjUsNC2nfZnN2FzGN4ObdPpj" autocomplete="off">
-                  <div class="single-transfer">
-                    <div class="custom-transfer-field">
-                      <span class="caption">Your Name</span>
-                      <input type="text" name="first_name" class="form-control sender" placeholder="Sam Bhoqo" style="margin-bottom: 20px; font-size: 16px;" required="">
+                <form method="POST" action="{{ route('contact.store') }}" id="lets-talk">
+                    @csrf
+
+                    <div class="single-transfer">
+                        <div class="custom-transfer-field">
+                            <span class="caption">Your Name</span>
+                            <input type="text" name="first_name" class="form-control sender"
+                                placeholder="Sam Bhoqo" style="margin-bottom: 20px; font-size: 16px;" required>
+                        </div>
+
+                        <div class="custom-transfer-field">
+                            <span class="caption">Your Email</span>
+                            <input type="email" name="email" class="form-control sender"
+                                placeholder="you@example.com" style="margin-bottom: 20px; font-size: 16px;">
+                        </div>
+
+                        <div class="custom-transfer-field">
+                            <span class="caption">WhatsApp Enable Number</span>
+                            <input type="text" name="phone_number" class="form-control sender"
+                                placeholder="+44 79 1234 5678" style="margin-bottom: 20px; font-size: 16px;">
+                        </div>
+
+                        <div class="custom-transfer-field">
+                            <select name="service_type" id="service_type" class="form-control input-solid"
+                                    style="margin-bottom: 20px; padding-top: 0rem; font-size: 16px;" required>
+                                <option value="" selected>Select the type of service</option>
+                                <option value="construction">Construction / Building</option>
+                                <option value="carpentry">Carpentry</option>
+                                <option value="plumbing">Plumbing</option>
+                                <option value="electrical">Electrical Work</option>
+                                <option value="cleaning">Cleaning</option>
+                                <option value="shuttle">Shuttle / Car Hire</option>
+                                <option value="borehole">Borehole Drilling</option>
+                                <option value="errands">Errands / Small Tasks</option>
+                                <option value="property_management">Property Management</option>
+                                <option value="other">Other Professional Services</option>
+                            </select>
+                        </div>
+
+                        <div class="custom-transfer-field">
+                            <span class="caption">Detailed Information</span>
+                            <textarea name="description" class="form-control sender"
+                                    placeholder="Provide more details about your service request"
+                                    style="margin-bottom: 20px; font-size: 16px;"></textarea>
+                        </div>
                     </div>
-                    <div class="custom-transfer-field">
-                      <span class="caption">Your Email</span>
-                      <input type="email" name="email" class="form-control sender" placeholder="you@example.com" style="margin-bottom: 20px; font-size: 16px;">
-                    </div>
-                    <div class="custom-transfer-field">
-                      <span class="caption">WhatsApp Enable Number</span>
-                      <input type="text" name="phone_number" class="form-control sender" placeholder="+44 79 1234 5678" style="margin-bottom: 20px; font-size: 16px;">
-                    </div>
-                    <div class="custom-transfer-field">
-                      <select name="service_type" id="service_type" class="form-control input-solid" style="margin-bottom: 20px; padding-top: 0rem; font-size: 16px;" required="">
-                        <option value="" selected="">Select the type of service</option>
-                        <option value="construction">Construction / Building</option>
-                        <option value="carpentry">Carpentry</option>
-                        <option value="plumbing">Plumbing</option>
-                        <option value="electrical">Electrical Work</option>
-                        <option value="cleaning">Cleaning</option>
-                        <option value="shuttle">Shuttle / Car Hire</option>
-                        <option value="borehole">Borehole Drilling</option>
-                        <option value="errands">Errands / Small Tasks</option>
-                        <option value="property_management">Property Management</option>
-                        <option value="other">Other Professional Services</option>
-                      </select>
-                    </div>
-                    <div class="custom-transfer-field">
-                      <span class="caption">Detailed Information</span>
-                      <textarea name="description" class="form-control sender" placeholder="Provide more details about your service request" style="margin-bottom: 20px; font-size: 16px;"></textarea>
-                    </div>
-                  </div>
-                  <button type="submit" class="btn main-btn w-100 mt-4">Send Now</button>
+
+                    <button type="submit" class="btn main-btn w-100 mt-4">Send Now</button>
                 </form>
               </div>
             </div>
