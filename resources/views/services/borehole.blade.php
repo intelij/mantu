@@ -10,7 +10,7 @@
     <meta name="csrf-token" content="EACPfLXe6uEqHALcDjUsNC2nfZnN2FzGN4ObdPpj">
     <meta name="application-name" content="Mantu">
     <meta name="msapplication-TileColor" content="#FFFFFF">
-    <meta name="msapplication-TileImage" content="http://mantu.co.zw/assets/img/icons/mstile-144x144.png">
+    <meta name="msapplication-TileImage" content="https://mantu.co.zw/assets/img/icons/mstile-144x144.png">
    <title>Mantu | Professional Borehole Drilling, Casing & Water Pump Installation in Matabeleland, Zimbabwe</title>
 
     <!-- =========================================================
@@ -254,7 +254,7 @@
             <div class="col-lg-5 ps-xxl-5 wow fadeInUp" data-wow-delay="0.5s" data-wow-duration="0.5s" style="visibility: visible; animation-duration: 0.5s; animation-delay: 0.5s; animation-name: fadeInUp;">
               <div class="banner-transfer">
                 <h4 class="title">Let us Talk </h4>
-                <form method="POST" action="http://mantu.co.zw/contact" id="lets-talk">
+                <form method="POST" action="https://mantu.co.zw/contact" id="lets-talk">
                   <input type="hidden" name="_token" value="EACPfLXe6uEqHALcDjUsNC2nfZnN2FzGN4ObdPpj" autocomplete="off">
                   <div class="single-transfer">
                     <div class="custom-transfer-field">
