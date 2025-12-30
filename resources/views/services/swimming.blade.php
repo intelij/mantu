@@ -7,7 +7,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="csrf-token" content="EACPfLXe6uEqHALcDjUsNC2nfZnN2FzGN4ObdPpj">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
     <meta name="application-name" content="Mantu">
     <meta name="msapplication-TileColor" content="#FFFFFF">
     <meta name="msapplication-TileImage" content="https://mantu.co.zw/assets/img/icons/mstile-144x144.png">
