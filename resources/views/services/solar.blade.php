@@ -30,11 +30,11 @@
     <!-- =========================================================
         Icons & Favicons
     ========================================================== -->
-    <link rel="shortcut icon" type="image/png" href="http://mantu.co.zw.test/images/favicon.png">
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://mantu.co.zw.test/assets/img/icons/apple-touch-icon-144x144.png">
-    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="http://mantu.co.zw.test/assets/img/icons/apple-touch-icon-152x152.png">
-    <link rel="icon" type="image/png" href="http://mantu.co.zw.test/assets/img/icons/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="http://mantu.co.zw.test/assets/img/icons/favicon-16x16.png" sizes="16x16">
+    <link rel="shortcut icon" type="image/png" href="http://mantu.co.zw/images/favicon.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://mantu.co.zw/assets/img/icons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="http://mantu.co.zw/assets/img/icons/apple-touch-icon-152x152.png">
+    <link rel="icon" type="image/png" href="http://mantu.co.zw/assets/img/icons/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="http://mantu.co.zw/assets/img/icons/favicon-16x16.png" sizes="16x16">
 
     <!-- =========================================================
         Open Graph / Facebook
@@ -208,7 +208,7 @@
             <div class="col-lg-5 ps-xxl-5 wow fadeInUp" data-wow-delay="0.5s" data-wow-duration="0.5s" style="visibility: visible; animation-duration: 0.5s; animation-delay: 0.5s; animation-name: fadeInUp;">
               <div class="banner-transfer">
                 <h4 class="title">Let us Talk </h4>
-                <form method="POST" action="http://mantu.co.zw.test/contact" id="lets-talk">
+                <form method="POST" action="http://mantu.co.zw/contact" id="lets-talk">
                   <input type="hidden" name="_token" value="EACPfLXe6uEqHALcDjUsNC2nfZnN2FzGN4ObdPpj" autocomplete="off">
                   <div class="single-transfer">
                     <div class="custom-transfer-field">

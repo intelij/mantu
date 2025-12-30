@@ -176,7 +176,7 @@
             <div class="col-lg-5">
               <div class="banner-transfer">
                 <h4 class="title">Request a Personal Shopper</h4>
-                <form method="POST" action="http://mantu.co.zw.test/contact" id="lets-talk">
+                <form method="POST" action="http://mantu.co.zw/contact" id="lets-talk">
                   <input type="hidden" name="_token" value="EACPfLXe6uEqHALcDjUsNC2nfZnN2FzGN4ObdPpj" autocomplete="off">
                   <div class="single-transfer">
                     <div class="custom-transfer-field">
