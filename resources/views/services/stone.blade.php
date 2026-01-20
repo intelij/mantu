@@ -236,7 +236,7 @@
                 </p>
 
                 <div class="d-sm-flex flex-wrap align-items-center mt-2">
-                    <a href="assets/downloads/tombstone-design-samples.pdf" target="_blank" class="btn main-btn me-3 mt-3">
+                    <a href="#tombstone-design-samples.pdf" target="_blank" class="btn main-btn me-3 mt-3">
                         View Tombstone Design Samples
                     </a>
                 </div>
