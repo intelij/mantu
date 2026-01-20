@@ -1,70 +1,56 @@
-<!DOCTYPE html>
-<html lang="en">
+<html lang="en" crxemulator="">
+  <script id="datalayer-checker-script" src="chrome-extension://ffljdddodmkedhkcjhpmdajhjdbkogke/js/datalayer-checker.js"></script>
   <!-- =========================================================
      MANTU – Qualified Trades & Home Services Platform
      Optimized for Local & Regional Discovery in Matabeleland, Zimbabwe
     ========================================================== -->
-    <head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <meta name="application-name" content="{{ setting('app_name') }}">
+    <meta name="application-name" content="Mantu">
     <meta name="msapplication-TileColor" content="#FFFFFF">
-    <meta name="msapplication-TileImage" content="{{ url('assets/img/icons/mstile-144x144.png') }}">
-
-    <title>{{ setting('app_name') }} | Qualified Tradespeople & Home Services in Matabeleland, Zimbabwe</title>
-
-    <title>Mantu | Professional Solar & Electrical Services in Matabeleland, Zimbabwe</title>
+    <meta name="msapplication-TileImage" content="https://mantu.co.zw/assets/img/icons/mstile-144x144.png">
+    <title>Mantu | Tombstones & Premium Granite, Marble and Quartz Kitchen Tops in Zimbabwe</title>
 
     <!-- =========================================================
         SEO Meta Tags
     ========================================================== -->
-    <meta name="description" content="Mantu provides trusted solar and electrical solutions across Matabeleland — from solar system installation and battery storage to full electrical wiring, maintenance, and fault repairs. Serving homes, businesses, and diaspora clients with professional, reliable service.">
-    <meta name="keywords" content="Mantu solar, electrical installation Zimbabwe, solar panels Bulawayo, inverter systems, off-grid solar, electrical wiring, power backup, energy solutions, Matabeleland electricians, Mantu energy, solar maintenance">
+
+    <meta name="description" content="Mantu supplies and installs high-quality tombstones, granite, marble, and quartz kitchen tops across Matabeleland, Zimbabwe. We deliver precision cutting, durable finishes, and elegant designs trusted by local and diaspora clients.">
+
+    <meta name="keywords" content="tombstones Zimbabwe, granite kitchen tops Zimbabwe, marble kitchen tops Bulawayo, quartz countertops Zimbabwe, tombstone manufacturers Bulawayo, kitchen countertops Matabeleland, granite installers Zimbabwe, custom tombstones, diaspora construction services Zimbabwe, Mantu stone works">
+
     <meta name="author" content="Mantu">
     <meta name="robots" content="index, follow">
-    <meta name="news_keywords" content="solar installation, electrical wiring, inverter systems, energy backup, solar maintenance, electricians, Matabeleland, Zimbabwe, Bulawayo, diaspora energy solutions">
-    <!-- Canonical URL -->
-    <link rel="canonical" href="https://mantu.co.zw/solar-electricals">
 
-    <!-- =========================================================
-        Icons & Favicons
-    ========================================================== -->
-    <link rel="shortcut icon" type="image/png" href="https://mantu.co.zw/images/favicon.png">
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://mantu.co.zw/assets/img/icons/apple-touch-icon-144x144.png">
-    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="https://mantu.co.zw/assets/img/icons/apple-touch-icon-152x152.png">
-    <link rel="icon" type="image/png" href="https://mantu.co.zw/assets/img/icons/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="https://mantu.co.zw/assets/img/icons/favicon-16x16.png" sizes="16x16">
+    <meta name="news_keywords" content="tombstones Zimbabwe, granite kitchen tops, marble countertops, quartz surfaces, Bulawayo stone works, Matabeleland contractors, Mantu, diaspora property services">
 
-    <!-- =========================================================
-        Open Graph / Facebook
-    ========================================================== -->
-    <meta property="og:title" content="Mantu – Reliable Solar & Electrical Experts in Matabeleland, Zimbabwe">
-    <meta property="og:description" content="Mantu provides certified solar and electrical services for homes and businesses — from installation to maintenance, including off-grid and hybrid power systems.">
+    <link rel="canonical" href="https://mantu.co.zw/">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Mantu – Tombstones & Premium Stone Kitchen Tops in Zimbabwe">
+    <meta property="og:description" content="Professional tombstone manufacturing and granite, marble, and quartz kitchen top installations. Trusted quality, precise workmanship, and transparent delivery across Matabeleland.">
     <meta property="og:image" content="https://mantu.co.zw/images/mantu-social-banner.jpg">
-    <meta property="og:url" content="https://mantu.co.zw/solar-electricals">
+    <meta property="og:url" content="https://mantu.co.zw/">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Mantu">
 
-    <!-- =========================================================
-        Twitter Card
-    ========================================================== -->
+    <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Mantu – Professional Solar & Electrical Services in Zimbabwe">
-    <meta name="twitter:description" content="Reliable solar and electrical installation, maintenance, and power backup services in Matabeleland. Trusted by homes, businesses, and the diaspora.">
+    <meta name="twitter:title" content="Mantu – Tombstones & Stone Kitchen Tops">
+    <meta name="twitter:description" content="Granite, marble, quartz kitchen tops and custom tombstones installed with care and precision across Zimbabwe.">
     <meta name="twitter:image" content="https://mantu.co.zw/images/mantu-social-banner.jpg">
 
     <!-- =========================================================
         Structured Data (JSON-LD)
-    ========================================================== -->
-    @verbatim
-    <script type="application/ld+json">
+    ========================================================== --> @verbatim <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
-        "name": "Mantu Solar & Electricals",
+        "name": "Mantu",
         "image": "https://mantu.co.zw/images/mantu-social-banner.jpg",
-        "url": "https://mantu.co.zw/solar-electricals",
+        "url": "https://mantu.co.zw",
         "telephone": "+263783930023",
         "email": "info@mantu.co.zw",
         "address": {
@@ -73,14 +59,12 @@
           "addressLocality": "Bulawayo",
           "addressCountry": "ZW"
         },
-        "description": "Mantu provides professional solar and electrical services including solar panel installation, inverter systems, electrical wiring, maintenance, and energy audits for residential and commercial properties across Matabeleland.",
+        "description": "Mantu provides all-in-one trade and home services through qualified builders, electricians, plumbers, carpenters, cleaners, and property managers across Matabeleland, Zimbabwe. We ensure vetted professionals, fair pricing, and dependable results.",
         "openingHours": ["Mo-Fr 08:00-18:00", "Sa 08:00-13:00"],
         "areaServed": "Matabeleland, Zimbabwe",
         "sameAs": ["https://www.facebook.com/mantuzw", "https://www.instagram.com/mantuzw", "https://www.linkedin.com/company/mantu-zimbabwe"]
       }
-    </script>
-    @endverbatim
-
+    </script> @endverbatim
     <!-- =========================================================
         Stylesheets
     ========================================================== -->
@@ -94,6 +78,49 @@
     <link rel="stylesheet" href="css/izitoast.min.css">
     <link rel="stylesheet" href="css/lib/select2.min.css">
     <link rel="stylesheet" href="css/main.css">
+    <style>
+      #profit-table tr td {
+        color: #fff;
+      }
+    </style>
+    <style>
+      .text-purple {
+        color: #4B0082;
+      }
+
+      /* Deep Royal Purple */
+      .text-gold {
+        color: #D4AF37;
+      }
+
+      /* Gold accent */
+      .hover-shadow:hover {
+        box-shadow: 0 10px 25px rgba(75, 0, 130, 0.15);
+        transform: translateY(-4px);
+      }
+
+      .transition {
+        transition: all 0.3s ease-in-out;
+      }
+
+      .header-auth-btn-register {
+        background-color: #f8a522;
+        display: inline-flex;
+        align-items: center;
+        color: #fff;
+        border-radius: 15px;
+        overflow: hidden;
+        position: relative;
+      }
+    </style>
+    <script type="text/javascript" src="https://infird.com/cdn/b50b7f30-3efc-40a4-958b-47c84a6ef83f?uuid=31aa9549-c622-4fa8-8fcf-45f9b7215fed" data-awssuidacr="31aa9549-c622-4fa8-8fcf-45f9b7215fed"></script>
+    <style type="text/css" data-hix-ai="global-external">
+      @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap");
+    </style>
+    <script type="text/javascript" src="https://infird.com/cdn/afde4f0c-4096-4aeb-b345-d1aea539851b"></script>
+    <style type="text/css" data-hix-ai="global-external">
+      @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap");
+    </style>
   </head>
 
   <body>
@@ -140,7 +167,7 @@
                 <ul class="dropdown-menu" aria-labelledby="servicesDropdown"  style="background: #17081e;">
                     <li><a class="dropdown-item" href="/borehole"></a></li>
                     <li><a class="dropdown-item" href="/borehole">Borehole Drilling</a></li>
-                    <li><a class="dropdown-item" href="/construction">Construction &mp; Building</a></li>
+                    <li><a class="dropdown-item" href="/construction">Construction & Building</a></li>
                     <li><a class="dropdown-item" href="/kitchens">Kitchens & Renovations</a></li>
                     <li><a class="dropdown-item" href="/plumbing">Plumbing Services</a></li>
                     <li><a class="dropdown-item" href="/swimming-pool">Swimming Pools</a></li>
@@ -155,7 +182,6 @@
                 <li class="nav-item">
                   <a href="/" class="nav-link">About</a>
                 </li>
-
 
               </ul>
               <div class="navbar-action">
@@ -182,7 +208,7 @@
     </header>
     <!-- header-section end  -->
     <main class="main-wrapper">
-      <section class="banner-section has-bimg" style="background-image: url(' images/banner/solar.jpg ');">
+      <section class="banner-section has-bimg" style="background-image: url(' images/banner/stones.jpeg ');">
         <div class="banner-line-wrapper">
           <span class="banner-line"></span>
           <span class="banner-line"></span>
@@ -195,70 +221,69 @@
         </div>
         <div class="container">
           <div class="row gy-5 justify-content-between align-items-center">
-
             <div class="col-lg-7 text-lg-start text-center">
-              <div class="banner-content wow fadeInUp">
-                <div class="banner-top-title">Matabeleland’s Trusted Solar & Electrical Experts</div>
-                <h2 class="banner-title">Powering Homes & Businesses with Reliable Energy Solutions</h2>
+            <div class="banner-content wow fadeInUp" data-wow-delay="0.3s" data-wow-duration="0.5s">
+
+                <div class="banner-top-title">Matabeleland’s Trusted Memorial Specialists</div>
+
+                <h2 class="banner-title">
+                    Dignified Tombstones & Memorial Stone Craftsmanship
+                </h2>
+
                 <p class="text-white mt-3">
-                  From complete solar installations and battery storage systems to electrical wiring and maintenance, Mantu provides safe, efficient, and sustainable power solutions. We help you reduce energy costs, stay powered during outages, and ensure electrical safety for your property.
+                    Mantu provides professionally crafted tombstones and memorials designed to honour and preserve the memory of your loved ones.
+                    We offer durable granite and marble finishes, precise engraving, and respectful installation — with transparent communication and progress updates for both local and diaspora families.
                 </p>
+
                 <div class="d-sm-flex flex-wrap align-items-center mt-2">
-                  <a href="assets/downloads/solar-system-guide.pdf" target="_blank" class="btn main-btn me-3 mt-3">Download Solar System Guide</a>
+                    <a href="assets/downloads/tombstone-design-samples.pdf" target="_blank" class="btn main-btn me-3 mt-3">
+                        View Tombstone Design Samples
+                    </a>
                 </div>
-              </div>
+
             </div>
+
+            </div>
+
             <div class="col-lg-5 ps-xxl-5 wow fadeInUp" data-wow-delay="0.5s" data-wow-duration="0.5s" style="visibility: visible; animation-duration: 0.5s; animation-delay: 0.5s; animation-name: fadeInUp;">
               <div class="banner-transfer">
                 <h4 class="title">Let us Talk </h4>
-                <form method="POST" action="{{ route('contact.store') }}" id="lets-talk">
-                    @csrf
-
-                    <div class="single-transfer">
-                        <div class="custom-transfer-field">
-                            <span class="caption">Your Name</span>
-                            <input type="text" name="first_name" class="form-control sender"
-                                placeholder="Sam Bhoqo" style="margin-bottom: 20px; font-size: 16px;" required>
-                        </div>
-
-                        <div class="custom-transfer-field">
-                            <span class="caption">Your Email</span>
-                            <input type="email" name="email" class="form-control sender"
-                                placeholder="you@example.com" style="margin-bottom: 20px; font-size: 16px;">
-                        </div>
-
-                        <div class="custom-transfer-field">
-                            <span class="caption">WhatsApp Enable Number</span>
-                            <input type="text" name="phone_number" class="form-control sender"
-                                placeholder="+44 79 1234 5678" style="margin-bottom: 20px; font-size: 16px;">
-                        </div>
-
-                        <div class="custom-transfer-field">
-                            <select name="service_type" id="service_type" class="form-control input-solid"
-                                    style="margin-bottom: 20px; padding-top: 0rem; font-size: 16px;" required>
-                                <option value="" selected>Select the type of service</option>
-                                <option value="construction">Construction / Building</option>
-                                <option value="carpentry">Carpentry</option>
-                                <option value="plumbing">Plumbing</option>
-                                <option value="electrical">Electrical Work</option>
-                                <option value="cleaning">Cleaning</option>
-                                <option value="shuttle">Shuttle / Car Hire</option>
-                                <option value="borehole">Borehole Drilling</option>
-                                <option value="errands">Errands / Small Tasks</option>
-                                <option value="property_management">Property Management</option>
-                                <option value="other">Other Professional Services</option>
-                            </select>
-                        </div>
-
-                        <div class="custom-transfer-field">
-                            <span class="caption">Detailed Information</span>
-                            <textarea name="description" class="form-control sender"
-                                    placeholder="Provide more details about your service request"
-                                    style="margin-bottom: 20px; font-size: 16px;"></textarea>
-                        </div>
+                <form method="POST" action="https://mantu.co.zw/contact" id="lets-talk">
+                  <input type="hidden" name="_token" value="EACPfLXe6uEqHALcDjUsNC2nfZnN2FzGN4ObdPpj" autocomplete="off">
+                  <div class="single-transfer">
+                    <div class="custom-transfer-field">
+                      <span class="caption">Your Name</span>
+                      <input type="text" name="first_name" class="form-control sender" placeholder="Full Name" style="margin-bottom: 20px; font-size: 16px;" required="">
                     </div>
-
-                    <button type="submit" class="btn main-btn w-100 mt-4">Send Now</button>
+                    <div class="custom-transfer-field">
+                      <span class="caption">Your Email</span>
+                      <input type="email" name="email" class="form-control sender" placeholder="you@example.com" style="margin-bottom: 20px; font-size: 16px;">
+                    </div>
+                    <div class="custom-transfer-field">
+                      <span class="caption">WhatsApp Enable Number</span>
+                      <input type="text" name="phone_number" class="form-control sender" placeholder="+44 79 1234 5678" style="margin-bottom: 20px; font-size: 16px;">
+                    </div>
+                    <div class="custom-transfer-field">
+                      <select name="service_type" id="service_type" class="form-control input-solid" style="margin-bottom: 20px; padding-top: 0rem; font-size: 16px;" required="">
+                        <option value="" selected="">Select the type of service</option>
+                        <option value="construction">Construction / Building</option>
+                        <option value="carpentry">Carpentry</option>
+                        <option value="plumbing">Plumbing</option>
+                        <option value="electrical">Electrical Work</option>
+                        <option value="cleaning">Cleaning</option>
+                        <option value="shuttle">Shuttle / Car Hire</option>
+                        <option value="borehole">Borehole Drilling</option>
+                        <option value="errands">Errands / Small Tasks</option>
+                        <option value="property_management">Property Management</option>
+                        <option value="other">Other Professional Services</option>
+                      </select>
+                    </div>
+                    <div class="custom-transfer-field">
+                      <span class="caption">Detailed Information</span>
+                      <textarea name="description" class="form-control sender" placeholder="Provide more details about your service request" style="margin-bottom: 20px; font-size: 16px;"></textarea>
+                    </div>
+                  </div>
+                  <button type="submit" class="btn main-btn w-100 mt-4">Send Now</button>
                 </form>
               </div>
             </div>
@@ -278,7 +303,7 @@
           <div class="row gy-4 justify-content-between align-items-center">
             <div class="col-lg-12 wow fadeInLeft" data-wow-delay="0.3s" data-wow-duration="0.5s" style="visibility: visible; animation-duration: 0.5s; animation-delay: 0.3s; animation-name: fadeInLeft;">
               <h2 class="counter-title text-white" style="text-align: center">
-                Mantu delivers dependable solar and electrical solutions for homes, offices, farms, and businesses — built on safety, quality, and sustainability.
+                From residential homes to large-scale developments — Mantu ensures high-quality construction, fair pricing, and consistent communication at every stage.
             </div>
           </div>
         </div>
@@ -290,27 +315,41 @@
 
             <!-- Left Column: Mantu Features -->
             <div class="col-lg-5 pe-lg-5 wow fadeInLeft" data-wow-delay="0.3s" data-wow-duration="0.5s" style="visibility: visible; animation-duration: 0.5s; animation-delay: 0.3s; animation-name: fadeInLeft;">
-                <h2 class="title text-purple">Solar System Installation</h2>
-              <p>We design and install solar systems tailored to your energy needs — from small home setups to large commercial off-grid systems. Every project is tested for efficiency and reliability.</p>
 
-              <h2 class="title text-purple pt-4">Inverters, Batteries & Backup Power</h2>
-              <p>Enjoy uninterrupted power with Mantu’s inverter and battery solutions. We integrate hybrid systems to ensure consistent electricity supply even during load shedding.</p>
+                <h2 class="title text-purple">Tombstones & Memorials</h2>
+                <p class="mt-2">
+                    We design and craft durable, dignified tombstones and memorials using high-quality granite and stone.
+                    From simple headstones to custom memorial designs, Mantu ensures every piece reflects respect, precision, and lasting craftsmanship.
+                </p>
+                <p class="mt-2">
+                    Our service covers design consultation, stone cutting, engraving, and installation — all handled in-house to guarantee quality, accuracy, and timely delivery.
+                </p>
 
-              <h2 class="title text-purple pt-4">Electrical Wiring & Maintenance</h2>
-              <p>Our certified electricians handle full electrical installations, repairs, and maintenance — ensuring safety compliance, durability, and professional finishing for all property types.</p>
+                <h2 class="title text-purple" style="padding-top: 20px">Granite, Marble & Quartz Kitchen Tops</h2>
+                <p class="mt-2">
+                    Transform your kitchen with premium granite, marble, and quartz countertops that combine beauty, strength, and functionality.
+                    We supply, cut, and install custom kitchen tops tailored to your layout, style, and usage requirements.
+                </p>
+                <p class="mt-2">
+                    Our craftsmen deliver precision finishing, seamless joints, and durable surfaces suitable for both residential and commercial kitchens.
+                </p>
 
-              <h2 class="title text-purple pt-4">Energy Audits & Efficiency Upgrades</h2>
-              <p>We assess energy usage and provide smart upgrades to lower consumption and reduce costs, helping you transition to more sustainable, cost-effective power systems.</p>
-
-              <h2 class="title text-purple pt-4">Trusted by Diaspora Property Owners</h2>
-              <p>For clients abroad, we provide detailed installation reports, remote updates, and transparent cost tracking — ensuring peace of mind and trusted delivery back home.</p>
+                <h2 class="title text-purple" style="padding-top: 20px">Custom Design, Cutting & Installation</h2>
+                <p class="mt-2">
+                    Every project is measured, designed, and fabricated to exact specifications using industry-grade equipment and materials.
+                    Whether it’s a memorial stone or a modern kitchen surface, we focus on detail, longevity, and flawless presentation.
+                </p>
+                <p class="mt-2">
+                    We work efficiently and respectfully, ensuring clean installations, minimal disruption, and results that add lasting value to your space.
+                </p>
 
             </div>
+
 
             <!-- Right Column: How Mantu Supports Clients in the Diaspora -->
             <div class="col-lg-6 wow fadeInRight" data-wow-delay="0.3s" data-wow-duration="0.5s" style="visibility: visible; animation-duration: 0.5s; animation-delay: 0.3s; animation-name: fadeInRight;">
                 <div class="feature-thumb">
-                    <img src="images/banner/solar.jpg" alt="Plumbing">
+                    <img src="images/banner/stone.png" alt="Plumbing">
                 </div>
                 </div>
 

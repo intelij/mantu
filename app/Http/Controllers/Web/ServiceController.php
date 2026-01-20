@@ -58,4 +58,8 @@ class ServiceController extends Controller
     public function calculator() {
         return view('services.calculator');
     }
+
+    public function stones() {
+        return view('services.stone');
+    }
 }

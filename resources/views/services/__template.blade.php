@@ -160,6 +160,20 @@
                     <li><a class="dropdown-item" href="/shuttle">Shuttle &amp; Transport</a></li>
                     <li><a class="dropdown-item" href="/personal-shopper">Personal Shopper (Groceries & Deliveries)</a></li>
                   </ul>
+
+                <ul class="dropdown-menu" aria-labelledby="servicesDropdown"  style="background: #17081e;">
+                    <li><a class="dropdown-item" href="/borehole"></a></li>
+                    <li><a class="dropdown-item" href="/borehole">Borehole Drilling</a></li>
+                    <li><a class="dropdown-item" href="/construction">Construction &mp; Building</a></li>
+                    <li><a class="dropdown-item" href="/kitchens">Kitchens & Renovations</a></li>
+                    <li><a class="dropdown-item" href="/plumbing">Plumbing Services</a></li>
+                    <li><a class="dropdown-item" href="/swimming-pool">Swimming Pools</a></li>
+                    <li><a class="dropdown-item" href="/hampers">Hampers & Gifts</a></li>
+                    <li><a class="dropdown-item" href="/shuttle">Shuttle & Transport</a></li>
+                    <li><a class="dropdown-item" href="/solar-electricals">Solar & Electricals</a></li>
+                    <li><a class="dropdown-item" href="/trucks">Trucks & Logistics</a></li>
+                    <li><a class="dropdown-item" href="/tombstones">Tombstones</a></li>
+                </ul>
                 </li>
 
                 <li class="nav-item"><a class="nav-link" href="/about">About</a></li>

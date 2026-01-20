@@ -44,6 +44,7 @@ Route::get('/template', [ServiceController::class, 'template'])->name('services.
 Route::get('/calculator', [ServiceController::class, 'calculator'])->name('services.calculator');
 Route::get('/swimming-pool', [ServiceController::class, 'swimming'])->name('services.swimming-pool');
 Route::get('/hampers', [ServiceController::class, 'hamper'])->name('services.hampers');
+Route::get('/tombstones', [ServiceController::class, 'stones'])->name('services.stones');
 
 
 Route::post('/contact', [ContactController::class, 'store'])->name('contact.store');
